@@ -13,7 +13,6 @@ import sys, os
 # 添加上本文件对应目录
 sys.path.append(os.path.abspath(os.path.dirname(__file__))) 
 
-
 if __name__ == "__main__":
     # kill_other_python()
     my_car = MyCar()
@@ -21,34 +20,6 @@ if __name__ == "__main__":
     # my_car.task.reset()
     
 
-    # 简单的循迹测试函数
-    def simple_lane_test():
-        """简单的车道线循迹测试"""
-        print("开始车道线循迹测试...")
-        # 以0.3m/s速度循迹5秒
-        my_car.lane_time(0.3, 5)
-        print("车道线循迹测试完成")
-
-    def lane_distance_test():
-        """按距离循迹测试"""
-        print("开始按距离循迹测试...")
-        # 以0.3m/s速度循迹1米
-        my_car.lane_dis_offset(0.3, 1.0)
-        print("按距离循迹测试完成")
-
-    def basic_movement_test():
-        """基础移动测试"""
-        print("开始基础移动测试...")
-        # 前进2秒
-        my_car.move_time([0.2, 0, 0], 2)
-        # 停止1秒
-        time.sleep(1)
-        # 左转2秒
-        my_car.move_time([0, 0, 0.5], 2)
-        print("基础移动测试完成")
-
-    # 注释掉所有复杂的任务函数
-    """
     def hanoi_tower_func():
         my_car.lane_dis_offset(0.3, 0.5)
         # print(my_car.get_odometry())
@@ -271,47 +242,23 @@ if __name__ == "__main__":
         # my_car.do_action_list(actions_map)
     def car_move():
         my_car.set_pose([0.20, 0,0], 1)
-    """
+    def follow_map():
+        # 使用循迹功能前进
+        my_car.lane_dis_offset(0.3, 0.5)  # 以0.3的速度前进0.5米
+        
+        # 使用红外传感器检测边界
+        my_car.lane_sensor(0.3, value_h=0.3, sides=1)  # 以0.3的速度前进，直到左侧传感器检测到边界
+        
+        # 继续前进一段距离
+        my_car.lane_dis_offset(0.3, 1.0)  # 以0.3的速度继续前进1.0米
+        
+        # 转弯处理
+        side = my_car.get_card_side()  # 获取转弯方向
+        if side != 0:  # 如果需要转弯
+            my_car.set_pose_offset([0, 0, math.pi/2*side], 1)  # 根据方向旋转90度
+        
+        # 最后一段直线
+        my_car.lane_dis_offset(0.3, 0.5)  # 继续前进0.5米
 
-    my_car.beep()
-    time.sleep(0.2)
-    
-    # 只保留简单的循迹测试函数
-    def camera_lane_ai_preview():
-        """
-        实时显示摄像头画面，并叠加循迹AI推理结果（偏移、角度等）
-        """
-        import cv2
-
-        # cap = my_car.cap_front.cap  # 直接用MyCar对象的前摄像头
-        cap = my_car.cap_side.cap
-        while True:
-            ret, frame = cap.read()
-            if not ret:
-                print("摄像头读取失败")
-                break
-
-            # AI循迹推理
-            try:
-                error_y, error_angle = my_car.crusie(frame)
-                # 在画面上显示偏移和角度
-                cv2.putText(frame, f"Lane Offset: {error_y:.2f}", (10, 30),
-                            cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0, 255, 0), 2)
-                cv2.putText(frame, f"Angle: {error_angle:.2f}", (10, 60),
-                            cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0, 255, 0), 2)
-            except Exception as e:
-                cv2.putText(frame, f"Lane AI Error: {e}", (10, 30),
-                            cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 0, 255), 2)
-
-            # 你也可以在这里加目标检测等其它AI结果的可视化
-
-            cv2.imshow("Camera + Lane AI Preview", frame)
-            if cv2.waitKey(1) & 0xFF == ord('q'):
-                break
-
-        cap.release()
-        cv2.destroyAllWindows()
-
-    functions = [camera_lane_ai_preview, simple_lane_test, lane_distance_test, basic_movement_test]
-    my_car.manage(functions, 0)
-
+    functions = [hanoi_tower_func, bmi_cal, camp_fun, send_fun, task_ingredients, task_answer, task_fun2, task_food, task_help, follow_map]
+    my_car.manage(functions, 10)  # 注意这里数字改为10

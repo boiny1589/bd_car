@@ -1311,3 +1311,207 @@
 2025-07-06 21:46:18,106 car_wrap.py, line 673, INFO:0
 2025-07-06 21:46:18,107 car_wrap.py, line 675, INFO:['camera_lane_ai_preview', 'simple_lane_test', 'lane_distance_test', 'basic_movement_test', 'all_task', 'lane_test', 'reset', 'debug']
 2025-07-06 21:46:21,213 car_wrap.py, line 756, INFO:camera_lane_ai_preview
+2025-07-06 22:01:28,527 serial_wrap.py, line 123, INFO:try:COM3 - USB-SERIAL CH340 (COM3)
+2025-07-06 22:01:28,599 serial_wrap.py, line 63, INFO:port is COM3, controller is mc602, mode USB
+2025-07-06 22:01:28,630 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-06 22:01:29,426 vehicle_base.py, line 305, INFO:MecanumChassis
+2025-07-06 22:01:29,426 vehicle_base.py, line 194, INFO:mecanum init
+2025-07-06 22:01:29,427 car_wrap.py, line 147, INFO:my car init ok 0.003993988037109375
+2025-07-06 22:01:33,953 infer_front.py, line 115, INFO:lane连接服务器...
+2025-07-06 22:01:37,544 infer_front.py, line 154, INFO:开启infer_back_end.py脚本, 后台运行中, 请等待
+2025-07-06 22:01:59,691 infer_front.py, line 128, INFO:
+2025-07-06 22:01:59,692 infer_front.py, line 137, INFO:lane连接服务器成功
+2025-07-06 22:01:59,696 infer_front.py, line 115, INFO:front连接服务器...
+2025-07-06 22:02:01,546 infer_front.py, line 137, INFO:front连接服务器成功
+2025-07-06 22:02:01,549 infer_front.py, line 115, INFO:task连接服务器...
+2025-07-06 22:02:03,520 infer_front.py, line 137, INFO:task连接服务器成功
+2025-07-06 22:02:03,523 infer_front.py, line 115, INFO:ocr连接服务器...
+2025-07-06 22:02:05,503 infer_front.py, line 137, INFO:ocr连接服务器成功
+2025-07-06 22:02:06,112 car_wrap.py, line 673, INFO:0
+2025-07-06 22:02:06,112 car_wrap.py, line 675, INFO:['auto_lane_follow', 'camera_lane_ai_preview', 'simple_lane_test', 'lane_distance_test', 'basic_movement_test', 'all_task', 'lane_test', 'reset', 'debug']
+2025-07-06 22:02:35,132 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:06:20,926 serial_wrap.py, line 123, INFO:try:COM3 - USB-SERIAL CH340 (COM3)
+2025-07-06 22:06:20,996 serial_wrap.py, line 63, INFO:port is COM3, controller is mc602, mode USB
+2025-07-06 22:06:21,043 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-06 22:06:22,018 vehicle_base.py, line 305, INFO:MecanumChassis
+2025-07-06 22:06:22,019 vehicle_base.py, line 194, INFO:mecanum init
+2025-07-06 22:06:22,020 car_wrap.py, line 147, INFO:my car init ok 0.006005048751831055
+2025-07-06 22:06:26,495 infer_front.py, line 115, INFO:lane连接服务器...
+2025-07-06 22:06:30,096 infer_front.py, line 137, INFO:lane连接服务器成功
+2025-07-06 22:06:30,097 infer_front.py, line 115, INFO:front连接服务器...
+2025-07-06 22:06:31,944 infer_front.py, line 137, INFO:front连接服务器成功
+2025-07-06 22:06:31,945 infer_front.py, line 115, INFO:task连接服务器...
+2025-07-06 22:06:33,724 infer_front.py, line 137, INFO:task连接服务器成功
+2025-07-06 22:06:33,727 infer_front.py, line 115, INFO:ocr连接服务器...
+2025-07-06 22:06:35,520 infer_front.py, line 137, INFO:ocr连接服务器成功
+2025-07-06 22:06:36,130 car_wrap.py, line 673, INFO:0
+2025-07-06 22:06:36,131 car_wrap.py, line 675, INFO:['auto_lane_follow', 'camera_lane_ai_preview', 'simple_lane_test', 'lane_distance_test', 'basic_movement_test', 'all_task', 'lane_test', 'reset', 'debug']
+2025-07-06 22:06:38,377 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:06:41,863 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:09:31,940 serial_wrap.py, line 123, INFO:try:COM3 - USB-SERIAL CH340 (COM3)
+2025-07-06 22:09:32,019 serial_wrap.py, line 63, INFO:port is COM3, controller is mc602, mode USB
+2025-07-06 22:09:32,052 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-06 22:09:32,813 vehicle_base.py, line 305, INFO:MecanumChassis
+2025-07-06 22:09:32,814 vehicle_base.py, line 194, INFO:mecanum init
+2025-07-06 22:09:32,815 car_wrap.py, line 147, INFO:my car init ok 0.004998683929443359
+2025-07-06 22:09:37,361 infer_front.py, line 115, INFO:lane连接服务器...
+2025-07-06 22:09:40,853 infer_front.py, line 137, INFO:lane连接服务器成功
+2025-07-06 22:09:40,856 infer_front.py, line 115, INFO:front连接服务器...
+2025-07-06 22:09:42,654 infer_front.py, line 137, INFO:front连接服务器成功
+2025-07-06 22:09:42,655 infer_front.py, line 115, INFO:task连接服务器...
+2025-07-06 22:09:44,408 infer_front.py, line 137, INFO:task连接服务器成功
+2025-07-06 22:09:44,411 infer_front.py, line 115, INFO:ocr连接服务器...
+2025-07-06 22:09:46,167 infer_front.py, line 137, INFO:ocr连接服务器成功
+2025-07-06 22:09:46,778 car_wrap.py, line 673, INFO:0
+2025-07-06 22:09:46,779 car_wrap.py, line 675, INFO:['auto_lane_follow', 'camera_lane_ai_preview', 'simple_lane_test', 'lane_distance_test', 'basic_movement_test', 'all_task', 'lane_test', 'reset', 'debug']
+2025-07-06 22:09:48,907 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:10:29,618 serial_wrap.py, line 123, INFO:try:COM3 - USB-SERIAL CH340 (COM3)
+2025-07-06 22:10:29,697 serial_wrap.py, line 63, INFO:port is COM3, controller is mc602, mode USB
+2025-07-06 22:10:29,735 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-06 22:10:30,573 vehicle_base.py, line 305, INFO:MecanumChassis
+2025-07-06 22:10:30,574 vehicle_base.py, line 194, INFO:mecanum init
+2025-07-06 22:10:30,575 car_wrap.py, line 147, INFO:my car init ok 0.0049991607666015625
+2025-07-06 22:10:35,089 infer_front.py, line 115, INFO:lane连接服务器...
+2025-07-06 22:10:38,609 infer_front.py, line 137, INFO:lane连接服务器成功
+2025-07-06 22:10:38,611 infer_front.py, line 115, INFO:front连接服务器...
+2025-07-06 22:10:40,407 infer_front.py, line 137, INFO:front连接服务器成功
+2025-07-06 22:10:40,409 infer_front.py, line 115, INFO:task连接服务器...
+2025-07-06 22:10:42,160 infer_front.py, line 137, INFO:task连接服务器成功
+2025-07-06 22:10:42,162 infer_front.py, line 115, INFO:ocr连接服务器...
+2025-07-06 22:10:43,978 infer_front.py, line 137, INFO:ocr连接服务器成功
+2025-07-06 22:10:44,587 car_wrap.py, line 673, INFO:0
+2025-07-06 22:10:44,589 car_wrap.py, line 675, INFO:['auto_lane_follow', 'camera_lane_ai_preview', 'simple_lane_test', 'lane_distance_test', 'basic_movement_test', 'all_task', 'lane_test', 'reset', 'debug']
+2025-07-06 22:10:58,368 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:10:58,402 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:10:58,436 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:10:58,470 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:10:58,504 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:10:58,538 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:10:58,572 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:10:58,607 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:10:58,641 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:10:58,675 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:10:58,709 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:10:58,743 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:10:58,777 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:10:58,811 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:10:58,845 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:10:58,879 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:10:58,913 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:10:58,947 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:10:58,982 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:10:59,016 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:04,125 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:04,160 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:04,195 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:04,229 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:04,263 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:04,297 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:04,331 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:04,365 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:04,399 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:04,432 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:04,467 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:04,501 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:04,536 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:04,570 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:04,657 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:45,655 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:45,690 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:45,724 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:45,758 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:45,792 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:45,827 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:45,861 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:45,895 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:45,929 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:45,963 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:45,997 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:46,031 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:46,065 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:46,100 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:46,134 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:46,169 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:46,203 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:46,237 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:46,272 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:46,306 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:46,340 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:46,374 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:46,408 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:46,442 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:46,476 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:46,509 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:46,544 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:46,578 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:46,612 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:46,646 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:46,680 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:46,714 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:46,748 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:46,783 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:46,817 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:46,851 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:46,886 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:46,920 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:46,954 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:46,989 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:47,024 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:47,058 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:47,093 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:47,126 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:47,162 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:47,197 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:47,231 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:47,267 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:47,302 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:47,336 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:47,371 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:47,406 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:47,440 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:47,475 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:47,510 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:47,545 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:47,581 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:47,615 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:47,649 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:47,685 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:47,719 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:47,752 car_wrap.py, line 756, INFO:auto_lane_follow
+2025-07-06 22:11:49,177 camera.py, line 108, INFO:0 close
+2025-07-06 22:11:49,548 camera.py, line 108, INFO:2 close
+2025-07-06 22:12:04,731 serial_wrap.py, line 123, INFO:try:COM3 - USB-SERIAL CH340 (COM3)
+2025-07-06 22:12:04,815 serial_wrap.py, line 63, INFO:port is COM3, controller is mc602, mode USB
+2025-07-06 22:12:04,845 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-06 22:12:05,577 vehicle_base.py, line 305, INFO:MecanumChassis
+2025-07-06 22:12:05,577 vehicle_base.py, line 194, INFO:mecanum init
+2025-07-06 22:12:05,579 car_wrap.py, line 147, INFO:my car init ok 0.005999088287353516
+2025-07-06 22:12:10,112 infer_front.py, line 115, INFO:lane连接服务器...
+2025-07-06 22:12:13,820 infer_front.py, line 137, INFO:lane连接服务器成功
+2025-07-06 22:12:13,822 infer_front.py, line 115, INFO:front连接服务器...
+2025-07-06 22:12:15,774 infer_front.py, line 137, INFO:front连接服务器成功
+2025-07-06 22:12:15,776 infer_front.py, line 115, INFO:task连接服务器...
+2025-07-06 22:12:17,566 infer_front.py, line 137, INFO:task连接服务器成功
+2025-07-06 22:12:17,567 infer_front.py, line 115, INFO:ocr连接服务器...
+2025-07-06 22:12:19,365 infer_front.py, line 137, INFO:ocr连接服务器成功
+2025-07-06 22:12:19,977 car_wrap.py, line 673, INFO:0
+2025-07-06 22:12:19,978 car_wrap.py, line 675, INFO:['auto_lane_follow', 'camera_lane_ai_preview', 'simple_lane_test', 'lane_distance_test', 'basic_movement_test', 'all_task', 'lane_test', 'reset', 'debug']
+2025-07-06 23:15:33,933 serial_wrap.py, line 123, INFO:try:COM3 - USB-SERIAL CH340 (COM3)
+2025-07-06 23:15:34,014 serial_wrap.py, line 63, INFO:port is COM3, controller is mc602, mode USB
+2025-07-06 23:15:34,059 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-06 23:15:34,997 vehicle_base.py, line 305, INFO:MecanumChassis
+2025-07-06 23:15:34,997 vehicle_base.py, line 194, INFO:mecanum init
+2025-07-06 23:15:34,998 car_wrap.py, line 147, INFO:my car init ok 0.0060007572174072266
+2025-07-06 23:15:39,718 infer_front.py, line 115, INFO:lane连接服务器...
+2025-07-06 23:15:45,025 infer_front.py, line 137, INFO:lane连接服务器成功
+2025-07-06 23:15:45,028 infer_front.py, line 115, INFO:front连接服务器...
+2025-07-06 23:15:47,942 infer_front.py, line 137, INFO:front连接服务器成功
+2025-07-06 23:15:47,948 infer_front.py, line 115, INFO:task连接服务器...
+2025-07-06 23:15:51,195 infer_front.py, line 137, INFO:task连接服务器成功
+2025-07-06 23:15:51,197 infer_front.py, line 115, INFO:ocr连接服务器...
+2025-07-06 23:15:54,333 infer_front.py, line 137, INFO:ocr连接服务器成功
+2025-07-06 23:15:54,540 car_wrap.py, line 673, INFO:10
+2025-07-06 23:15:54,541 car_wrap.py, line 675, INFO:['hanoi_tower_func', 'bmi_cal', 'camp_fun', 'send_fun', 'task_ingredients', 'task_answer', 'task_fun2', 'task_food', 'task_help', 'follow_map', 'all_task', 'lane_test', 'reset', 'debug']
+2025-07-06 23:16:46,447 car_wrap.py, line 376, INFO:task location dis out
+2025-07-06 23:16:48,101 car_wrap.py, line 376, INFO:task location dis out
+2025-07-06 23:16:49,498 car_wrap.py, line 376, INFO:task location dis out

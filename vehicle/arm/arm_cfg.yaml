@@ -33,8 +33,8 @@ horiz_cfg:
   - 0.3
 pos_cfg:
   pose_enable: true
-  pose_horiz: 0.13494726372691934
-  pose_vert: 0.07978
+  pose_horiz: 0.27475377229973624
+  pose_vert: 0.1453975
   side: 1
 vert_cfg:
   motor:
