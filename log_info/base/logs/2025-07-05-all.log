@@ -1,0 +1,15 @@
+2025-07-05 15:10:02,381 serial_wrap.py, line 123, INFO:try:COM3 - USB-SERIAL CH340 (COM3)
+2025-07-05 15:10:02,831 serial_wrap.py, line 324, ERROR:get_anwser timeout 
+2025-07-05 15:10:02,845 serial_wrap.py, line 267, INFO:is mc602
+2025-07-05 15:10:02,846 serial_wrap.py, line 268, INFO:load program
+2025-07-05 15:10:04,647 serial_wrap.py, line 63, INFO:port is COM3, controller is mc602, mode USB
+2025-07-05 15:10:04,703 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-05 15:13:32,628 serial_wrap.py, line 123, INFO:try:COM3 - USB-SERIAL CH340 (COM3)
+2025-07-05 15:13:32,707 serial_wrap.py, line 63, INFO:port is COM3, controller is mc602, mode USB
+2025-07-05 15:13:32,733 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-05 15:13:37,127 serial_wrap.py, line 123, INFO:try:COM3 - USB-SERIAL CH340 (COM3)
+2025-07-05 15:13:37,206 serial_wrap.py, line 63, INFO:port is COM3, controller is mc602, mode USB
+2025-07-05 15:13:37,234 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-05 15:36:56,326 serial_wrap.py, line 123, INFO:try:COM3 - USB-SERIAL CH340 (COM3)
+2025-07-05 15:36:56,400 serial_wrap.py, line 63, INFO:port is COM3, controller is mc602, mode USB
+2025-07-05 15:36:56,438 controller_wrap.py, line 31, INFO:dev_name:mc602

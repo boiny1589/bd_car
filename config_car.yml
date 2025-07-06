@@ -1,0 +1,76 @@
+# 智能小车配置文件 - config_car.yml
+# 
+# 本配置文件包含智能小车系统的所有重要参数设置
+# 包括摄像头、传感器、PID控制器、速度限制等
+
+# 车辆基础参数
+wbt_car: 0.1  # 车辆版本号或标识
+
+# 摄像头配置
+camera:
+  front: 0  # 前摄像头设备号（通常为0或1）
+  side: 2   # 侧摄像头设备号（通常为2）
+
+# 输入输出设备配置
+io:
+  left_sensor: 8   # 左红外传感器端口号
+  right_sensor: 7  # 右红外传感器端口号
+  key: 1           # 4按键控制器端口号
+  light: 2         # LED指示灯端口号
+
+# 速度限制配置
+speed:
+  x:
+    limit: 0.7  # X轴最大线速度限制（m/s）
+  y:
+    limit: 0.7  # Y轴最大线速度限制（m/s）
+  angle:
+    limit: 3    # 最大角速度限制（rad/s）
+
+# 车道线巡航PID控制器参数
+# 用于控制车辆沿车道线行驶时的稳定性
+lane_pid:
+  cfg_pid_y:  # Y轴位置PID参数
+    Kp: 4      # 比例系数，控制响应速度
+    Ki: 0      # 积分系数，消除稳态误差
+    Kd: 0      # 微分系数，抑制超调
+    setpoint: 0        # 目标值（车道线中心）
+    output_limits: [-0.7, 0.7]  # 输出限制范围
+  cfg_pid_angle:  # 角度PID参数
+    Kp: 3      # 比例系数
+    Ki: 0      # 积分系数
+    Kd: 0      # 微分系数
+    setpoint: 0        # 目标角度（0度）
+    output_limits: [-1.5, 1.5]  # 角度输出限制
+
+# 目标检测巡航PID控制器参数
+# 用于控制车辆跟随目标物体时的稳定性
+det_pid:
+  cfg_pid_y:  # Y轴位置PID参数
+    Kp: 1      # 比例系数（比车道线巡航更保守）
+    Ki: 0      # 积分系数
+    Kd: 0      # 微分系数
+    setpoint: 0        # 目标值
+    output_limits: [-0.7, 0.7]  # 输出限制
+  cfg_pid_angle:  # 角度PID参数
+    Kp: 1      # 比例系数
+    Ki: 0      # 积分系数
+    Kd: 0      # 微分系数
+    setpoint: 0        # 目标角度
+    output_limits: [-1.5, 1.5]  # 角度输出限制
+
+# 精确定位PID控制器参数
+# 用于控制车辆到达目标位置时的精确定位
+location_pid:
+  pid_x:  # X轴位置PID参数
+    Kp: -2     # 负比例系数，用于反向控制
+    Ki: 0      # 积分系数
+    Kd: 0      # 微分系数
+    setpoint: 0        # 目标X位置
+    output_limits: [-0.7, 0.7]  # X轴速度限制
+  pid_y:  # Y轴位置PID参数
+    Kp: -2     # 负比例系数，用于反向控制
+    Ki: 0      # 积分系数
+    Kd: 0      # 微分系数
+    setpoint: 0        # 目标Y位置
+    output_limits: [-0.7, 0.7]  # Y轴速度限制
