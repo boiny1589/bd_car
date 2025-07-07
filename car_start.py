@@ -244,21 +244,24 @@ if __name__ == "__main__":
         my_car.set_pose([0.20, 0,0], 1)
     def follow_map():
         # 使用循迹功能前进
-        my_car.lane_dis_offset(0.3, 0.5)  # 以0.3的速度前进0.5米
+        my_car.lane_dis_offset(0.3, 2)  # 以0.3的速度前进0.5米
         
         # 使用红外传感器检测边界
         my_car.lane_sensor(0.3, value_h=0.3, sides=1)  # 以0.3的速度前进，直到左侧传感器检测到边界
+        # # 继续前进一段距离
+        # my_car.lane_dis_offset(0.3, 1.0)  # 以0.3的速度继续前进1.0米
         
-        # 继续前进一段距离
-        my_car.lane_dis_offset(0.3, 1.0)  # 以0.3的速度继续前进1.0米
-        
-        # 转弯处理
-        side = my_car.get_card_side()  # 获取转弯方向
-        if side != 0:  # 如果需要转弯
-            my_car.set_pose_offset([0, 0, math.pi/2*side], 1)  # 根据方向旋转90度
-        
-        # 最后一段直线
-        my_car.lane_dis_offset(0.3, 0.5)  # 继续前进0.5米
+        # # 最后一段直线
+        # my_car.lane_dis_offset(0.3, 0.5)  # 继续前进0.5米
 
-    functions = [hanoi_tower_func, bmi_cal, camp_fun, send_fun, task_ingredients, task_answer, task_fun2, task_food, task_help, follow_map]
-    my_car.manage(functions, 10)  # 注意这里数字改为10
+    def arm_test():
+        # my_car.task.arm.reset()
+        # my_car.task.arm.reset_pos_dir(dir=1, speed=0.05)
+        my_car.task.arm.switch_side(1)
+        my_car.task.arm.set_arm_angle(0,20)
+        my_car.task.arm.set_hand_angle(30)
+        # my_car.task.arm.set_arm_angle(1.57)
+        sys.exit()  # 运行完自动结束
+        
+    functions = [hanoi_tower_func, bmi_cal, camp_fun, send_fun, task_ingredients, task_answer, task_fun2, task_food, task_help, follow_map, arm_test]
+    my_car.manage(functions, 11)  # 注意这里数字改为10

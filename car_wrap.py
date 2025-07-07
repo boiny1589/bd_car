@@ -437,12 +437,23 @@ class MyCar(CarBase):
         
             
     def lane_base(self, speed, end_fuction, stop=STOP_PARAM):
+        '''
+        前摄像头实现循迹，crusie是ClintInterface的方法工作流程：
+        车辆调用self.crusie(image)
+        ClintInterface实例将图像调整为128x128
+        通过5001端口发送到车道线检测服务
+        服务返回包含error_y和error_angle的JSON
+        结论：
+        完全基于AI模型：使用专门的车道线检测模型（LaneInfer）
+        独立服务：通过本地网络通信实现高效推理
+        实时性保障：小尺寸图像（128x128）确保低延迟
+        '''
         while True:
             if self._stop_flag:
                 return
-            image = self.cap_front.read()
-            error_y, error_angle = self.crusie(image)
-            y_speed, angle_speed = self.lane_pid.get_out(-error_y, -error_angle)
+            image = self.cap_front.read()   #前摄像头识别图像
+            error_y, error_angle = self.crusie(image)   #调用self.crusie(image)函数(这是一ClinitInterface实例，用于车道线检测)，返回error_y和error_angle
+            y_speed, angle_speed = self.lane_pid.get_out(-error_y, -error_angle)    #lane_pid是一个计算y方向和加速度的方法
             # speed_dy, angle_speed = process(image)
             self.set_velocity(speed, y_speed, angle_speed)
             if end_fuction():
@@ -451,6 +462,12 @@ class MyCar(CarBase):
             self.stop()
 
     def lane_det_base(self, speed, end_fuction, stop=STOP_PARAM):
+        '''
+        核心功能：通过前摄像头检测特定目标物体，
+        实时计算车辆与目标的相对位置关系，并动态调整车辆运动方向
+        控制目标：使车辆保持与目标物体的理想距离和角度
+        应用场景：物体跟随、目标接近、视觉导航等任务
+        '''
         # 初始化速度和角度速度
         y_speed = 0
         angle_speed = 0
@@ -480,32 +497,136 @@ class MyCar(CarBase):
             self.stop()
             
     def lane_det_time(self, speed, time_dur, stop=STOP_PARAM):
+        """基于视觉检测的定时车道循迹
+        
+        功能: 在指定时间内，使用摄像头检测车道线并保持车辆在车道内行驶
+        
+        参数:
+            speed: 行驶速度(单位: m/s)
+            time_dur: 持续时间(单位: 秒)
+            stop: 停止条件参数(默认使用全局STOP_PARAM)
+        
+        使用示例:
+            car.lane_det_time(speed=0.5, time_dur=10)  # 以0.5m/s的速度循迹行驶10秒
+        """        
         time_end = time.time() + time_dur
         end_fuction = lambda x: time.time() > time_end
         self.lane_det_base(speed, end_fuction, stop=stop)
 
     def lane_det_dis2pt(self, speed, dis_end, stop=STOP_PARAM):
+        """基于视觉检测的定距车道循迹
+        
+        功能: 行驶到距离目标点指定距离时停止，使用摄像头检测车道线保持车辆在车道内
+        
+        参数:
+            speed: 行驶速度(单位: m/s)
+            dis_end: 目标停止距离(单位: 米)
+            stop: 停止条件参数(默认使用全局STOP_PARAM)
+        
+        使用示例:
+            car.lane_det_dis2pt(speed=0.5, dis_end=2.0)  # 以0.5m/s的速度循迹行驶，距离目标点2米时停止
+        """
         # lambda定义endfunction
         end_fuction = lambda x: x < dis_end and x != 0
         self.lane_det_base(speed, end_fuction, stop=stop)
 
-    def lane_time(self, speed, time_dur, stop=STOP_PARAM):
+    def lane_time(self, speed, time_dur, stop=STOP_PARAM):  #该方法适用于视觉系统不可用时的基本循迹需求，但相比视觉循迹灵活性较低，更适合已知直线路径的场景。
+        """基于预设参数的定时车道循迹
+        
+        功能: 在指定时间内，使用预设PID参数保持车辆在车道内行驶（不依赖实时视觉检测）
+        
+        参数:
+            speed: 行驶速度(单位: m/s)
+            time_dur: 持续时间(单位: 秒)
+            stop: 停止条件参数(默认使用全局STOP_PARAM)
+        
+        使用场景:
+            当视觉检测不可用时，使用预设车道参数进行循迹
+        
+        使用示例:
+            car.lane_time(speed=0.5, time_dur=10)  # 以0.5m/s的速度循迹行驶10秒
+        """
         time_end = time.time() + time_dur
         end_fuction = lambda: time.time() > time_end
         self.lane_base(speed, end_fuction, stop=stop)
     
     # 巡航一段路程
     def lane_dis(self, speed, dis_end, stop=STOP_PARAM):
+        """基于预设参数的定距车道循迹
+        
+        功能: 使用预设PID参数保持车辆在车道内行驶指定距离
+        
+        参数:
+            speed: 行驶速度(单位: m/s)
+            dis_end: 目标行驶距离(单位: 米)
+            stop: 停止条件参数(默认使用全局STOP_PARAM)
+        
+        实现逻辑:
+        1. 定义结束函数：当行驶距离超过目标距离时停止
+        2. 调用基础车道循迹方法(lane_base)执行循迹
+        
+        使用场景:
+            已知直线路径上需要精确控制行驶距离的场景
+        
+        使用示例:
+            car.lane_dis(speed=0.5, dis_end=3.0)  # 以0.5m/s的速度直线循迹3米
+        """
         # lambda重新endfunction
         end_fuction = lambda: self.get_dis_traveled() > dis_end
         self.lane_base(speed, end_fuction, stop=stop)
 
     def lane_dis_offset(self, speed, dis_hold, stop=STOP_PARAM):
+        """基于当前位置的定距车道循迹
+        
+        功能: 从当前位置开始，行驶指定距离
+        
+        参数:
+            speed: 行驶速度(单位: m/s)
+            dis_hold: 需要行驶的距离(单位: 米)
+            stop: 停止条件参数(默认使用全局STOP_PARAM)
+        
+        实现逻辑:
+        1. 记录当前行驶距离作为起点
+        2. 计算目标距离 = 当前距离 + 需要行驶的距离
+        3. 调用lane_dis方法执行循迹
+        
+        使用场景:
+            需要从当前位置开始行驶特定距离的场景
+        
+        使用示例:
+            car.lane_dis_offset(speed=0.4, dis_hold=2.5)  # 从当前位置开始行驶2.5米
+        """
         dis_start = self.get_dis_traveled()
         dis_stop = dis_start + dis_hold
         self.lane_dis(speed, dis_stop, stop=stop)
 
     def lane_sensor(self, speed, value_h=None, value_l=None, dis_offset=0.0, times=1, sides=1, stop=STOP_PARAM):
+        """基于传感器触发的车道循迹
+        
+        功能: 当传感器读数进入指定范围时停止，可多次触发
+        
+        参数:
+            speed: 行驶速度(单位: m/s)
+            value_h: 传感器读数上限阈值(默认1200)
+            value_l: 传感器读数下限阈值(默认0)
+            dis_offset: 触发后继续行驶的距离(单位: 米)
+            times: 触发次数(默认1次)
+            sides: 使用哪侧传感器(1=左侧, -1=右侧)
+            stop: 停止条件参数(默认使用全局STOP_PARAM)
+        
+        实现逻辑:
+        1. 设置传感器阈值和选择传感器
+        2. 定义结束函数：当传感器读数在阈值范围内时标记触发
+        3. 执行指定次数的触发检测
+        4. 触发后继续行驶指定距离
+        
+        使用场景:
+            需要根据传感器读数（如红外、超声波）控制停止位置的场景
+        
+        使用示例:
+            # 左侧传感器读数在500-800范围内时停止
+            car.lane_sensor(speed=0.3, value_l=500, value_h=800)
+        """
         if value_h is None:
             value_h = 1200
         if value_l is None:
@@ -531,6 +652,7 @@ class MyCar(CarBase):
         self.lane_dis_offset(speed, dis_offset, stop=stop)
 
     def get_card_side(self):
+        
         # 检测卡片左右指示
         count_side = CountRecord(3)
         while True:

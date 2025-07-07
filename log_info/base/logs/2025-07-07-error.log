@@ -1,0 +1,10 @@
+2025-07-07 15:13:59,134 serial_wrap.py, line 324, ERROR:get_anwser timeout 
+2025-07-07 15:16:07,684 serial_wrap.py, line 324, ERROR:get_anwser timeout 
+2025-07-07 15:18:15,836 serial_wrap.py, line 324, ERROR:get_anwser timeout 
+2025-07-07 15:28:05,762 serial_wrap.py, line 324, ERROR:get_anwser timeout 
+2025-07-07 15:29:55,328 serial_wrap.py, line 324, ERROR:get_anwser timeout 
+2025-07-07 15:31:46,967 serial_wrap.py, line 324, ERROR:get_anwser timeout 
+2025-07-07 15:32:11,043 serial_wrap.py, line 324, ERROR:get_anwser timeout 
+2025-07-07 15:54:10,785 serial_wrap.py, line 116, ERROR:未找到串口,查看是否插入了串口,或者查看下位机是否开机
+2025-07-07 15:54:27,327 serial_wrap.py, line 324, ERROR:get_anwser timeout 
+2025-07-07 16:10:01,367 serial_wrap.py, line 324, ERROR:get_anwser timeout 

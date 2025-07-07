@@ -185,7 +185,7 @@ class ArmBase():
     # 设置手部舵机的角度
     def set_hand_angle(self, angle):
         # 将手部舵机的角度设置为传入的参数angle，速度为90
-        self.hand_servo.set_angle(angle, 90)
+        self.hand_servo.set_angle(angle, 10)
 
     def switch_hand_dir(self, side):
         self.set_hand_angle(self.hand_list2[side])
@@ -235,7 +235,14 @@ class ArmBase():
                 self.vert_speed(0)
             # time.sleep(0.1)
                           
-    def reset(self):
+    def reset(self):    #不咋用
+        '''
+        reset方法：
+        同时重置垂直和水平方向的位置（通过多线程并行执行）
+        先将机械臂切换到左侧（-1）再切换到右侧（1），确保机械臂回到初始位置
+        保存当前状态到配置文件（arm_cfg.yaml）
+        整个过程是同步的（通过join等待线程完成）
+        '''
         thread_reset_v = Thread(target=self.reset_vert)
         thread_reset_h = Thread(target=self.reset_horiz)
         self.side = -1
@@ -250,21 +257,45 @@ class ArmBase():
         # self.reset_pos_dir(2, 0.04)
         # 回到初始位置
 
-    def switch_side(self, side):
+    def switch_side(self, side):    #调换左右
+        '''
+        switch_side方法：
+        根据传入的side参数（1或-1）切换机械臂的工作侧
+        如果目标侧与当前侧相同，则直接返回
+        否则，更新当前侧，并控制机械臂转动到目标侧对应的预设角度
+        转动后等待0.5秒确保动作完成
+        '''
         if self.side != side:
             self.side = side
             logger.info("change side to {}".format(self.side))
-            # print("change side to {}".format(self.side))
+            print("change side to {}".format(self.side))
         else:
             return
         angle_tar = self.hand_list[side]
-        # print(angle_tar)
+        print(angle_tar)
         self.set_arm_angle(angle_tar, 80)
         time.sleep(0.5)
     
-    def reset_pos_dir(self, dir=0, speed=0.1):
-        horiz_flag = False
-        vert_flag = False
+    def reset_pos_dir(self, dir=0, speed=0.1):  #不知道用过没有
+        """按方向复位机械臂位置
+        
+        参数:
+            dir: 复位方向 (0=水平方向, 1=垂直方向, 其他值=同时复位两个方向)
+            speed: 复位速度 (单位: m/s)
+            
+        功能说明:
+        1. 根据dir参数确定需要复位的方向
+        2. 循环检测直到目标方向复位完成
+        3. 水平方向复位:
+           - 检查是否到达限位位置
+           - 到达后停止电机并重置位置变量
+        4. 垂直方向复位:
+           - 检查限位开关状态
+           - 到达后停止电机并重置位置变量
+        """
+        horiz_flag = False  # 水平复位完成标志
+        vert_flag = False   # 垂直复位完成标志
+        # 设置复位方向标志
         if dir == 0:
             # 只复位水平位置
             vert_flag = True
@@ -273,37 +304,46 @@ class ArmBase():
             horiz_flag = True
         while True:
             if vert_flag and horiz_flag:
-                break
+                break   # 两个方向都完成时退出
+              # 水平方向复位逻辑
             if horiz_flag is False:
-                self.horiz_motor.get_dis()
-                if self.horiz_stop_check():
-                    self.horiz_speed(0)
-                    self.horiz_pose_now = 0
-                    self.horiz_pose_start = 0
-                    self.horiz_motor.reset()
-
-                    self.horiz_pose_start = 0
-                    self.horiz_pose_now = 0
-                    horiz_flag = True
+                self.horiz_motor.get_dis()  # 获取当前位置
+                if self.horiz_stop_check():  # 检查是否到达限位位置
+                    self.horiz_speed(0)  # 停止水平电机
+                    self.horiz_pose_now = 0  # 重置当前位置
+                    self.horiz_pose_start = 0  # 重置起始位置
+                    self.horiz_motor.reset()  # 重置电机编码器
+                    horiz_flag = True  # 标记水平复位完成
+                    print("Horizontal reset complete, current position:", self.horiz_pose_now)
                 else:
                     pass
                     self.horiz_speed(speed)
 
+            # 垂直方向复位逻辑
             if vert_flag is False:
-                if self.vert_reset_check():
-                    self.vert_speed(0)
-                    self.vert_motor.reset()
-
-                    self.horiz_pose_start = 0
-                    self.vert_pose_now = 0
-                    vert_flag = True
+                if self.vert_reset_check():  # 检查限位开关状态
+                    self.vert_speed(0)  # 停止垂直电机
+                    self.vert_motor.reset()  # 重置电机编码器
+                    self.vert_pose_now = 0  # 重置当前位置
+                    vert_flag = True  # 标记垂直复位完成
                 else:
-                    self.vert_speed(0-abs(speed))
+                    self.vert_speed(0-abs(speed))  # 向下移动（负速度）
 
 
     def set_arm_angle(self, angle, speed=80):
-        # 设置
-        self.arm_servo.set_angle(angle, speed)
+        """设置机械臂角度
+        
+        参数:
+            angle: 目标角度（度）
+            speed: 转动速度（百分比，0-100）
+            
+        功能说明:
+        1. 控制舵机转动到指定角度
+        2. 根据角度值更新当前工作侧
+        3. 保存配置到YAML文件
+        """
+        self.arm_servo.set_angle(angle, speed)  # 设置舵机角度
+        # 根据角度值更新当前工作侧（side）
         for key, val in self.hand_list.items():
             if val == angle:
                 self.side = key
@@ -311,18 +351,73 @@ class ArmBase():
         else:
             self.side = 0
         self.save_yaml()
+        print("set arm angle to {}".format(angle))
     
     def set_arm_dir(self, dir=0, speed=80):
+        """根据方向设置机械臂位置
+        
+        参数:
+            dir: 目标方向 (-1=左侧, 0=中间, 1=右侧)
+            speed: 转动速度（百分比，0-100）
+            
+        功能说明:
+        1. 验证方向参数有效性
+        2. 根据预配置的角度映射表设置角度
+        """
+        # 验证方向参数（必须是-1,0,1）
         assert dir == 0 or dir == 1 or dir == -1, "dir should be 0 or 1 or -1"
         self.set_arm_angle(self.hand_list[dir], speed)
 
 
     def set_offset(self, horiz_offset, vert_offset, time_run=None, speed=[0.15, 0.04]):
+        """设置机械臂偏移量
+        参数:
+            horiz_offset: 水平方向偏移量（单位：米）
+            vert_offset: 垂直方向偏移量（单位：米）
+            time_run: 移动到目标位置的预期时间（秒），可选
+            speed: 移动速度（单位：米/秒），可选
+                - 单个数值：水平和垂直方向使用相同速度
+                - 两个元素的列表/元组：[水平速度, 垂直速度]
+                
+        功能说明:
+        1. 计算相对于当前位置的目标位置
+        2. 调用set()方法执行移动操作
+        """
         horiz_pos = self.horiz_pose_now + horiz_offset
         vert_pos = self.vert_pose_now + vert_offset
         self.set(horiz_pos, vert_pos, time_run, speed)
 
-    def set(self, horiz_pos, vert_pos, time_run=None, speed=[0.15, 0.04]):
+    def set(self, horiz_pos, vert_pos, time_run=None, speed=[0.15, 0.04]):  ###不咋用
+        """
+        设置机械臂的绝对目标位置并移动到该位置
+        
+        参数:
+            horiz_pos: 水平方向目标绝对位置（单位：米）
+            vert_pos: 垂直方向目标绝对位置（单位：米）
+            time_run: 移动到目标位置的预期时间（秒），可选
+            speed: 移动速度（单位：米/秒），可选
+                - 单个数值：水平和垂直方向使用相同速度
+                - 两个元素的列表/元组：[水平速度, 垂直速度]
+                
+        实现逻辑:
+        1. 位置边界检查: 确保目标位置在安全范围内
+        2. 速度/时间计算: 
+           - 如果提供time_run，则根据距离计算所需速度
+           - 如果提供speed，则根据速度计算所需时间
+        3. PID控制器设置: 为水平和垂直方向PID设置目标值和速度限制
+        4. 位置移动循环: 
+           - 检查是否到达目标位置
+           - 处理超时情况
+           - 实时更新PID控制输出
+           - 处理垂直方向限位开关触发
+        5. 保存最终位置到配置文件
+        
+        关键设计:
+        - 使用PID控制器实现平滑位置控制
+        - 自动处理超时和安全边界
+        - 支持速度优先或时间优先两种控制模式
+        """
+        # 控制上下限，确保目标位置在安全范围内
         # print(horiz_pos)
         # 控制上下限
         horiz_pos = limit_val(horiz_pos, self.horiz_threshold[0], self.horiz_threshold[1])

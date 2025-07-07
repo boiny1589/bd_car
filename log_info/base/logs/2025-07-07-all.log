@@ -1,0 +1,315 @@
+2025-07-07 15:10:06,880 serial_wrap.py, line 123, INFO:try:COM3 - USB-SERIAL CH340 (COM3)
+2025-07-07 15:10:06,953 serial_wrap.py, line 63, INFO:port is COM3, controller is mc602, mode USB
+2025-07-07 15:10:06,981 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-07 15:10:07,653 vehicle_base.py, line 305, INFO:MecanumChassis
+2025-07-07 15:10:07,653 vehicle_base.py, line 194, INFO:mecanum init
+2025-07-07 15:10:07,654 car_wrap.py, line 147, INFO:my car init ok 0.00450897216796875
+2025-07-07 15:10:12,217 infer_front.py, line 115, INFO:lane连接服务器...
+2025-07-07 15:10:15,214 infer_front.py, line 137, INFO:lane连接服务器成功
+2025-07-07 15:10:15,215 infer_front.py, line 115, INFO:front连接服务器...
+2025-07-07 15:10:16,746 infer_front.py, line 137, INFO:front连接服务器成功
+2025-07-07 15:10:16,748 infer_front.py, line 115, INFO:task连接服务器...
+2025-07-07 15:10:18,274 infer_front.py, line 137, INFO:task连接服务器成功
+2025-07-07 15:10:18,276 infer_front.py, line 115, INFO:ocr连接服务器...
+2025-07-07 15:10:19,786 infer_front.py, line 137, INFO:ocr连接服务器成功
+2025-07-07 15:10:19,992 car_wrap.py, line 691, INFO:11
+2025-07-07 15:10:19,992 car_wrap.py, line 693, INFO:['hanoi_tower_func', 'bmi_cal', 'camp_fun', 'send_fun', 'task_ingredients', 'task_answer', 'task_fun2', 'task_food', 'task_help', 'follow_map', 'arm_test', 'all_task', 'lane_test', 'reset', 'debug']
+2025-07-07 15:10:34,565 car_wrap.py, line 774, INFO:lane_test
+2025-07-07 15:10:37,977 car_wrap.py, line 774, INFO:all_task
+2025-07-07 15:10:39,294 car_wrap.py, line 774, INFO:arm_test
+2025-07-07 15:10:44,541 arm_base.py, line 270, INFO:change side to 1
+2025-07-07 15:13:58,688 serial_wrap.py, line 123, INFO:try:COM3 - USB-SERIAL CH340 (COM3)
+2025-07-07 15:13:59,134 serial_wrap.py, line 324, ERROR:get_anwser timeout 
+2025-07-07 15:13:59,148 serial_wrap.py, line 267, INFO:is mc602
+2025-07-07 15:13:59,149 serial_wrap.py, line 268, INFO:load program
+2025-07-07 15:14:00,961 serial_wrap.py, line 63, INFO:port is COM3, controller is mc602, mode USB
+2025-07-07 15:14:00,993 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-07 15:14:01,648 vehicle_base.py, line 305, INFO:MecanumChassis
+2025-07-07 15:14:01,648 vehicle_base.py, line 194, INFO:mecanum init
+2025-07-07 15:14:01,648 car_wrap.py, line 147, INFO:my car init ok 0.002996683120727539
+2025-07-07 15:14:06,148 infer_front.py, line 115, INFO:lane连接服务器...
+2025-07-07 15:14:09,042 infer_front.py, line 137, INFO:lane连接服务器成功
+2025-07-07 15:14:09,044 infer_front.py, line 115, INFO:front连接服务器...
+2025-07-07 15:14:10,508 infer_front.py, line 137, INFO:front连接服务器成功
+2025-07-07 15:14:10,510 infer_front.py, line 115, INFO:task连接服务器...
+2025-07-07 15:14:12,010 infer_front.py, line 137, INFO:task连接服务器成功
+2025-07-07 15:14:12,012 infer_front.py, line 115, INFO:ocr连接服务器...
+2025-07-07 15:14:13,455 infer_front.py, line 137, INFO:ocr连接服务器成功
+2025-07-07 15:14:13,663 car_wrap.py, line 691, INFO:11
+2025-07-07 15:14:13,664 car_wrap.py, line 693, INFO:['hanoi_tower_func', 'bmi_cal', 'camp_fun', 'send_fun', 'task_ingredients', 'task_answer', 'task_fun2', 'task_food', 'task_help', 'follow_map', 'arm_test', 'all_task', 'lane_test', 'reset', 'debug']
+2025-07-07 15:14:36,118 car_wrap.py, line 774, INFO:arm_test
+2025-07-07 15:14:38,458 arm_base.py, line 270, INFO:change side to 1
+2025-07-07 15:16:07,239 serial_wrap.py, line 123, INFO:try:COM3 - USB-SERIAL CH340 (COM3)
+2025-07-07 15:16:07,684 serial_wrap.py, line 324, ERROR:get_anwser timeout 
+2025-07-07 15:16:07,699 serial_wrap.py, line 267, INFO:is mc602
+2025-07-07 15:16:07,700 serial_wrap.py, line 268, INFO:load program
+2025-07-07 15:16:09,511 serial_wrap.py, line 63, INFO:port is COM3, controller is mc602, mode USB
+2025-07-07 15:16:09,545 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-07 15:16:10,191 vehicle_base.py, line 305, INFO:MecanumChassis
+2025-07-07 15:16:10,192 vehicle_base.py, line 194, INFO:mecanum init
+2025-07-07 15:16:10,192 car_wrap.py, line 147, INFO:my car init ok 0.0035071372985839844
+2025-07-07 15:16:14,689 infer_front.py, line 115, INFO:lane连接服务器...
+2025-07-07 15:16:17,646 infer_front.py, line 137, INFO:lane连接服务器成功
+2025-07-07 15:16:17,647 infer_front.py, line 115, INFO:front连接服务器...
+2025-07-07 15:16:19,112 infer_front.py, line 137, INFO:front连接服务器成功
+2025-07-07 15:16:19,115 infer_front.py, line 115, INFO:task连接服务器...
+2025-07-07 15:16:20,626 infer_front.py, line 137, INFO:task连接服务器成功
+2025-07-07 15:16:20,628 infer_front.py, line 115, INFO:ocr连接服务器...
+2025-07-07 15:16:22,113 infer_front.py, line 137, INFO:ocr连接服务器成功
+2025-07-07 15:16:22,319 car_wrap.py, line 691, INFO:11
+2025-07-07 15:16:22,320 car_wrap.py, line 693, INFO:['hanoi_tower_func', 'bmi_cal', 'camp_fun', 'send_fun', 'task_ingredients', 'task_answer', 'task_fun2', 'task_food', 'task_help', 'follow_map', 'arm_test', 'all_task', 'lane_test', 'reset', 'debug']
+2025-07-07 15:16:25,464 car_wrap.py, line 774, INFO:arm_test
+2025-07-07 15:18:15,394 serial_wrap.py, line 123, INFO:try:COM3 - USB-SERIAL CH340 (COM3)
+2025-07-07 15:18:15,836 serial_wrap.py, line 324, ERROR:get_anwser timeout 
+2025-07-07 15:18:15,851 serial_wrap.py, line 267, INFO:is mc602
+2025-07-07 15:18:15,852 serial_wrap.py, line 268, INFO:load program
+2025-07-07 15:18:17,666 serial_wrap.py, line 63, INFO:port is COM3, controller is mc602, mode USB
+2025-07-07 15:18:17,702 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-07 15:18:18,351 vehicle_base.py, line 305, INFO:MecanumChassis
+2025-07-07 15:18:18,351 vehicle_base.py, line 194, INFO:mecanum init
+2025-07-07 15:18:18,352 car_wrap.py, line 147, INFO:my car init ok 0.0035202503204345703
+2025-07-07 15:18:22,757 infer_front.py, line 115, INFO:lane连接服务器...
+2025-07-07 15:18:25,580 infer_front.py, line 137, INFO:lane连接服务器成功
+2025-07-07 15:18:25,582 infer_front.py, line 115, INFO:front连接服务器...
+2025-07-07 15:18:27,058 infer_front.py, line 137, INFO:front连接服务器成功
+2025-07-07 15:18:27,060 infer_front.py, line 115, INFO:task连接服务器...
+2025-07-07 15:18:28,567 infer_front.py, line 137, INFO:task连接服务器成功
+2025-07-07 15:18:28,570 infer_front.py, line 115, INFO:ocr连接服务器...
+2025-07-07 15:18:30,010 infer_front.py, line 137, INFO:ocr连接服务器成功
+2025-07-07 15:18:30,217 car_wrap.py, line 691, INFO:11
+2025-07-07 15:18:30,217 car_wrap.py, line 693, INFO:['hanoi_tower_func', 'bmi_cal', 'camp_fun', 'send_fun', 'task_ingredients', 'task_answer', 'task_fun2', 'task_food', 'task_help', 'follow_map', 'arm_test', 'all_task', 'lane_test', 'reset', 'debug']
+2025-07-07 15:18:33,419 car_wrap.py, line 774, INFO:arm_test
+2025-07-07 15:28:05,311 serial_wrap.py, line 123, INFO:try:COM3 - USB-SERIAL CH340 (COM3)
+2025-07-07 15:28:05,762 serial_wrap.py, line 324, ERROR:get_anwser timeout 
+2025-07-07 15:28:05,775 serial_wrap.py, line 267, INFO:is mc602
+2025-07-07 15:28:05,775 serial_wrap.py, line 268, INFO:load program
+2025-07-07 15:28:07,587 serial_wrap.py, line 63, INFO:port is COM3, controller is mc602, mode USB
+2025-07-07 15:28:07,613 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-07 15:28:08,343 vehicle_base.py, line 305, INFO:MecanumChassis
+2025-07-07 15:28:08,343 vehicle_base.py, line 194, INFO:mecanum init
+2025-07-07 15:28:08,344 car_wrap.py, line 147, INFO:my car init ok 0.004000186920166016
+2025-07-07 15:28:12,845 infer_front.py, line 115, INFO:lane连接服务器...
+2025-07-07 15:28:15,845 infer_front.py, line 137, INFO:lane连接服务器成功
+2025-07-07 15:28:15,847 infer_front.py, line 115, INFO:front连接服务器...
+2025-07-07 15:28:17,342 infer_front.py, line 137, INFO:front连接服务器成功
+2025-07-07 15:28:17,344 infer_front.py, line 115, INFO:task连接服务器...
+2025-07-07 15:28:18,984 infer_front.py, line 137, INFO:task连接服务器成功
+2025-07-07 15:28:18,987 infer_front.py, line 115, INFO:ocr连接服务器...
+2025-07-07 15:28:20,608 infer_front.py, line 137, INFO:ocr连接服务器成功
+2025-07-07 15:28:20,814 car_wrap.py, line 691, INFO:11
+2025-07-07 15:28:20,814 car_wrap.py, line 693, INFO:['hanoi_tower_func', 'bmi_cal', 'camp_fun', 'send_fun', 'task_ingredients', 'task_answer', 'task_fun2', 'task_food', 'task_help', 'follow_map', 'arm_test', 'all_task', 'lane_test', 'reset', 'debug']
+2025-07-07 15:29:01,227 car_wrap.py, line 774, INFO:arm_test
+2025-07-07 15:29:54,878 serial_wrap.py, line 123, INFO:try:COM3 - USB-SERIAL CH340 (COM3)
+2025-07-07 15:29:55,328 serial_wrap.py, line 324, ERROR:get_anwser timeout 
+2025-07-07 15:29:55,343 serial_wrap.py, line 267, INFO:is mc602
+2025-07-07 15:29:55,345 serial_wrap.py, line 268, INFO:load program
+2025-07-07 15:29:57,154 serial_wrap.py, line 63, INFO:port is COM3, controller is mc602, mode USB
+2025-07-07 15:29:57,186 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-07 15:29:57,863 vehicle_base.py, line 305, INFO:MecanumChassis
+2025-07-07 15:29:57,864 vehicle_base.py, line 194, INFO:mecanum init
+2025-07-07 15:29:57,864 car_wrap.py, line 147, INFO:my car init ok 0.003000020980834961
+2025-07-07 15:30:02,474 infer_front.py, line 115, INFO:lane连接服务器...
+2025-07-07 15:30:05,685 infer_front.py, line 137, INFO:lane连接服务器成功
+2025-07-07 15:30:05,688 infer_front.py, line 115, INFO:front连接服务器...
+2025-07-07 15:30:07,274 infer_front.py, line 137, INFO:front连接服务器成功
+2025-07-07 15:30:07,276 infer_front.py, line 115, INFO:task连接服务器...
+2025-07-07 15:30:08,817 infer_front.py, line 137, INFO:task连接服务器成功
+2025-07-07 15:30:08,819 infer_front.py, line 115, INFO:ocr连接服务器...
+2025-07-07 15:30:10,355 infer_front.py, line 137, INFO:ocr连接服务器成功
+2025-07-07 15:30:10,562 car_wrap.py, line 691, INFO:11
+2025-07-07 15:30:10,562 car_wrap.py, line 693, INFO:['hanoi_tower_func', 'bmi_cal', 'camp_fun', 'send_fun', 'task_ingredients', 'task_answer', 'task_fun2', 'task_food', 'task_help', 'follow_map', 'arm_test', 'all_task', 'lane_test', 'reset', 'debug']
+2025-07-07 15:30:19,834 car_wrap.py, line 774, INFO:arm_test
+2025-07-07 15:31:46,526 serial_wrap.py, line 123, INFO:try:COM3 - USB-SERIAL CH340 (COM3)
+2025-07-07 15:31:46,967 serial_wrap.py, line 324, ERROR:get_anwser timeout 
+2025-07-07 15:31:46,981 serial_wrap.py, line 267, INFO:is mc602
+2025-07-07 15:31:46,982 serial_wrap.py, line 268, INFO:load program
+2025-07-07 15:31:48,796 serial_wrap.py, line 63, INFO:port is COM3, controller is mc602, mode USB
+2025-07-07 15:31:48,831 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-07 15:31:49,568 vehicle_base.py, line 305, INFO:MecanumChassis
+2025-07-07 15:31:49,568 vehicle_base.py, line 194, INFO:mecanum init
+2025-07-07 15:31:49,569 car_wrap.py, line 147, INFO:my car init ok 0.004296064376831055
+2025-07-07 15:31:49,914 arm_base.py, line 46, INFO:hand init
+2025-07-07 15:31:49,915 arm_base.py, line 270, INFO:change side to -1
+2025-07-07 15:31:54,688 infer_front.py, line 115, INFO:lane连接服务器...
+2025-07-07 15:31:57,532 infer_front.py, line 137, INFO:lane连接服务器成功
+2025-07-07 15:31:57,534 infer_front.py, line 115, INFO:front连接服务器...
+2025-07-07 15:31:58,949 infer_front.py, line 137, INFO:front连接服务器成功
+2025-07-07 15:31:58,951 infer_front.py, line 115, INFO:task连接服务器...
+2025-07-07 15:32:00,393 infer_front.py, line 137, INFO:task连接服务器成功
+2025-07-07 15:32:00,395 infer_front.py, line 115, INFO:ocr连接服务器...
+2025-07-07 15:32:01,900 infer_front.py, line 137, INFO:ocr连接服务器成功
+2025-07-07 15:32:02,306 car_wrap.py, line 691, INFO:11
+2025-07-07 15:32:02,306 car_wrap.py, line 693, INFO:['hanoi_tower_func', 'bmi_cal', 'camp_fun', 'send_fun', 'task_ingredients', 'task_answer', 'task_fun2', 'task_food', 'task_help', 'follow_map', 'arm_test', 'all_task', 'lane_test', 'reset', 'debug']
+2025-07-07 15:32:10,600 serial_wrap.py, line 123, INFO:try:COM3 - USB-SERIAL CH340 (COM3)
+2025-07-07 15:32:11,043 serial_wrap.py, line 324, ERROR:get_anwser timeout 
+2025-07-07 15:32:11,057 serial_wrap.py, line 267, INFO:is mc602
+2025-07-07 15:32:11,058 serial_wrap.py, line 268, INFO:load program
+2025-07-07 15:32:12,869 serial_wrap.py, line 63, INFO:port is COM3, controller is mc602, mode USB
+2025-07-07 15:32:12,904 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-07 15:32:13,553 vehicle_base.py, line 305, INFO:MecanumChassis
+2025-07-07 15:32:13,553 vehicle_base.py, line 194, INFO:mecanum init
+2025-07-07 15:32:13,554 car_wrap.py, line 147, INFO:my car init ok 0.004000425338745117
+2025-07-07 15:32:18,081 infer_front.py, line 115, INFO:lane连接服务器...
+2025-07-07 15:32:21,089 infer_front.py, line 137, INFO:lane连接服务器成功
+2025-07-07 15:32:21,091 infer_front.py, line 115, INFO:front连接服务器...
+2025-07-07 15:32:22,529 infer_front.py, line 137, INFO:front连接服务器成功
+2025-07-07 15:32:22,531 infer_front.py, line 115, INFO:task连接服务器...
+2025-07-07 15:32:24,008 infer_front.py, line 137, INFO:task连接服务器成功
+2025-07-07 15:32:24,010 infer_front.py, line 115, INFO:ocr连接服务器...
+2025-07-07 15:32:25,464 infer_front.py, line 137, INFO:ocr连接服务器成功
+2025-07-07 15:32:25,671 car_wrap.py, line 691, INFO:11
+2025-07-07 15:32:25,671 car_wrap.py, line 693, INFO:['hanoi_tower_func', 'bmi_cal', 'camp_fun', 'send_fun', 'task_ingredients', 'task_answer', 'task_fun2', 'task_food', 'task_help', 'follow_map', 'arm_test', 'all_task', 'lane_test', 'reset', 'debug']
+2025-07-07 15:32:28,595 car_wrap.py, line 774, INFO:arm_test
+2025-07-07 15:32:31,531 arm_base.py, line 270, INFO:change side to 1
+2025-07-07 15:54:10,785 serial_wrap.py, line 116, ERROR:未找到串口,查看是否插入了串口,或者查看下位机是否开机
+2025-07-07 15:54:26,879 serial_wrap.py, line 123, INFO:try:COM3 - USB-SERIAL CH340 (COM3)
+2025-07-07 15:54:27,327 serial_wrap.py, line 324, ERROR:get_anwser timeout 
+2025-07-07 15:54:27,342 serial_wrap.py, line 267, INFO:is mc602
+2025-07-07 15:54:27,342 serial_wrap.py, line 268, INFO:load program
+2025-07-07 15:54:29,166 serial_wrap.py, line 63, INFO:port is COM3, controller is mc602, mode USB
+2025-07-07 15:54:29,227 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-07 15:54:30,286 vehicle_base.py, line 305, INFO:MecanumChassis
+2025-07-07 15:54:30,287 vehicle_base.py, line 194, INFO:mecanum init
+2025-07-07 15:54:30,288 car_wrap.py, line 147, INFO:my car init ok 0.004970073699951172
+2025-07-07 15:54:30,635 arm_base.py, line 46, INFO:hand init
+2025-07-07 15:54:30,636 arm_base.py, line 270, INFO:change side to -1
+2025-07-07 15:54:35,529 infer_front.py, line 115, INFO:lane连接服务器...
+2025-07-07 15:54:38,947 infer_front.py, line 137, INFO:lane连接服务器成功
+2025-07-07 15:54:38,950 infer_front.py, line 115, INFO:front连接服务器...
+2025-07-07 15:54:40,681 infer_front.py, line 137, INFO:front连接服务器成功
+2025-07-07 15:54:40,683 infer_front.py, line 115, INFO:task连接服务器...
+2025-07-07 15:54:42,412 infer_front.py, line 137, INFO:task连接服务器成功
+2025-07-07 15:54:42,415 infer_front.py, line 115, INFO:ocr连接服务器...
+2025-07-07 15:54:44,147 infer_front.py, line 137, INFO:ocr连接服务器成功
+2025-07-07 15:54:44,354 car_wrap.py, line 691, INFO:11
+2025-07-07 15:54:44,354 car_wrap.py, line 693, INFO:['hanoi_tower_func', 'bmi_cal', 'camp_fun', 'send_fun', 'task_ingredients', 'task_answer', 'task_fun2', 'task_food', 'task_help', 'follow_map', 'arm_test', 'all_task', 'lane_test', 'reset', 'debug']
+2025-07-07 15:54:56,663 car_wrap.py, line 774, INFO:arm_test
+2025-07-07 15:54:59,214 arm_base.py, line 270, INFO:change side to 1
+2025-07-07 16:06:55,914 serial_wrap.py, line 123, INFO:try:COM3 - USB-SERIAL CH340 (COM3)
+2025-07-07 16:06:55,988 serial_wrap.py, line 63, INFO:port is COM3, controller is mc602, mode USB
+2025-07-07 16:06:56,027 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-07 16:06:56,988 vehicle_base.py, line 305, INFO:MecanumChassis
+2025-07-07 16:06:56,988 vehicle_base.py, line 194, INFO:mecanum init
+2025-07-07 16:06:56,989 car_wrap.py, line 147, INFO:my car init ok 0.004549264907836914
+2025-07-07 16:07:19,602 serial_wrap.py, line 123, INFO:try:COM3 - USB-SERIAL CH340 (COM3)
+2025-07-07 16:07:19,673 serial_wrap.py, line 63, INFO:port is COM3, controller is mc602, mode USB
+2025-07-07 16:07:19,700 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-07 16:07:20,388 vehicle_base.py, line 305, INFO:MecanumChassis
+2025-07-07 16:07:20,389 vehicle_base.py, line 194, INFO:mecanum init
+2025-07-07 16:07:20,389 car_wrap.py, line 147, INFO:my car init ok 0.0045316219329833984
+2025-07-07 16:07:37,086 serial_wrap.py, line 123, INFO:try:COM3 - USB-SERIAL CH340 (COM3)
+2025-07-07 16:07:37,158 serial_wrap.py, line 63, INFO:port is COM3, controller is mc602, mode USB
+2025-07-07 16:07:37,189 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-07 16:07:37,884 vehicle_base.py, line 305, INFO:MecanumChassis
+2025-07-07 16:07:37,884 vehicle_base.py, line 194, INFO:mecanum init
+2025-07-07 16:07:37,885 car_wrap.py, line 147, INFO:my car init ok 0.004448652267456055
+2025-07-07 16:07:38,220 arm_base.py, line 46, INFO:hand init
+2025-07-07 16:07:38,220 arm_base.py, line 270, INFO:change side to -1
+2025-07-07 16:07:42,945 infer_front.py, line 115, INFO:lane连接服务器...
+2025-07-07 16:07:46,519 infer_front.py, line 137, INFO:lane连接服务器成功
+2025-07-07 16:07:46,521 infer_front.py, line 115, INFO:front连接服务器...
+2025-07-07 16:07:48,414 infer_front.py, line 137, INFO:front连接服务器成功
+2025-07-07 16:07:48,416 infer_front.py, line 115, INFO:task连接服务器...
+2025-07-07 16:07:50,499 infer_front.py, line 137, INFO:task连接服务器成功
+2025-07-07 16:07:50,501 infer_front.py, line 115, INFO:ocr连接服务器...
+2025-07-07 16:07:52,241 infer_front.py, line 137, INFO:ocr连接服务器成功
+2025-07-07 16:07:52,449 car_wrap.py, line 691, INFO:11
+2025-07-07 16:07:52,449 car_wrap.py, line 693, INFO:['hanoi_tower_func', 'bmi_cal', 'camp_fun', 'send_fun', 'task_ingredients', 'task_answer', 'task_fun2', 'task_food', 'task_help', 'follow_map', 'arm_test', 'all_task', 'lane_test', 'reset', 'debug']
+2025-07-07 16:07:56,616 car_wrap.py, line 774, INFO:arm_test
+2025-07-07 16:07:57,775 arm_base.py, line 270, INFO:change side to 1
+2025-07-07 16:09:08,277 serial_wrap.py, line 123, INFO:try:COM3 - USB-SERIAL CH340 (COM3)
+2025-07-07 16:09:08,354 serial_wrap.py, line 63, INFO:port is COM3, controller is mc602, mode USB
+2025-07-07 16:09:08,380 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-07 16:09:09,078 vehicle_base.py, line 305, INFO:MecanumChassis
+2025-07-07 16:09:09,078 vehicle_base.py, line 194, INFO:mecanum init
+2025-07-07 16:09:09,079 car_wrap.py, line 147, INFO:my car init ok 0.004518032073974609
+2025-07-07 16:09:09,421 arm_base.py, line 46, INFO:hand init
+2025-07-07 16:09:09,422 arm_base.py, line 270, INFO:change side to -1
+2025-07-07 16:09:14,156 infer_front.py, line 115, INFO:lane连接服务器...
+2025-07-07 16:09:17,914 infer_front.py, line 137, INFO:lane连接服务器成功
+2025-07-07 16:09:17,916 infer_front.py, line 115, INFO:front连接服务器...
+2025-07-07 16:09:19,721 infer_front.py, line 137, INFO:front连接服务器成功
+2025-07-07 16:09:19,723 infer_front.py, line 115, INFO:task连接服务器...
+2025-07-07 16:09:21,504 infer_front.py, line 137, INFO:task连接服务器成功
+2025-07-07 16:09:21,506 infer_front.py, line 115, INFO:ocr连接服务器...
+2025-07-07 16:09:23,238 infer_front.py, line 137, INFO:ocr连接服务器成功
+2025-07-07 16:09:23,443 car_wrap.py, line 691, INFO:11
+2025-07-07 16:09:23,444 car_wrap.py, line 693, INFO:['hanoi_tower_func', 'bmi_cal', 'camp_fun', 'send_fun', 'task_ingredients', 'task_answer', 'task_fun2', 'task_food', 'task_help', 'follow_map', 'arm_test', 'all_task', 'lane_test', 'reset', 'debug']
+2025-07-07 16:09:29,849 car_wrap.py, line 774, INFO:arm_test
+2025-07-07 16:09:30,899 arm_base.py, line 270, INFO:change side to 1
+2025-07-07 16:10:00,919 serial_wrap.py, line 123, INFO:try:COM3 - USB-SERIAL CH340 (COM3)
+2025-07-07 16:10:01,367 serial_wrap.py, line 324, ERROR:get_anwser timeout 
+2025-07-07 16:10:01,383 serial_wrap.py, line 267, INFO:is mc602
+2025-07-07 16:10:01,384 serial_wrap.py, line 268, INFO:load program
+2025-07-07 16:10:03,195 serial_wrap.py, line 63, INFO:port is COM3, controller is mc602, mode USB
+2025-07-07 16:10:03,229 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-07 16:10:03,857 vehicle_base.py, line 305, INFO:MecanumChassis
+2025-07-07 16:10:03,857 vehicle_base.py, line 194, INFO:mecanum init
+2025-07-07 16:10:03,858 car_wrap.py, line 147, INFO:my car init ok 0.004514932632446289
+2025-07-07 16:10:04,202 arm_base.py, line 46, INFO:hand init
+2025-07-07 16:10:04,203 arm_base.py, line 270, INFO:change side to -1
+2025-07-07 16:10:08,946 infer_front.py, line 115, INFO:lane连接服务器...
+2025-07-07 16:10:12,226 infer_front.py, line 137, INFO:lane连接服务器成功
+2025-07-07 16:10:12,228 infer_front.py, line 115, INFO:front连接服务器...
+2025-07-07 16:10:13,940 infer_front.py, line 137, INFO:front连接服务器成功
+2025-07-07 16:10:13,942 infer_front.py, line 115, INFO:task连接服务器...
+2025-07-07 16:10:15,588 infer_front.py, line 137, INFO:task连接服务器成功
+2025-07-07 16:10:15,591 infer_front.py, line 115, INFO:ocr连接服务器...
+2025-07-07 16:10:17,369 infer_front.py, line 137, INFO:ocr连接服务器成功
+2025-07-07 16:10:17,576 car_wrap.py, line 691, INFO:11
+2025-07-07 16:10:17,576 car_wrap.py, line 693, INFO:['hanoi_tower_func', 'bmi_cal', 'camp_fun', 'send_fun', 'task_ingredients', 'task_answer', 'task_fun2', 'task_food', 'task_help', 'follow_map', 'arm_test', 'all_task', 'lane_test', 'reset', 'debug']
+2025-07-07 16:10:20,289 car_wrap.py, line 774, INFO:arm_test
+2025-07-07 16:10:22,574 arm_base.py, line 270, INFO:change side to 1
+2025-07-07 16:11:15,628 serial_wrap.py, line 123, INFO:try:COM3 - USB-SERIAL CH340 (COM3)
+2025-07-07 16:11:15,707 serial_wrap.py, line 63, INFO:port is COM3, controller is mc602, mode USB
+2025-07-07 16:11:15,738 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-07 16:11:16,494 vehicle_base.py, line 305, INFO:MecanumChassis
+2025-07-07 16:11:16,494 vehicle_base.py, line 194, INFO:mecanum init
+2025-07-07 16:11:16,495 car_wrap.py, line 147, INFO:my car init ok 0.003761768341064453
+2025-07-07 16:11:16,837 arm_base.py, line 46, INFO:hand init
+2025-07-07 16:11:16,838 arm_base.py, line 270, INFO:change side to -1
+2025-07-07 16:12:28,949 serial_wrap.py, line 123, INFO:try:COM3 - USB-SERIAL CH340 (COM3)
+2025-07-07 16:12:29,026 serial_wrap.py, line 63, INFO:port is COM3, controller is mc602, mode USB
+2025-07-07 16:12:29,053 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-07 16:12:29,713 vehicle_base.py, line 305, INFO:MecanumChassis
+2025-07-07 16:12:29,715 vehicle_base.py, line 194, INFO:mecanum init
+2025-07-07 16:12:29,715 car_wrap.py, line 147, INFO:my car init ok 0.0035021305084228516
+2025-07-07 16:12:34,196 infer_front.py, line 115, INFO:lane连接服务器...
+2025-07-07 16:12:38,467 infer_front.py, line 137, INFO:lane连接服务器成功
+2025-07-07 16:12:38,469 infer_front.py, line 115, INFO:front连接服务器...
+2025-07-07 16:12:40,270 infer_front.py, line 137, INFO:front连接服务器成功
+2025-07-07 16:12:40,272 infer_front.py, line 115, INFO:task连接服务器...
+2025-07-07 16:12:42,090 infer_front.py, line 137, INFO:task连接服务器成功
+2025-07-07 16:12:42,093 infer_front.py, line 115, INFO:ocr连接服务器...
+2025-07-07 16:12:43,899 infer_front.py, line 137, INFO:ocr连接服务器成功
+2025-07-07 16:12:44,106 car_wrap.py, line 691, INFO:0
+2025-07-07 16:12:44,106 car_wrap.py, line 693, INFO:['hanoi_tower_func', 'bmi_cal', 'camp_fun', 'send_fun', 'task_ingredients', 'task_answer', 'task_fun2', 'task_food', 'task_help', 'follow_map', 'arm_test', 'all_task', 'lane_test', 'reset', 'debug']
+2025-07-07 16:12:56,033 car_wrap.py, line 774, INFO:debug
+2025-07-07 16:12:57,248 car_wrap.py, line 774, INFO:reset
+2025-07-07 16:12:57,927 car_wrap.py, line 774, INFO:lane_test
+2025-07-07 16:12:59,145 car_wrap.py, line 774, INFO:all_task
+2025-07-07 16:12:59,872 car_wrap.py, line 774, INFO:arm_test
+2025-07-07 16:13:01,574 arm_base.py, line 270, INFO:change side to 1
+2025-07-07 17:11:32,438 serial_wrap.py, line 123, INFO:try:COM3 - USB-SERIAL CH340 (COM3)
+2025-07-07 17:11:32,511 serial_wrap.py, line 63, INFO:port is COM3, controller is mc602, mode USB
+2025-07-07 17:11:32,552 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-07 17:11:33,470 vehicle_base.py, line 305, INFO:MecanumChassis
+2025-07-07 17:11:33,470 vehicle_base.py, line 194, INFO:mecanum init
+2025-07-07 17:11:33,470 car_wrap.py, line 147, INFO:my car init ok 0.004569053649902344
+2025-07-07 17:11:33,811 arm_base.py, line 46, INFO:hand init
+2025-07-07 17:11:33,812 arm_base.py, line 270, INFO:change side to -1
+2025-07-07 17:11:38,610 infer_front.py, line 115, INFO:lane连接服务器...
+2025-07-07 17:11:42,228 infer_front.py, line 137, INFO:lane连接服务器成功
+2025-07-07 17:11:42,230 infer_front.py, line 115, INFO:front连接服务器...
+2025-07-07 17:11:44,194 infer_front.py, line 137, INFO:front连接服务器成功
+2025-07-07 17:11:44,196 infer_front.py, line 115, INFO:task连接服务器...
+2025-07-07 17:11:46,146 infer_front.py, line 137, INFO:task连接服务器成功
+2025-07-07 17:11:46,147 infer_front.py, line 115, INFO:ocr连接服务器...
+2025-07-07 17:11:48,054 infer_front.py, line 137, INFO:ocr连接服务器成功
+2025-07-07 17:11:48,262 car_wrap.py, line 795, INFO:11
+2025-07-07 17:11:48,262 car_wrap.py, line 797, INFO:['hanoi_tower_func', 'bmi_cal', 'camp_fun', 'send_fun', 'task_ingredients', 'task_answer', 'task_fun2', 'task_food', 'task_help', 'follow_map', 'arm_test', 'all_task', 'lane_test', 'reset', 'debug']
+2025-07-07 17:11:55,589 car_wrap.py, line 878, INFO:arm_test
+2025-07-07 17:11:57,068 car_wrap.py, line 878, INFO:follow_map
+2025-07-07 17:12:06,489 car_wrap.py, line 878, INFO:follow_map
+2025-07-07 17:12:28,011 car_wrap.py, line 878, INFO:follow_map
+2025-07-07 17:12:51,902 car_wrap.py, line 878, INFO:follow_map
