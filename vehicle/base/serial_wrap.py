@@ -167,8 +167,18 @@ class SerialWrap(serial.Serial):
                 time.sleep(1)
                 self.open()
                 if self.is_open:
-                    logger.info("串口重连成功")
-                    return True
+                    logger.info("串口重连成功，开始初始化...")
+                    # self.reset_buffer()  # 清空缓冲区
+                    # # 主动发一次握手/初始化命令
+                    # if self.dev is not None:
+                    #     handshake_ok = self.dev.ping_rx(self)
+                    #     if handshake_ok:
+                    #         logger.info("下位机握手/初始化成功")
+                    #     else:
+                    #         logger.warning("下位机握手/初始化失败，可能需要人工干预")
+                    # else:
+                    #     logger.warning("未找到下位机设备对象，无法握手")
+                    # return True
             except Exception as e:
                 logger.error(f"串口重连失败: {e}")
             time.sleep(1)
