@@ -76,6 +76,8 @@ class SerialWrap(serial.Serial):
             res = self.dev.get_anwser(self)
         except Exception as e:
             logger.error("get_anwser error:{}".format(e))
+            # 串口异常时自动重连
+            self.try_reconnect()
         self.lock.release()
         return res
 
@@ -155,6 +157,23 @@ class SerialWrap(serial.Serial):
             logger.error(f"dev is not {name_test}")
             while True:
                 time.sleep(1)
+
+    def try_reconnect(self, max_retry=3):
+        for i in range(max_retry):
+            try:
+                logger.warning(f"尝试串口重连({i+1}/{max_retry})...")
+                if self.is_open:
+                    self.close()
+                time.sleep(1)
+                self.open()
+                if self.is_open:
+                    logger.info("串口重连成功")
+                    return True
+            except Exception as e:
+                logger.error(f"串口重连失败: {e}")
+            time.sleep(1)
+        logger.critical("串口多次重连失败，请检查硬件连接！")
+        return False
 
 class MC601(CotrollerInfo):
     def __init__(self, baudrate=380400, timeout=0.1, mode="USB") -> None:

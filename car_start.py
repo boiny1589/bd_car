@@ -246,7 +246,7 @@ if __name__ == "__main__":
     def follow_map():
         # 使用循迹功能前进
         # my_car.lane_dis_offset(0.3, 2)  # 以0.3的速度前进0.5米
-        my_car.lane_base(0.3,lambda: None)
+        my_car.lane_base(0.3, end_fuction=lambda: False)
         # my_car.lane_det_dis2pt(0.3, 2)  # 以0.3的速度循迹行驶，距离目标点2米时停止
         # 使用红外传感器检测边界
         my_car.lane_sensor(0.3, value_h=0.3, sides=1)  # 以0.3的速度前进，直到左侧传感器检测到边界
