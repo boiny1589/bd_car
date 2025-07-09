@@ -70,12 +70,12 @@ def limit(value, value_range):
 # 两个pid集合成一个
 class PidCal2():
     def __init__(self, cfg_pid_y=None, cfg_pid_angle=None):
-        self.pid_y = PID(**cfg_pid_y)
-        self.pid_angle = PID(**cfg_pid_angle)
+        self.pid_y = PID(**cfg_pid_y) if cfg_pid_y else None
+        self.pid_angle = PID(**cfg_pid_angle) if cfg_pid_angle else None
     
     def get_out(self, error_y, error_angle):
-        pid_y_out = self.pid_y(error_y)
-        pid_angle_out = self.pid_angle(error_angle)
+        pid_y_out = self.pid_y(error_y) if self.pid_y else 0
+        pid_angle_out = self.pid_angle(error_angle) if self.pid_angle else 0
         return pid_y_out, pid_angle_out
 
 class LanePidCal():
@@ -452,9 +452,12 @@ class MyCar(CarBase):
             if self._stop_flag:
                 return
             image = self.cap_front.read()   #前摄像头识别图像
+            if image is None:
+                logger.info("no image")
             error_y, error_angle = self.crusie(image)   #调用self.crusie(image)函数(这是一ClinitInterface实例，用于车道线检测)，返回error_y和error_angle
             y_speed, angle_speed = self.lane_pid.get_out(-error_y, -error_angle)    #lane_pid是一个计算y方向和加速度的方法
             # speed_dy, angle_speed = process(image)
+            print("巡线AI输出：error_y=", error_y, "error_angle=", error_angle)
             self.set_velocity(speed, y_speed, angle_speed)
             if end_fuction():
                 break

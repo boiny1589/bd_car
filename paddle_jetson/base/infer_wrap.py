@@ -120,6 +120,7 @@ class InferInterface:
         return self.predict(*args, **kwds)
     
     def predict(self, image, normalize_out=False, visualize=False):
+        print("predict")
         pass
     
     def draw_box(self, image, results:List[DetectResult], threshold=0.5):
@@ -437,7 +438,7 @@ def get_rotate_crop_image(img, points):
 
 class OCRReco(InferInterface):
     def __init__(self, run_mode='paddle') -> None:
-        model_det_dir = "ch_PP-OCRv3_det_infer"
+        model_det_dir = "ch_PP-OCRv3_det_infer" ###之后改这个参数就可以了
         model_rec_dir = "ch_PP-OCRv3_rec_infer"
         
         # super().__init__(model_det_dir)
@@ -497,7 +498,7 @@ class OCRReco(InferInterface):
 
 class LaneInfer(InferInterface):
     def __init__(self) -> None:
-        model_lane = "lane_model"
+        model_lane = "lane1"   ###之后改这个参数就可以了
         super().__init__(model_lane)
         model_path, params_path = self.get_model_path()
         self.config = Config(model_path, params_path)

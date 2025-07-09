@@ -48,7 +48,14 @@ class InferServer:
         for conf in configs:
             # 创建推理模型, eval字符转为对象
             # print(*conf['model'])
-            infer_tmp = eval(conf['infer_type'])(*conf['model'])
+            try:
+                infer_tmp = eval(conf['infer_type'])(*conf['model'])
+            except TypeError as e:
+                # 如果参数不匹配，尝试使用默认参数
+                if "takes 1 positional argument but" in str(e):
+                    infer_tmp = eval(conf['infer_type'])()
+                else:
+                    raise e
             self.infer_dict[conf['name']] = infer_tmp
 
         # 创建推理模型

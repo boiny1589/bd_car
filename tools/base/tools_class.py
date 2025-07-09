@@ -119,7 +119,7 @@ class PID(object):
 
         now = self.time_fn()
         if dt is None:
-            dt = now - self._last_time if (now - self._last_time) else 1e-16
+            dt = (now - self._last_time) if (self._last_time is not None) else 1e-16
         elif dt <= 0:
             raise ValueError('dt has negative value {}, must be positive'.format(dt))
 
@@ -300,9 +300,9 @@ class PidWrap:
         self.pid_t.setpoint = target
 
     def set(self, kp, ki, kd):
-        self.pid_t.kp = kp
-        self.pid_t.ki = ki
-        self.pid_t.kd = kd
+        self.pid_t.Kp = kp
+        self.pid_t.Ki = ki
+        self.pid_t.Kd = kd
 
     def get(self, val_in):
         return self.pid_t(val_in)

@@ -111,9 +111,17 @@ class ClintInterface:
     #         ]
     
     def __init__(self, name):
-        self.configs = get_yaml(get_path_relative('infer.yaml'))['infer_cfg']
+        yaml_data = get_yaml(get_path_relative('infer.yaml'))
+        if not yaml_data or 'infer_cfg' not in yaml_data:
+            raise FileNotFoundError("infer.yaml 文件不存在或缺少 infer_cfg 配置")
+        self.configs = yaml_data['infer_cfg']
         logger.info("{}连接服务器...".format(name))
+        # model_cfg = self.get_config(name)
+        # self.img_size = model_cfg['img_size']
+        # self.client = self.get_zmp_client(model_cfg['port'])
         model_cfg = self.get_config(name)
+        if model_cfg is None:
+            raise ValueError(f"未找到名为 {name} 的模型配置，请检查 infer.yaml 配置文件。")
         self.img_size = model_cfg['img_size']
         self.client = self.get_zmp_client(model_cfg['port'])
         
