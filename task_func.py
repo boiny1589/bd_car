@@ -281,7 +281,7 @@ def bmi_test():
 def cylinder_test():
     task = MyTask()
     key = Key4Btn(1)
-    # task.arm.reset()
+    task.arm.reset()
     i = 0
     tar = task.pick_up_cylinder(i, arm_set=True)
     while True:
@@ -342,8 +342,8 @@ if __name__ == "__main__":
         task_reset()
 
     # eject_test()
-    # cylinder_test()
-    bmi_test()
+    cylinder_test()
+    # bmi_test()
     # ingredients_test()
     # pick_ingredients_test()
     # answer_test()
