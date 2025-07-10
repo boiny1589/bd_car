@@ -21,11 +21,11 @@ if __name__ == "__main__":
     
 
     def hanoi_tower_func():
-        # my_car.lane_dis_offset(0.3, 0.5)
+        my_car.lane_dis_offset(0.3, 0.5)
         # print(my_car.get_odometry())
-        # my_car.set_pose_offset([0.3,0,0], 1)
+        my_car.set_pose_offset([0.3,0,0], 1)
         # print(my_car.get_odometry())
-        # det_side = my_car.lane_det_dis2pt(0.2, 0.19)
+        det_side = my_car.lane_det_dis2pt(0.2, 0.19)
         side = my_car.get_card_side()
         # print(side) 
         # 调整检测方向
