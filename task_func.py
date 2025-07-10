@@ -66,6 +66,7 @@ class MyTask:
 
     # 抓圆柱，选则大小
     def pick_up_cylinder(self, radius, arm_set=False):
+        print("pick_up_cylinder开始,arm_set:",arm_set,"False是真抓")
         # 定位目标的参数 label_id, obj_width, label, prob, err_x, err_y, width, height
         tar_list =  [[13, 100, "cylinder1", 0,  0, 0.28, 0.75, 0.97], [14, 80, "cylinder2", 0, 0, 0.3, 0.61, 0.9], 
                      [15, 60, "cylinder3", 0, 0, 0.2, 0.45, 0.7]]
@@ -75,6 +76,7 @@ class MyTask:
         tar_horiz = self.arm.horiz_mid
         # 手臂方向向下
         self.arm.set_hand_angle(48)
+        print("pick_up_cylinder设置小舵机方向")
         if arm_set:
             tar_height = 0.045
             # 到达目标位置
