@@ -87,7 +87,7 @@ class ArmBase():
             return False
     
     def reset_vert(self):
-        
+        print("reset_vert开始")
         self.vert_pid.setpoint = -0.25
         while True:
             if self.vert_pid_move(-0.25):
@@ -153,6 +153,7 @@ class ArmBase():
         # self.beep.rings()
         
     def reset_horiz(self):
+        print("reset_horiz开始")
         tar = -0.25
         self.horiz_pid.output_limits = (-0.06, 0.06)
         self.horiz_pid.setpoint = tar
@@ -251,6 +252,7 @@ class ArmBase():
         保存当前状态到配置文件（arm_cfg.yaml）
         整个过程是同步的（通过join等待线程完成）
         '''
+        print("正在运行reset中")
         thread_reset_v = Thread(target=self.reset_vert)
         thread_reset_h = Thread(target=self.reset_horiz)
         self.side = -1
@@ -262,6 +264,7 @@ class ArmBase():
         thread_reset_v.join()
         thread_reset_h.join()
         self.save_yaml()
+        print("reset结束")
         # self.reset_pos_dir(2, 0.04)
         # 回到初始位置
 
