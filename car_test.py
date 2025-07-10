@@ -22,18 +22,18 @@ if __name__ == "__main__":
 
     def hanoi_tower_func():
         my_car.lane_dis_offset(0.3, 0.5)
-        # print(my_car.get_odometry())
+        print(my_car.get_odometry())
         my_car.set_pose_offset([0.3,0,0], 1)
-        # print(my_car.get_odometry())
+        print(my_car.get_odometry())
         det_side = my_car.lane_det_dis2pt(0.2, 0.19)
         side = my_car.get_card_side()
-        # print(side) 
-        # 调整检测方向
+        print(side) 
+        调整检测方向
         my_car.task.arm.switch_side(side*-1)
         
         # 调整车子朝向
-        # my_car.set_pose_offset([0, 0, math.pi/4*side], 1)
-        logger.info("no set pose offset")
+        my_car.set_pose_offset([0, 0, math.pi/4*side], 1)
+        logger.info(" set pose offset")
         
         # 第一个要抓取的圆柱
         cylinder_id = 1
@@ -41,7 +41,7 @@ if __name__ == "__main__":
         logger.info("start pick up cylinder")
         pts = my_car.task.pick_up_cylinder(cylinder_id, True)
         # 走一段距离
-        # my_car.lane_dis_offset(0.3,0.66)
+        my_car.lane_dis_offset(0.3,0.66)
         
         # 第二次感应到侧面位置
         # my_car.lane_sensor(0.2, value_h=0.3, sides=side*-1)
@@ -57,14 +57,14 @@ if __name__ == "__main__":
             pose_dict[index] = my_car.get_odometry().copy()
             if i == 2:
                 pose_last = my_car.get_odometry().copy()
-            # print(index)
+            print(index)
             # pose_list.append([index, my_car.get_odometry().copy()])
             
             if i < 2:
                 my_car.set_pose_offset([0.08, 0, 0])
                 my_car.beep()
             
-        # print(pose_dict)
+        print(pose_dict)
         # 根据识别到的位置调整方向位置
         # angle = math.atan((pose_dict[2][1] - pose_dict[0][1]) / (pose_dict[2][0] - pose_dict[0][0]))
         # print(angle)

@@ -396,7 +396,7 @@ class CarBase():
         return self.chassis.odom.pose
     
     def get_dis_traveled(self):
-        return self.chassis.odom.dis_traveled
+        return self.chassis.odom.dis_traveled   ##这个是里程计的位移
     
     def stop(self):
         self.set_velocity(0, 0, 0)
@@ -407,7 +407,15 @@ class CarBase():
     
     
     def set_pose(self, pose, during=None, vel=[0.15, 0.15, math.pi/3], threshold=[0.004, 0.004, 0.02]):
+        ###基本不会用
+        """设置车辆到目标全局位姿（x, y, yaw）
         
+        参数:
+            pose: 目标位姿 [x, y, yaw] (单位: 米, 弧度)
+            during: 期望到达时间(秒)，提供时将自动计算速度
+            vel: 最大控制速度 [x方向, y方向, 角速度]
+            threshold: 位姿误差阈值 [x, y, yaw]
+        """
         if during is not None:
             vel = (np.abs(np.array(pose) - self.chassis.odom.pose)) / during
             # print(vel)
@@ -449,6 +457,15 @@ class CarBase():
         self.set_velocity(0, 0, 0)
 
     def set_pose_offset(self, pose, during=None, vel=[0.2, 0.2, math.pi/3], threshold=[0.002, 0.002, 0.02]):
+        """设置车辆相对于当前位置的偏移位姿
+        
+        参数:
+            pose: 相对偏移量 [dx, dy, dyaw] (单位: 米, 弧度)
+            during: 期望到达时间(秒)
+            vel: 最大控制速度 [x方向, y方向, 角速度]
+            threshold: 位姿误差阈值 [x, y, yaw]
+        """
+        print("set_pose_offset")
         start_pos = self.chassis.odom.pose
         tar_pos = [0, 0, 0]
         tar_pos[0] = start_pos[0] + pose[0]*math.cos(start_pos[2]) - pose[1]*math.sin(start_pos[2])

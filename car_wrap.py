@@ -436,7 +436,7 @@ class MyCar(CarBase):
             self.set_velocity(out_x, out_y, 0)
         
             
-    def lane_base(self, speed, end_fuction, stop=STOP_PARAM):
+    def lane_base(self, speed, end_fuction, stop=STOP_PARAM):   ###这个是靠的AI循迹
         '''
         前摄像头实现循迹，crusie是ClintInterface的方法工作流程：
         车辆调用self.crusie(image)
@@ -655,7 +655,7 @@ class MyCar(CarBase):
         self.lane_dis_offset(speed, dis_offset, stop=stop)
 
     def get_card_side(self):
-        
+        print("get_card_side")
         # 检测卡片左右指示
         count_side = CountRecord(3)
         while True:

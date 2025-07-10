@@ -622,8 +622,8 @@ def cam_infer_test():
             fps = 1/(time.time()-time_start)
             print("fps:", fps)
             time_start = time.time()
-            # cv2.putText(img, "fps:{}".format(fps), (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
-            # cv2.imshow("img", img)
+            cv2.putText(img, "fps:{}".format(fps), (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
+            cv2.imshow("img", img)
             key = cv2.waitKey(1)
             if key == ord('q'):
                 break

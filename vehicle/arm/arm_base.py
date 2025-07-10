@@ -205,6 +205,14 @@ class ArmBase():
             yaml.dump(self.config, stream, sort_keys=False)
 
     def vert_speed(self, vel_vert):
+        '''
+        设置竖直方向电机速度
+        参数:
+            vel_vert: 竖直方向速度
+        功能:
+        1. 限制速度在竖直方向速度限制范围内
+        2. 设置竖直方向电机速度
+        '''
         vel_vert = limit_val(vel_vert, *self.vert_vel_limit)
         self.vert_motor.set_velocity(vel_vert)
     
@@ -265,6 +273,7 @@ class ArmBase():
         否则，更新当前侧，并控制机械臂转动到目标侧对应的预设角度
         转动后等待0.5秒确保动作完成
         '''
+        print("switch_side")
         if self.side != side:
             self.side = side
             logger.info("change side to {}".format(self.side))
