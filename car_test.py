@@ -2,93 +2,91 @@
 # -*- coding: utf-8 -*-
 import time
 import threading
+import os
+import numpy as np
+from task_func import MyTask
+from log_info import logger
+from car_wrap import MyCar
+from tools import CountRecord
+import math
 import sys, os
-# 添加上本地目录
+# 添加上本文件对应目录
 sys.path.append(os.path.abspath(os.path.dirname(__file__))) 
 
-import platform
-import signal
-from camera import Camera
-import numpy as np
-from vehicle import SensorAi, SerialWrap, ArmBase, ScreenShow, Key4Btn
-from simple_pid import PID
-import cv2
-from task_func import MyTask
-
-
 if __name__ == "__main__":
-    kill_other_python()
+    # kill_other_python()
     my_car = MyCar()
-    my_car.beep()
-    time.sleep(0.2)
-    my_car.lane_time(0.3, 5)
-    import math, datetime
-    now_time = datetime.datetime.now().strftime('%Y%m%d%H%M%S.%f')[2:-3]  # 当前日期格式化
-    print(now_time)
-    time.sleep(0.2)
-    now_time = datetime.datetime.now().strftime('%Y%m%d%H%M%S.%f')[2:-3]  # 当前日期格式化
-    print(now_time)
-    from vehicle import MecanumBase
-    car = MecanumBase()
-    car.beep()
-    print(car.get_odom())
-    car.set_pos_offset([0, 0, math.pi/2], 2)
-    car.stop()
-    print(car.get_odom())
-    #前进
-    print("forward")
-    car.set_pos_offset([0.3, 0, 0])
-    # 后退
-    print("backward")
-    car.set_pos_offset([-0.3, 0, 0])
-    car.set_pos_offset([-0.3, -0.3, -2], 5)
-    while True:
-        car.set_pos([0.3, 0.2, math.pi/2], 2)
-        time.sleep(1)
-        car.set_pos([0, 0, 0], 2)
-        time.sleep(1)
-    while True:
+    my_car.STOP_PARAM = False
+    # my_car.task.reset()
+    
 
-        car.turn(1.5, 1.57)
-        time.sleep(1)
-
-        car.turn(1.5, -1.57)
-        time.sleep(1)
-    car = ()
-    while True:
-        car.move_closed([-0.15, 0.07], 1)
-        time.sleep(2)
-        car.move_closed([0.15, - 0.07], 1)
-        time.sleep(2)
-    while True:
-        if my_car.key.get_key() == 3:
-            my_car.task.arm.switch_side(-1)
-            my_car.task.arm.reset()
-            my_car.task.arm.set(-0.05, 0, 1.5)
-            # while True:
-
-                # my_car.lane_forward(0.2, 0.0, 0.1)
-            my_car.lane_time(0.2, 1)
-            my_car.lane_advance(0.3, dis_offset=0.01, value_h=500, sides=-1)
-            my_car.lane_task_location(0.3, 2)
+    def hanoi_tower_func():
+        # my_car.lane_dis_offset(0.3, 0.5)
+        # print(my_car.get_odometry())
+        # my_car.set_pose_offset([0.3,0,0], 1)
+        # print(my_car.get_odometry())
+        # det_side = my_car.lane_det_dis2pt(0.2, 0.19)
+        side = my_car.get_card_side()
+        # print(side) 
+        # 调整检测方向
+        my_car.task.arm.switch_side(side*-1)
+        
+        # 调整车子朝向
+        # my_car.set_pose_offset([0, 0, math.pi/4*side], 1)
+        logger.info("no set pose offset")
+        
+        # 第一个要抓取的圆柱
+        cylinder_id = 1
+        # 调整抓手位置，获取要抓取的圆柱信息
+        logger.info("start pick up cylinder")
+        pts = my_car.task.pick_up_cylinder(cylinder_id, True)
+        # 走一段距离
+        # my_car.lane_dis_offset(0.3,0.66)
+        
+        # 第二次感应到侧面位置
+        # my_car.lane_sensor(0.2, value_h=0.3, sides=side*-1)
+        my_car.lane_sensor(0.2, value_h=0.3, sides=side*-1, stop=True)
+        # return
+        # 记录此时的位置
+        pose_dict = {}
+        pose_last = None
+        for i in range(3):
+            # 根据给定信息定位目标
+            index = my_car.lane_det_location(0.2, pts, side=side*-1)
+            my_car.beep()
+            pose_dict[index] = my_car.get_odometry().copy()
+            if i == 2:
+                pose_last = my_car.get_odometry().copy()
+            # print(index)
+            # pose_list.append([index, my_car.get_odometry().copy()])
             
-    my_car.task.pick_up_block()
-    my_car.task.put_down_self_block()
-    my_car.lane_time(0.2, 2)
-    my_car.lane_advance(0.3, dis_offset=0.01, value_h=500, sides=-1)
-    my_car.lane_task_location(0.3, 2)
-    my_car.task.pick_up_block()
-    my_car.close()
-    print(time.time())
-    my_car.lane_task_location(0.3, 2)
-
-
-    my_car.debug()
-    programs = [func1, func2, func3, func4, func5, func6]
-    my_car.manage(programs)
-    import sys
-    test_ord = 0
-    if len(sys.argv) >= 2:
-        test_ord = int(sys.argv[1])
-    print("test:", test_ord)
-    car_test(test_ord)
+            if i < 2:
+                my_car.set_pose_offset([0.08, 0, 0])
+                my_car.beep()
+            
+        # print(pose_dict)
+        # 根据识别到的位置调整方向位置
+        # angle = math.atan((pose_dict[2][1] - pose_dict[0][1]) / (pose_dict[2][0] - pose_dict[0][0]))
+        # print(angle)
+        # my_car.set_pose_offset([0, 0, -angle])
+        # 重新定位最后一个圆柱
+        # my_car.lane_det_location(0.2, pts, side=side*-1)
+        angle_det = my_car.get_odometry()[2]
+        # 计算目的地终点坐标
+        pose_end = [0, 0, angle_det]
+        pose_end[0] = pose_last[0] + 0.12*math.cos(angle_det)
+        pose_end[1] = pose_last[1] + 0.12*math.sin(angle_det)
+        # print(det)
+        # 调整到目的地
+        # my_car.set_pose(det)
+        for i in range(3):
+            det = pose_dict[i]
+            det[2] = angle_det
+            my_car.set_pose(det)
+            # my_car.lane_det_location(0.2, pts, side=side*-1)
+            my_car.task.pick_up_cylinder(i)
+            my_car.set_pose(pose_end)
+            my_car.task.put_down_cylinder(i)
+        # return
+    functions = [hanoi_tower_func]
+    my_car.manage(functions, 1)  # 注意这里数字改为1
