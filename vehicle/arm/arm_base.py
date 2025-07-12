@@ -169,7 +169,7 @@ class ArmBase():
         # print(self.horiz_motor.get_dis() - self.horiz_pos_start)
         # self.beep.rings()
     
-            
+
     def hand_params_init(self, hand, hand2, grap):
         self.hand_servo = ServoPwm(hand2["port"], mode=270)
         self.hand_list2 = hand2["angle_list"]

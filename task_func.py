@@ -35,7 +35,7 @@ class Ejection():
             self.motor.set_linear(0-abs(vel))
             if abs(self.motor.get_dis()) > length:
                 break
-        self.motor.set_linear(0)
+        self.motor.set_linear(0)                  
         self.step1_rad_cnt += 1
         self.step1.set_rad(math.pi/5*2*self.step1_rad_cnt + self.step_rad_st)
         self.pout.set(1)
@@ -66,8 +66,9 @@ class MyTask:
 
     # 抓圆柱，选则大小
     def pick_up_cylinder(self, radius, arm_set=False):
-        print("pick_up_cylinder开始,arm_set:",arm_set,"False是真抓")
+        logger.info("pick_up_cylinder开始,arm_set:",arm_set,"False是真抓")
         # 定位目标的参数 label_id, obj_width, label, prob, err_x, err_y, width, height
+        # id号码（数据集对应的），目标宽度，目标名称，目标概率，目标中心误差x，目标中心误差y，目标宽度占比，目标高度占比
         tar_list =  [[13, 100, "cylinder1", 0,  0, 0.28, 0.75, 0.97], [14, 80, "cylinder2", 0, 0, 0.3, 0.61, 0.9], 
                      [15, 60, "cylinder3", 0, 0, 0.2, 0.45, 0.7]]
         # pt_tar = tar_list[radius-1]
