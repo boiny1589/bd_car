@@ -79,7 +79,7 @@ class MyTask:
         self.arm.set_hand_angle(48)
         print("pick_up_cylinder设置小舵机方向48")
         if arm_set:
-            tar_height = 0.08
+            tar_height = 0.10
             # 到达目标位置
             self.arm.set(tar_horiz, tar_height)
             print("pick_up_cylinder到达目标位置tar_height: %f" % tar_height)
@@ -90,8 +90,8 @@ class MyTask:
         # 到圆柱的位置
         horiz_offset = 0.14 * self.arm.side
         if radius == 0:
-            self.arm.set(0, tar_height+0.04)
-            # self.arm.set_offset(0, 0.04)
+            # self.arm.set(tar_horiz, tar_height+0.04)
+            self.arm.set_offset(0, 0.04)
         tar_horiz = self.arm.horiz_mid + horiz_offset
         self.arm.set(tar_horiz, tar_height)
         print("pick_up_cylinder移动到准备抓取的位置tar_horiz: %f, tar_height: %f" % (tar_horiz, tar_height))
@@ -266,7 +266,7 @@ class MyTask:
         self.arm.switch_side(1)
         # 调整手水平
         self.arm.set_hand_angle(-45)
-        tar_height = 0.08
+        tar_height = 0.10
         tar_horiz = self.arm.horiz_mid
         self.arm.set(tar_horiz, tar_height)
         if arm_set:
@@ -361,6 +361,11 @@ def eject_test():
     task = MyTask()
     task.eject(2)
 
+def run_test():
+    task = MyTask()
+    task.arm.set(0,0)
+    print("arm绝对位置0，0")
+
 if __name__ == "__main__":
     
     import argparse
@@ -372,9 +377,10 @@ if __name__ == "__main__":
         task_reset()
 
     # eject_test()
-    cylinder_test()
+    # cylinder_test()
     # bmi_test()
     # ingredients_test()
     # pick_ingredients_test()
     # answer_test()
     # food_test()
+    run_test()
