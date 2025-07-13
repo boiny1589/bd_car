@@ -75,15 +75,17 @@ class MyTask:
         height_list = [0.08, 0.08, 0.15]
         tar_height = height_list[0]
         tar_horiz = self.arm.horiz_mid
-        # 手臂方向向下
+        # 手爪方向向下
         self.arm.set_hand_angle(48)
         print("pick_up_cylinder设置小舵机方向")
         if arm_set:
             tar_height = 0.045
             # 到达目标位置
             self.arm.set(tar_horiz, tar_height)
+            print("pick_up_cylinder到达目标位置")
             return tar_list
         # 抓取圆柱
+        print("pick_up_cylinder准备抓取圆柱")
         self.arm.grap(1)
         # 到圆柱的位置
         horiz_offset = 0.14 * self.arm.side
@@ -92,6 +94,7 @@ class MyTask:
             self.arm.set_offset(0, 0.04)
         tar_horiz = self.arm.horiz_mid + horiz_offset
         self.arm.set(tar_horiz, tar_height)
+        print("pick_up_cylinder移动到准备抓取的位置")
         # 往下放,抓住
         self.arm.set_offset(0, -0.015)
         time.sleep(0.5)
