@@ -77,12 +77,12 @@ class MyTask:
         tar_horiz = self.arm.horiz_mid
         # 手爪方向向下
         self.arm.set_hand_angle(48)
-        print("pick_up_cylinder设置小舵机方向")
+        print("pick_up_cylinder设置小舵机方向48")
         if arm_set:
             tar_height = 0.08
             # 到达目标位置
             self.arm.set(tar_horiz, tar_height)
-            print("pick_up_cylinder到达目标位置")
+            print("pick_up_cylinder到达目标位置tar_height: %f" % tar_height)
             return tar_list
         # 抓取圆柱
         print("pick_up_cylinder准备抓取圆柱")
@@ -94,13 +94,13 @@ class MyTask:
             self.arm.set_offset(0, 0.04)
         tar_horiz = self.arm.horiz_mid + horiz_offset
         self.arm.set(tar_horiz, tar_height)
-        print("pick_up_cylinder移动到准备抓取的位置")
+        print("pick_up_cylinder移动到准备抓取的位置tar_horiz: %f, tar_height: %f" % (tar_horiz, tar_height))
         # 往下放,抓住
         self.arm.set_offset(0, -0.015)
         time.sleep(0.5)
         # 抬起一定高度
         # height_offset = 0.07
-        height_offset = 0.08
+        height_offset = 0.12
         if radius == 2:
             height_offset += 0.06
         self.arm.set_offset(0, height_offset)
@@ -110,11 +110,13 @@ class MyTask:
         # tar_height = 0.02
         height_offset = 0.02
         if radius==0:
-            height_offset = 0.08
+            height_offset = 0.12
         # 下放放开物块
         self.arm.set_offset(0, 0-height_offset)
+        print("put_down_cylinder 0-height_offset：%s" % (0-height_offset))
         # time.sleep(0.2)
         self.arm.grap(0)
+        print("put_down_cylinder grap 放")
         time.sleep(0.5)
         # 抬起
         self.arm.set_offset(0, 0.02)
