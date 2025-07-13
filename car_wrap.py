@@ -479,7 +479,7 @@ class MyCar(CarBase):
         while True:
             # 读取前摄像头图像
             image = self.cap_front.read()
-            dets_ret = self.front_det(image)
+            dets_ret = self.front_det(image)    # 调用self.front_det(image)函数，返回检测结果
             # 此处检测简单不需要排序
             # dets_ret.sort(key=lambda x: x[4]**2 + (x[5])**2)
             if len(dets_ret)>0:

@@ -23,9 +23,9 @@ if __name__ == "__main__":
     def hanoi_tower_func():
         my_car.lane_dis_offset(0.3, 0.5)
         # print(my_car.get_odometry())
-        my_car.set_pose_offset([0.3,0,0], 1)
+        my_car.set_pose_offset([0.3,0,0], 1)    #让 my_car （小车）在当前位置的基础上，向前（沿自身X轴方向）移动0.3米，并期望在1秒内完成这个移动。
         # print(my_car.get_odometry())
-        det_side = my_car.lane_det_dis2pt(0.2, 0.19)
+        det_side = my_car.lane_det_dis2pt(0.2, 0.19)    #调用大模型检测指示牌，到距离0.19m
         side = my_car.get_card_side()
         # print(side)
         # 调整检测方向
@@ -37,7 +37,7 @@ if __name__ == "__main__":
         # 第一个要抓取的圆柱
         cylinder_id = 1
         # 调整抓手位置，获取要抓取的圆柱信息
-        pts = my_car.task.pick_up_cylinder(cylinder_id, True)
+        pts = my_car.task.pick_up_cylinder(cylinder_id, True)   #True是准备阶段
         # 走一段距离
         my_car.lane_dis_offset(0.3,0.66)
         

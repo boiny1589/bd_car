@@ -71,10 +71,14 @@ class RemoteControlCar:
         self.rings.rings()
  
     def car_process(self):
+        # 初始化标志，用于判断手柄是否已连接
         pad_exit_flag = False
+        # 循环直到退出标志为True
         while not self.exit_flag:
+            # 读取手柄按键值
             keys_val = self.blue_pad.read()
             # print(keys_val)
+            # 如果手柄未连接或读取失败
             if keys_val == [-1, -1, -1, -1, 0]:
                 pad_exit_flag = False
                 self.car_state = [0.0, 0.0, 0.0]
@@ -83,24 +87,31 @@ class RemoteControlCar:
                 self.beep()
                 time.sleep(1)
                 
-                continue
+                continue # 继续循环，等待手柄连接
             else:
+                # 如果手柄已连接且是首次进入此分支
                 if not pad_exit_flag:
+                    # 显示控制提示信息
                     self.display.show("press btn control\n 3 pressing record\n 4+2 stop\n 4+v del 30pic\n 4+o del all\n")
-                pad_exit_flag = True
+                pad_exit_flag = True # 设置手柄已连接标志
             
+            # 检查按键值是否包含特定位（1024），用于控制运行模式
             if (keys_val[4] & 1024) != 0:
                 self.run_flag = True
             else:
                 self.run_flag = False
+            
+            # 根据按键值执行不同操作
             if keys_val[4] == 34816:
-                self.close()
+                self.close() # 关闭程序
             elif keys_val[4] == 2052:
                 # 删除3s内的图片
                 self.del_last3s()
             elif keys_val[4] == 2304:
                 # 删除所有图片和数据
                 self.restart()
+            
+            # 根据运行模式设置小车状态
             if self.run_flag:
                 self.car_state[0] = self.state_base[0]
                 self.car_state[1] = -1 * self.state_base[1] * keys_val[0]
@@ -109,8 +120,12 @@ class RemoteControlCar:
                 self.car_state[0] = self.state_start[0] * keys_val[1]
                 self.car_state[1] = -1 * self.state_start[1] * keys_val[0]
                 self.car_state[2] = -3.14 * self.state_start[2] * keys_val[2]
+            
+            # 打印小车状态
             print(*self.car_state)
+            # 设置小车速度
             self.car.set_velocity(*self.car_state)
+            # 延时
             time.sleep(0.05)
 
     def image_process(self):
