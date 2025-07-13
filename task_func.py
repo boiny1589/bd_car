@@ -66,7 +66,7 @@ class MyTask:
 
     # 抓圆柱，选则大小
     def pick_up_cylinder(self, radius, arm_set=False):
-        logger.info("pick_up_cylinder开始,arm_set:",arm_set,"False是真抓")
+        print("pick_up_cylinder开始,arm_set:",arm_set,"False是真抓")
         # 定位目标的参数 label_id, obj_width, label, prob, err_x, err_y, width, height
         # id号码（数据集对应的），目标宽度，目标名称，目标概率，目标中心误差x，目标中心误差y，目标宽度占比，目标高度占比
         tar_list =  [[13, 100, "cylinder1", 0,  0, 0.28, 0.75, 0.97], [14, 80, "cylinder2", 0, 0, 0.3, 0.61, 0.9], 
@@ -284,11 +284,33 @@ def bmi_test():
 def cylinder_test():
     task = MyTask()
     key = Key4Btn(1)
-    task.arm.reset()
+    # task.arm.reset()
     i = 0
     tar = task.pick_up_cylinder(i, arm_set=True)
+    '''
+    调用 task.pick_up_cylinder(i, arm_set=True) ，这里 arm_set=True 表示只进行准备动作：
+    - 设置手臂角度为48度（ self.arm.set_hand_angle(48) ）
+    - 将机械臂移动到预设高度 tar_height = 0.045
+    - 将机械臂移动到水平中间位置 tar_horiz = self.arm.horiz_mid
+    '''
     while True:
         if key.get_key()!=0:
+            '''
+            - 进入无限循环，等待按键输入
+            - 当检测到按键按下（ key.get_key()!=0 ）时：
+            - 执行抓取动作： task.pick_up_cylinder(i) ，此时 arm_set=False （默认值），会执行完整的抓取流程：
+            - 打开抓手（ self.arm.grap(1) ）
+            - 移动到目标位置
+            - 下降抓取
+            - 抬起机械臂
+            - 等待1秒
+            - 执行放下动作： task.put_down_cylinder(i)
+            - 下降机械臂
+            - 释放抓手（ self.arm.grap(0) ）
+            - 抬起机械臂
+            - 等待1秒
+            - 增加圆柱体索引 i ，准备测试下一个圆柱体
+            '''
             
             time.sleep(1)
             task.pick_up_cylinder(i)
