@@ -1,82 +1,82 @@
 import cv2
 import time
 
-# åˆ›å»ºæ‘„åƒå¤´å¯¹è±¡å¹¶æŒ‡å®šè®¾å¤‡å·
-front_cam = cv2.VideoCapture(1)  # å‰æ‘„åƒå¤´ (è®¾å¤‡å·1)
-side_cam = cv2.VideoCapture(2)   # ä¾§æ‘„åƒå¤´ (è®¾å¤‡å·2)
+# ´´½¨ÉãÏñÍ·¶ÔÏó²¢Ö¸¶¨Éè±¸ºÅ
+front_cam = cv2.VideoCapture(1)  # Ç°ÉãÏñÍ· (Éè±¸ºÅ1)
+side_cam = cv2.VideoCapture(2)   # ²àÉãÏñÍ· (Éè±¸ºÅ2)
 
-# è®¾ç½®æ‘„åƒå¤´å‚æ•°ä»¥æé«˜æ€§èƒ½
+# ÉèÖÃÉãÏñÍ·²ÎÊıÒÔÌá¸ßĞÔÄÜ
 for cam in [front_cam, side_cam]:
     if cam.isOpened():
-        # è®¾ç½®åˆ†è¾¨ç‡ï¼ˆé™ä½åˆ†è¾¨ç‡å¯æé«˜é€Ÿåº¦ï¼‰
+        # ÉèÖÃ·Ö±æÂÊ£¨½µµÍ·Ö±æÂÊ¿ÉÌá¸ßËÙ¶È£©
         cam.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
         cam.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
-        # è®¾ç½®å¸§ç‡
+        # ÉèÖÃÖ¡ÂÊ
         cam.set(cv2.CAP_PROP_FPS, 30)
-        # è®¾ç½®ç¼“å†²åŒºå¤§å°
+        # ÉèÖÃ»º³åÇø´óĞ¡
         cam.set(cv2.CAP_PROP_BUFFERSIZE, 1)
 
-# æ£€æŸ¥æ‘„åƒå¤´æ˜¯å¦æˆåŠŸæ‰“å¼€
+# ¼ì²éÉãÏñÍ·ÊÇ·ñ³É¹¦´ò¿ª
 if not front_cam.isOpened():
-    print("âŒ æ— æ³•æ‰“å¼€å‰æ‘„åƒå¤´ (è®¾å¤‡å·1)")
+    print("? ÎŞ·¨´ò¿ªÇ°ÉãÏñÍ· (Éè±¸ºÅ1)")
 if not side_cam.isOpened():
-    print("âŒ æ— æ³•æ‰“å¼€ä¾§æ‘„åƒå¤´ (è®¾å¤‡å·2)")
+    print("? ÎŞ·¨´ò¿ª²àÉãÏñÍ· (Éè±¸ºÅ2)")
 
-# åˆ›å»ºä¸¤ä¸ªæ˜¾ç¤ºçª—å£
+# ´´½¨Á½¸öÏÔÊ¾´°¿Ú
 cv2.namedWindow("Front Camera - Device 1", cv2.WINDOW_NORMAL)
 cv2.namedWindow("Side Camera - Device 2", cv2.WINDOW_NORMAL)
 
-# è®¾ç½®çª—å£å¤§å°
+# ÉèÖÃ´°¿Ú´óĞ¡
 cv2.resizeWindow("Front Camera - Device 1", 640, 480)
 cv2.resizeWindow("Side Camera - Device 2", 640, 480)
 
-print("ğŸš€ æ‘„åƒå¤´æµ‹è¯•å¼€å§‹ï¼ŒæŒ‰ 'q' é”®é€€å‡º...")
+print("? ÉãÏñÍ·²âÊÔ¿ªÊ¼£¬°´ 'q' ¼üÍË³ö...")
 start_time = time.time()
 frame_count = 0
 
 while True:
-    # è¯»å–å‰æ‘„åƒå¤´å¸§
+    # ¶ÁÈ¡Ç°ÉãÏñÍ·Ö¡
     ret_front, frame_front = front_cam.read()
     if ret_front:
-        # åœ¨ç”»é¢ä¸Šæ·»åŠ è®¾å¤‡å·æ ‡è¯†å’ŒFPSä¿¡æ¯
+        # ÔÚ»­ÃæÉÏÌí¼ÓÉè±¸ºÅ±êÊ¶ºÍFPSĞÅÏ¢
         cv2.putText(frame_front, "Device 1", (10, 30), 
                    cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 0), 2)
         cv2.imshow("Front Camera - Device 1", frame_front)
     
-    # è¯»å–ä¾§æ‘„åƒå¤´å¸§
+    # ¶ÁÈ¡²àÉãÏñÍ·Ö¡
     ret_side, frame_side = side_cam.read()
     if ret_side:
-        # åœ¨ç”»é¢ä¸Šæ·»åŠ è®¾å¤‡å·æ ‡è¯†å’ŒFPSä¿¡æ¯
+        # ÔÚ»­ÃæÉÏÌí¼ÓÉè±¸ºÅ±êÊ¶ºÍFPSĞÅÏ¢
         cv2.putText(frame_side, "Device 2", (10, 30), 
                    cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 0), 2)
         cv2.imshow("Side Camera - Device 2", frame_side)
     
     frame_count += 1
     
-    # æ¯100å¸§æ˜¾ç¤ºä¸€æ¬¡FPS
+    # Ã¿100Ö¡ÏÔÊ¾Ò»´ÎFPS
     if frame_count % 100 == 0:
         elapsed_time = time.time() - start_time
         fps = frame_count / elapsed_time
-        print(f"ğŸ“Š å½“å‰FPS: {fps:.2f}")
+        print(f"? µ±Ç°FPS: {fps:.2f}")
     
-    # æŒ‰'q'é”®é€€å‡ºç¨‹åº
+    # °´'q'¼üÍË³ö³ÌĞò
     key = cv2.waitKey(1) & 0xFF
     if key == ord('q'):
         break
-    elif key == ord('s'):  # æŒ‰'s'é”®ä¿å­˜å½“å‰å¸§
+    elif key == ord('s'):  # °´'s'¼ü±£´æµ±Ç°Ö¡
         if ret_front:
             cv2.imwrite(f"front_cam_{int(time.time())}.jpg", frame_front)
         if ret_side:
             cv2.imwrite(f"side_cam_{int(time.time())}.jpg", frame_side)
-        print("ğŸ’¾ å·²ä¿å­˜å½“å‰å¸§")
+        print("? ÒÑ±£´æµ±Ç°Ö¡")
 
-# è®¡ç®—æœ€ç»ˆFPS
+# ¼ÆËã×îÖÕFPS
 total_time = time.time() - start_time
 final_fps = frame_count / total_time
-print(f"ğŸ“ˆ å¹³å‡FPS: {final_fps:.2f}")
-print(f"â±ï¸  æ€»è¿è¡Œæ—¶é—´: {total_time:.2f}ç§’")
+print(f"? Æ½¾ùFPS: {final_fps:.2f}")
+print(f"??  ×ÜÔËĞĞÊ±¼ä: {total_time:.2f}Ãë")
 
-# é‡Šæ”¾èµ„æº
+# ÊÍ·Å×ÊÔ´
 front_cam.release()
 side_cam.release()
 cv2.destroyAllWindows()
