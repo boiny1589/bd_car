@@ -79,7 +79,7 @@ class MyTask:
         self.arm.set_hand_angle(48)
         print("pick_up_cylinder设置小舵机方向")
         if arm_set:
-            tar_height = 0.045
+            tar_height = 0.08
             # 到达目标位置
             self.arm.set(tar_horiz, tar_height)
             print("pick_up_cylinder到达目标位置")
