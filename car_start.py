@@ -264,6 +264,18 @@ if __name__ == "__main__":
         my_car.task.arm.set_hand_angle(30)
         # my_car.task.arm.set_arm_angle(1.57)
         sys.exit()  # 运行完自动结束
+
+    def task_help_test():
+        my_car.lane_sensor(0.3, value_h=0.5, sides=1)
+        my_car.task.help_peo(arm_set=True)
+        # my_car.set_pose_offset([0.07, 0.14, 0])
+        # my_car.set_pose_offset([-0.1, 0.15, 0])
+        # my_car.set_pose_offset([0, -0.3, 0])
+        # my_car.set_pose_offset([0.7, 0, 0], vel=[0.3, 0.3, 0])
+        # my_car.set_pose_offset([0.1, -0.1, 0])
+
+        # my_car.move_advance([0.2, 0, 0], value_h=0.5, sides=1, dis_out=0.05)
+        # my_car.task.help_peo()    
         
-    functions = [hanoi_tower_func, bmi_cal, camp_fun, send_fun, task_ingredients, task_answer, task_fun2, task_food, task_help, follow_map, arm_test]
+    functions = [hanoi_tower_func, bmi_cal, camp_fun, send_fun, task_ingredients, task_answer, task_fun2, task_food, task_help, follow_map, arm_test, task_help_test]
     my_car.manage(functions, 11)  # 注意这里数字改为10
