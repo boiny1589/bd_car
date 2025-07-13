@@ -90,8 +90,8 @@ class MyTask:
         # 到圆柱的位置
         horiz_offset = 0.14 * self.arm.side
         if radius == 0:
-            # self.arm.set(tar_horiz, tar_height+0.04)
-            self.arm.set_offset(0, 0.04)
+            self.arm.set(0, tar_height+0.04)
+            # self.arm.set_offset(0, 0.04)
         tar_horiz = self.arm.horiz_mid + horiz_offset
         self.arm.set(tar_horiz, tar_height)
         print("pick_up_cylinder移动到准备抓取的位置tar_horiz: %f, tar_height: %f" % (tar_horiz, tar_height))
@@ -100,7 +100,7 @@ class MyTask:
         time.sleep(0.5)
         # 抬起一定高度
         # height_offset = 0.07
-        height_offset = 0.14
+        height_offset = 0.10
         if radius == 2:
             height_offset += 0.06
         self.arm.set_offset(0, height_offset)
@@ -110,7 +110,7 @@ class MyTask:
         # tar_height = 0.02
         height_offset = 0.02
         if radius==0:
-            height_offset = 0.14
+            height_offset = 0.10
         # 下放放开物块
         self.arm.set_offset(0, 0-height_offset)
         print("put_down_cylinder 0-height_offset：%s" % (0-height_offset))
