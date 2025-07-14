@@ -1,0 +1,2 @@
+2025-07-11 23:48:31,850 serial_wrap.py, line 118, ERROR:未找到串口,查看是否插入了串口,或者查看下位机是否开机
+2025-07-11 23:49:03,000 serial_wrap.py, line 353, ERROR:get_anwser timeout 

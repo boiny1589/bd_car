@@ -1,0 +1,27 @@
+2025-07-11 23:48:31,850 serial_wrap.py, line 118, ERROR:未找到串口,查看是否插入了串口,或者查看下位机是否开机
+2025-07-11 23:49:02,562 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-11 23:49:03,000 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-11 23:49:03,022 serial_wrap.py, line 296, INFO:is mc602
+2025-07-11 23:49:03,022 serial_wrap.py, line 297, INFO:load program
+2025-07-11 23:49:04,835 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-11 23:49:04,879 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-11 23:49:05,772 vehicle_base.py, line 305, INFO:MecanumChassis
+2025-07-11 23:49:05,773 vehicle_base.py, line 194, INFO:mecanum init
+2025-07-11 23:49:05,774 car_wrap.py, line 147, INFO:my car init ok 0.011756420135498047
+2025-07-11 23:49:08,778 infer_front.py, line 118, INFO:lane连接服务器...
+2025-07-11 23:49:08,868 infer_front.py, line 145, INFO:lane连接服务器成功
+2025-07-11 23:49:08,873 infer_front.py, line 118, INFO:front连接服务器...
+2025-07-11 23:49:08,948 infer_front.py, line 145, INFO:front连接服务器成功
+2025-07-11 23:49:08,953 infer_front.py, line 118, INFO:task连接服务器...
+2025-07-11 23:49:09,023 infer_front.py, line 145, INFO:task连接服务器成功
+2025-07-11 23:49:09,028 infer_front.py, line 118, INFO:ocr连接服务器...
+2025-07-11 23:49:09,098 infer_front.py, line 145, INFO:ocr连接服务器成功
+2025-07-11 23:49:09,306 car_wrap.py, line 798, INFO:1
+2025-07-11 23:49:09,306 car_wrap.py, line 800, INFO:['hanoi_tower_func', 'all_task', 'lane_test', 'reset', 'debug']
+2025-07-11 23:49:14,879 car_wrap.py, line 881, INFO:hanoi_tower_func
+2025-07-11 23:49:24,523 car_test.py, line 25, INFO:小车以0.3m/s速度循迹前进0.5米
+2025-07-11 23:49:26,285 car_test.py, line 30, INFO:检测侧边距离，参数：速度0.2m/s，目标距离0.19米
+2025-07-11 23:49:26,616 car_test.py, line 32, INFO:识别卡片方向，结果：-1
+2025-07-11 23:49:26,617 car_test.py, line 36, INFO:机械臂切换到左侧
+2025-07-11 23:49:27,739 car_test.py, line 40, INFO:调整车身朝向，偏转角度：-0.79弧度
+2025-07-11 23:49:27,740 car_test.py, line 45, INFO:准备抓取第一个圆柱

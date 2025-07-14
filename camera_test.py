@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import cv2
 import time
 
@@ -30,7 +31,7 @@ cv2.namedWindow("Side Camera - Device 2", cv2.WINDOW_NORMAL)
 cv2.resizeWindow("Front Camera - Device 1", 640, 480)
 cv2.resizeWindow("Side Camera - Device 2", 640, 480)
 
-print("? 摄像头测试开始，按 'q' 键退出...")
+print("?? 摄像头测试开始，按 'q' 键退出...")
 start_time = time.time()
 frame_count = 0
 
@@ -57,7 +58,7 @@ while True:
     if frame_count % 100 == 0:
         elapsed_time = time.time() - start_time
         fps = frame_count / elapsed_time
-        print(f"? 当前FPS: {fps:.2f}")
+        print(f"?? 当前FPS: {fps:.2f}")
     
     # 按'q'键退出程序
     key = cv2.waitKey(1) & 0xFF
@@ -68,12 +69,12 @@ while True:
             cv2.imwrite(f"front_cam_{int(time.time())}.jpg", frame_front)
         if ret_side:
             cv2.imwrite(f"side_cam_{int(time.time())}.jpg", frame_side)
-        print("? 已保存当前帧")
+        print("?? 已保存当前帧")
 
 # 计算最终FPS
 total_time = time.time() - start_time
 final_fps = frame_count / total_time
-print(f"? 平均FPS: {final_fps:.2f}")
+print(f"?? 平均FPS: {final_fps:.2f}")
 print(f"??  总运行时间: {total_time:.2f}秒")
 
 # 释放资源
