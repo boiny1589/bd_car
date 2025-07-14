@@ -1,0 +1,114 @@
+2025-07-13 06:47:20,412 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 13:31:47,459 serial_wrap.py, line 78, ERROR:get_anwser error:device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+2025-07-13 13:31:53,473 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:31:53,484 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:31:59,492 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:32:00,505 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:32:06,513 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:32:06,514 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:32:12,522 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:32:12,523 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:32:18,532 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:32:18,540 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:32:24,549 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:32:24,550 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:32:30,558 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:32:30,559 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:32:36,567 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:32:36,568 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:32:42,577 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:32:42,577 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:32:48,586 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:32:48,603 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:32:54,612 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:32:54,613 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:33:00,622 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:33:00,622 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:33:06,631 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:33:06,632 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:33:12,641 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:33:12,641 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:33:18,650 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:33:18,651 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:33:24,660 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:33:24,661 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:33:30,670 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:33:31,202 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:33:37,211 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:33:37,212 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:33:43,220 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:33:43,221 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:33:50,278 serial_wrap.py, line 78, ERROR:get_anwser error:(5, 'Input/output error')
+2025-07-13 13:33:56,288 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:33:56,289 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:34:02,298 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:34:02,298 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:34:08,307 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:34:08,308 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:34:14,317 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:34:14,318 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:34:20,327 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:34:21,336 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:34:27,345 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:34:28,357 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:34:34,366 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:34:34,366 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:34:40,375 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:34:40,375 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:34:46,385 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:34:46,393 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:40:19,562 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 13:43:20,770 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 13:44:03,768 serial_wrap.py, line 78, ERROR:get_anwser error:device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+2025-07-13 13:44:09,783 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:44:09,794 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:44:15,803 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:44:15,814 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:44:21,823 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:44:21,834 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:44:27,745 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 14:29:19,500 serial_wrap.py, line 78, ERROR:get_anwser error:device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+2025-07-13 14:46:47,299 serial_wrap.py, line 78, ERROR:get_anwser error:device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+2025-07-13 14:47:40,107 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 14:55:52,093 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 14:58:01,651 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 14:58:43,523 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 15:00:15,259 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 15:03:05,580 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 15:05:27,334 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 15:05:49,371 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 15:06:17,093 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 15:07:04,688 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 15:08:35,435 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 15:09:38,224 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 15:10:30,409 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 15:13:59,986 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 15:17:18,888 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 15:18:23,271 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 15:19:36,250 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 15:21:14,316 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 15:25:34,640 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 15:27:37,262 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 15:27:53,050 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 15:28:55,535 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 15:29:33,335 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 15:30:26,294 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 15:31:31,066 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 18:00:52,168 serial_wrap.py, line 78, ERROR:get_anwser error:device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+2025-07-13 18:01:34,228 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 18:02:44,555 serial_wrap.py, line 78, ERROR:get_anwser error:device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+2025-07-13 18:03:00,013 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 18:03:35,501 serial_wrap.py, line 78, ERROR:get_anwser error:device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+2025-07-13 18:04:41,713 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 18:06:16,785 serial_wrap.py, line 78, ERROR:get_anwser error:device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+2025-07-13 18:06:34,799 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 18:08:26,068 serial_wrap.py, line 78, ERROR:get_anwser error:write failed: [Errno 19] No such device
+2025-07-13 20:01:04,143 serial_wrap.py, line 118, ERROR:未找到串口,查看是否插入了串口,或者查看下位机是否开机
+2025-07-13 20:01:23,542 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 20:21:49,764 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 20:53:37,507 serial_wrap.py, line 78, ERROR:get_anwser error:device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+2025-07-13 20:54:10,019 serial_wrap.py, line 78, ERROR:get_anwser error:device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+2025-07-13 20:57:14,859 serial_wrap.py, line 78, ERROR:get_anwser error:device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+2025-07-13 20:57:31,579 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 20:58:40,234 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 20:59:32,591 serial_wrap.py, line 78, ERROR:get_anwser error:device reports readiness to read but returned no data (device disconnected or multiple access on port?)

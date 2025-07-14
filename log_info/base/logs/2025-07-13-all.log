@@ -1,0 +1,1080 @@
+2025-07-13 06:47:19,975 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 06:47:20,412 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 06:47:20,432 serial_wrap.py, line 296, INFO:is mc602
+2025-07-13 06:47:20,433 serial_wrap.py, line 297, INFO:load program
+2025-07-13 06:47:22,247 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 06:47:22,297 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 13:31:47,459 serial_wrap.py, line 78, ERROR:get_anwser error:device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+2025-07-13 13:31:47,460 serial_wrap.py, line 164, WARNING:尝试串口重连(1/3)...
+2025-07-13 13:31:49,468 serial_wrap.py, line 164, WARNING:尝试串口重连(2/3)...
+2025-07-13 13:31:51,471 serial_wrap.py, line 164, WARNING:尝试串口重连(3/3)...
+2025-07-13 13:31:53,473 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:31:53,484 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:31:53,484 serial_wrap.py, line 164, WARNING:尝试串口重连(1/3)...
+2025-07-13 13:31:55,487 serial_wrap.py, line 164, WARNING:尝试串口重连(2/3)...
+2025-07-13 13:31:57,489 serial_wrap.py, line 164, WARNING:尝试串口重连(3/3)...
+2025-07-13 13:31:59,492 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:32:00,505 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:32:00,505 serial_wrap.py, line 164, WARNING:尝试串口重连(1/3)...
+2025-07-13 13:32:02,508 serial_wrap.py, line 164, WARNING:尝试串口重连(2/3)...
+2025-07-13 13:32:04,510 serial_wrap.py, line 164, WARNING:尝试串口重连(3/3)...
+2025-07-13 13:32:06,513 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:32:06,514 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:32:06,514 serial_wrap.py, line 164, WARNING:尝试串口重连(1/3)...
+2025-07-13 13:32:08,516 serial_wrap.py, line 164, WARNING:尝试串口重连(2/3)...
+2025-07-13 13:32:10,519 serial_wrap.py, line 164, WARNING:尝试串口重连(3/3)...
+2025-07-13 13:32:12,522 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:32:12,523 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:32:12,523 serial_wrap.py, line 164, WARNING:尝试串口重连(1/3)...
+2025-07-13 13:32:14,526 serial_wrap.py, line 164, WARNING:尝试串口重连(2/3)...
+2025-07-13 13:32:16,529 serial_wrap.py, line 164, WARNING:尝试串口重连(3/3)...
+2025-07-13 13:32:18,532 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:32:18,540 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:32:18,541 serial_wrap.py, line 164, WARNING:尝试串口重连(1/3)...
+2025-07-13 13:32:20,544 serial_wrap.py, line 164, WARNING:尝试串口重连(2/3)...
+2025-07-13 13:32:22,547 serial_wrap.py, line 164, WARNING:尝试串口重连(3/3)...
+2025-07-13 13:32:24,549 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:32:24,550 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:32:24,550 serial_wrap.py, line 164, WARNING:尝试串口重连(1/3)...
+2025-07-13 13:32:26,552 serial_wrap.py, line 164, WARNING:尝试串口重连(2/3)...
+2025-07-13 13:32:28,555 serial_wrap.py, line 164, WARNING:尝试串口重连(3/3)...
+2025-07-13 13:32:30,558 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:32:30,559 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:32:30,559 serial_wrap.py, line 164, WARNING:尝试串口重连(1/3)...
+2025-07-13 13:32:32,561 serial_wrap.py, line 164, WARNING:尝试串口重连(2/3)...
+2025-07-13 13:32:34,564 serial_wrap.py, line 164, WARNING:尝试串口重连(3/3)...
+2025-07-13 13:32:36,567 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:32:36,567 arm_base.py, line 502, WARNING:timeout
+2025-07-13 13:32:36,568 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:32:36,568 serial_wrap.py, line 164, WARNING:尝试串口重连(1/3)...
+2025-07-13 13:32:38,571 serial_wrap.py, line 164, WARNING:尝试串口重连(2/3)...
+2025-07-13 13:32:40,574 serial_wrap.py, line 164, WARNING:尝试串口重连(3/3)...
+2025-07-13 13:32:42,577 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:32:42,577 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:32:42,578 serial_wrap.py, line 164, WARNING:尝试串口重连(1/3)...
+2025-07-13 13:32:44,580 serial_wrap.py, line 164, WARNING:尝试串口重连(2/3)...
+2025-07-13 13:32:46,583 serial_wrap.py, line 164, WARNING:尝试串口重连(3/3)...
+2025-07-13 13:32:48,586 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:32:48,603 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:32:48,603 serial_wrap.py, line 164, WARNING:尝试串口重连(1/3)...
+2025-07-13 13:32:50,606 serial_wrap.py, line 164, WARNING:尝试串口重连(2/3)...
+2025-07-13 13:32:52,609 serial_wrap.py, line 164, WARNING:尝试串口重连(3/3)...
+2025-07-13 13:32:54,612 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:32:54,613 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:32:54,613 serial_wrap.py, line 164, WARNING:尝试串口重连(1/3)...
+2025-07-13 13:32:56,616 serial_wrap.py, line 164, WARNING:尝试串口重连(2/3)...
+2025-07-13 13:32:58,619 serial_wrap.py, line 164, WARNING:尝试串口重连(3/3)...
+2025-07-13 13:33:00,622 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:33:00,622 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:33:00,623 serial_wrap.py, line 164, WARNING:尝试串口重连(1/3)...
+2025-07-13 13:33:02,625 serial_wrap.py, line 164, WARNING:尝试串口重连(2/3)...
+2025-07-13 13:33:04,628 serial_wrap.py, line 164, WARNING:尝试串口重连(3/3)...
+2025-07-13 13:33:06,631 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:33:06,632 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:33:06,632 serial_wrap.py, line 164, WARNING:尝试串口重连(1/3)...
+2025-07-13 13:33:08,635 serial_wrap.py, line 164, WARNING:尝试串口重连(2/3)...
+2025-07-13 13:33:10,638 serial_wrap.py, line 164, WARNING:尝试串口重连(3/3)...
+2025-07-13 13:33:12,641 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:33:12,641 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:33:12,642 serial_wrap.py, line 164, WARNING:尝试串口重连(1/3)...
+2025-07-13 13:33:14,644 serial_wrap.py, line 164, WARNING:尝试串口重连(2/3)...
+2025-07-13 13:33:16,647 serial_wrap.py, line 164, WARNING:尝试串口重连(3/3)...
+2025-07-13 13:33:18,650 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:33:18,651 arm_base.py, line 502, WARNING:timeout
+2025-07-13 13:33:18,651 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:33:18,652 serial_wrap.py, line 164, WARNING:尝试串口重连(1/3)...
+2025-07-13 13:33:20,654 serial_wrap.py, line 164, WARNING:尝试串口重连(2/3)...
+2025-07-13 13:33:22,657 serial_wrap.py, line 164, WARNING:尝试串口重连(3/3)...
+2025-07-13 13:33:24,660 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:33:24,661 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:33:24,661 serial_wrap.py, line 164, WARNING:尝试串口重连(1/3)...
+2025-07-13 13:33:26,664 serial_wrap.py, line 164, WARNING:尝试串口重连(2/3)...
+2025-07-13 13:33:28,667 serial_wrap.py, line 164, WARNING:尝试串口重连(3/3)...
+2025-07-13 13:33:30,670 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:33:31,202 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:33:31,203 serial_wrap.py, line 164, WARNING:尝试串口重连(1/3)...
+2025-07-13 13:33:33,205 serial_wrap.py, line 164, WARNING:尝试串口重连(2/3)...
+2025-07-13 13:33:35,208 serial_wrap.py, line 164, WARNING:尝试串口重连(3/3)...
+2025-07-13 13:33:37,211 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:33:37,212 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:33:37,212 serial_wrap.py, line 164, WARNING:尝试串口重连(1/3)...
+2025-07-13 13:33:39,215 serial_wrap.py, line 164, WARNING:尝试串口重连(2/3)...
+2025-07-13 13:33:41,218 serial_wrap.py, line 164, WARNING:尝试串口重连(3/3)...
+2025-07-13 13:33:43,220 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:33:43,221 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:33:43,221 serial_wrap.py, line 164, WARNING:尝试串口重连(1/3)...
+2025-07-13 13:33:45,224 serial_wrap.py, line 164, WARNING:尝试串口重连(2/3)...
+2025-07-13 13:33:47,227 serial_wrap.py, line 164, WARNING:尝试串口重连(3/3)...
+2025-07-13 13:33:48,241 serial_wrap.py, line 170, INFO:串口重连成功，开始初始化...
+2025-07-13 13:33:48,342 serial_wrap.py, line 178, WARNING:下位机握手/初始化失败，可能需要人工干预
+2025-07-13 13:33:48,342 arm_base.py, line 502, WARNING:timeout
+2025-07-13 13:33:50,278 serial_wrap.py, line 78, ERROR:get_anwser error:(5, 'Input/output error')
+2025-07-13 13:33:50,279 serial_wrap.py, line 164, WARNING:尝试串口重连(1/3)...
+2025-07-13 13:33:52,282 serial_wrap.py, line 164, WARNING:尝试串口重连(2/3)...
+2025-07-13 13:33:54,285 serial_wrap.py, line 164, WARNING:尝试串口重连(3/3)...
+2025-07-13 13:33:56,288 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:33:56,289 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:33:56,289 serial_wrap.py, line 164, WARNING:尝试串口重连(1/3)...
+2025-07-13 13:33:58,292 serial_wrap.py, line 164, WARNING:尝试串口重连(2/3)...
+2025-07-13 13:34:00,295 serial_wrap.py, line 164, WARNING:尝试串口重连(3/3)...
+2025-07-13 13:34:02,298 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:34:02,298 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:34:02,299 serial_wrap.py, line 164, WARNING:尝试串口重连(1/3)...
+2025-07-13 13:34:04,301 serial_wrap.py, line 164, WARNING:尝试串口重连(2/3)...
+2025-07-13 13:34:06,304 serial_wrap.py, line 164, WARNING:尝试串口重连(3/3)...
+2025-07-13 13:34:08,307 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:34:08,308 arm_base.py, line 502, WARNING:timeout
+2025-07-13 13:34:08,308 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:34:08,309 serial_wrap.py, line 164, WARNING:尝试串口重连(1/3)...
+2025-07-13 13:34:10,311 serial_wrap.py, line 164, WARNING:尝试串口重连(2/3)...
+2025-07-13 13:34:12,314 serial_wrap.py, line 164, WARNING:尝试串口重连(3/3)...
+2025-07-13 13:34:14,317 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:34:14,318 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:34:14,318 serial_wrap.py, line 164, WARNING:尝试串口重连(1/3)...
+2025-07-13 13:34:16,321 serial_wrap.py, line 164, WARNING:尝试串口重连(2/3)...
+2025-07-13 13:34:18,324 serial_wrap.py, line 164, WARNING:尝试串口重连(3/3)...
+2025-07-13 13:34:20,327 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:34:21,336 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:34:21,336 serial_wrap.py, line 164, WARNING:尝试串口重连(1/3)...
+2025-07-13 13:34:23,339 serial_wrap.py, line 164, WARNING:尝试串口重连(2/3)...
+2025-07-13 13:34:25,342 serial_wrap.py, line 164, WARNING:尝试串口重连(3/3)...
+2025-07-13 13:34:27,345 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:34:28,357 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:34:28,357 serial_wrap.py, line 164, WARNING:尝试串口重连(1/3)...
+2025-07-13 13:34:30,360 serial_wrap.py, line 164, WARNING:尝试串口重连(2/3)...
+2025-07-13 13:34:32,363 serial_wrap.py, line 164, WARNING:尝试串口重连(3/3)...
+2025-07-13 13:34:34,366 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:34:34,366 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:34:34,367 serial_wrap.py, line 164, WARNING:尝试串口重连(1/3)...
+2025-07-13 13:34:36,369 serial_wrap.py, line 164, WARNING:尝试串口重连(2/3)...
+2025-07-13 13:34:38,372 serial_wrap.py, line 164, WARNING:尝试串口重连(3/3)...
+2025-07-13 13:34:40,375 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:34:40,375 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:34:40,376 serial_wrap.py, line 164, WARNING:尝试串口重连(1/3)...
+2025-07-13 13:34:42,379 serial_wrap.py, line 164, WARNING:尝试串口重连(2/3)...
+2025-07-13 13:34:44,382 serial_wrap.py, line 164, WARNING:尝试串口重连(3/3)...
+2025-07-13 13:34:46,385 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:34:46,393 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:34:46,394 serial_wrap.py, line 164, WARNING:尝试串口重连(1/3)...
+2025-07-13 13:34:47,406 serial_wrap.py, line 170, INFO:串口重连成功，开始初始化...
+2025-07-13 13:34:47,507 serial_wrap.py, line 178, WARNING:下位机握手/初始化失败，可能需要人工干预
+2025-07-13 13:34:50,418 arm_base.py, line 502, WARNING:timeout
+2025-07-13 13:40:19,122 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 13:40:19,562 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 13:40:19,584 serial_wrap.py, line 296, INFO:is mc602
+2025-07-13 13:40:19,585 serial_wrap.py, line 297, INFO:load program
+2025-07-13 13:40:21,398 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 13:40:21,446 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 13:43:20,333 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 13:43:20,770 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 13:43:20,790 serial_wrap.py, line 296, INFO:is mc602
+2025-07-13 13:43:20,790 serial_wrap.py, line 297, INFO:load program
+2025-07-13 13:43:23,067 serial_wrap.py, line 312, INFO:downloading program
+2025-07-13 13:43:30,710 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 13:43:30,759 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 13:44:03,768 serial_wrap.py, line 78, ERROR:get_anwser error:device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+2025-07-13 13:44:03,769 serial_wrap.py, line 164, WARNING:尝试串口重连(1/3)...
+2025-07-13 13:44:05,777 serial_wrap.py, line 164, WARNING:尝试串口重连(2/3)...
+2025-07-13 13:44:07,780 serial_wrap.py, line 164, WARNING:尝试串口重连(3/3)...
+2025-07-13 13:44:09,783 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:44:09,794 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:44:09,794 serial_wrap.py, line 164, WARNING:尝试串口重连(1/3)...
+2025-07-13 13:44:11,797 serial_wrap.py, line 164, WARNING:尝试串口重连(2/3)...
+2025-07-13 13:44:13,800 serial_wrap.py, line 164, WARNING:尝试串口重连(3/3)...
+2025-07-13 13:44:15,803 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:44:15,814 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:44:15,814 serial_wrap.py, line 164, WARNING:尝试串口重连(1/3)...
+2025-07-13 13:44:17,817 serial_wrap.py, line 164, WARNING:尝试串口重连(2/3)...
+2025-07-13 13:44:19,820 serial_wrap.py, line 164, WARNING:尝试串口重连(3/3)...
+2025-07-13 13:44:21,823 serial_wrap.py, line 185, CRITICAL:串口多次重连失败，请检查硬件连接！
+2025-07-13 13:44:21,834 serial_wrap.py, line 78, ERROR:get_anwser error:Attempting to use a port that is not open
+2025-07-13 13:44:21,834 serial_wrap.py, line 164, WARNING:尝试串口重连(1/3)...
+2025-07-13 13:44:22,847 serial_wrap.py, line 170, INFO:串口重连成功，开始初始化...
+2025-07-13 13:44:22,948 serial_wrap.py, line 178, WARNING:下位机握手/初始化失败，可能需要人工干预
+2025-07-13 13:44:27,308 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 13:44:27,745 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 13:44:27,766 serial_wrap.py, line 296, INFO:is mc602
+2025-07-13 13:44:27,766 serial_wrap.py, line 297, INFO:load program
+2025-07-13 13:44:29,580 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 13:44:29,629 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 14:23:02,272 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 14:23:02,356 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 14:23:02,395 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 14:23:03,075 vehicle_base.py, line 305, INFO:MecanumChassis
+2025-07-13 14:23:03,075 vehicle_base.py, line 194, INFO:mecanum init
+2025-07-13 14:23:03,076 car_wrap.py, line 147, INFO:my car init ok 0.011413097381591797
+2025-07-13 14:23:16,456 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 14:23:16,540 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 14:23:16,576 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 14:23:30,347 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 14:23:30,430 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 14:23:30,467 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 14:29:19,500 serial_wrap.py, line 78, ERROR:get_anwser error:device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+2025-07-13 14:29:19,502 serial_wrap.py, line 164, WARNING:尝试串口重连(1/3)...
+2025-07-13 14:29:20,518 serial_wrap.py, line 170, INFO:串口重连成功，开始初始化...
+2025-07-13 14:29:20,619 serial_wrap.py, line 178, WARNING:下位机握手/初始化失败，可能需要人工干预
+2025-07-13 14:41:01,707 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 14:41:01,792 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 14:41:01,828 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 14:41:19,693 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 14:41:19,777 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 14:41:19,816 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 14:45:18,785 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 14:45:18,871 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 14:45:18,907 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 14:45:59,161 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 14:45:59,245 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 14:45:59,282 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 14:46:18,535 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 14:46:18,620 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 14:46:18,657 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 14:46:47,299 serial_wrap.py, line 78, ERROR:get_anwser error:device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+2025-07-13 14:46:47,299 serial_wrap.py, line 164, WARNING:尝试串口重连(1/3)...
+2025-07-13 14:46:49,307 serial_wrap.py, line 164, WARNING:尝试串口重连(2/3)...
+2025-07-13 14:46:50,321 serial_wrap.py, line 170, INFO:串口重连成功，开始初始化...
+2025-07-13 14:46:50,422 serial_wrap.py, line 178, WARNING:下位机握手/初始化失败，可能需要人工干预
+2025-07-13 14:47:39,669 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 14:47:40,107 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 14:47:40,127 serial_wrap.py, line 296, INFO:is mc602
+2025-07-13 14:47:40,128 serial_wrap.py, line 297, INFO:load program
+2025-07-13 14:47:41,941 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 14:47:41,979 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 14:51:37,512 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 14:51:37,596 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 14:51:37,634 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 14:55:51,656 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 14:55:52,093 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 14:55:52,113 serial_wrap.py, line 296, INFO:is mc602
+2025-07-13 14:55:52,113 serial_wrap.py, line 297, INFO:load program
+2025-07-13 14:55:53,927 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 14:55:53,975 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 14:56:33,580 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 14:56:33,664 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 14:56:33,701 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 14:58:01,212 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 14:58:01,651 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 14:58:01,671 serial_wrap.py, line 296, INFO:is mc602
+2025-07-13 14:58:01,672 serial_wrap.py, line 297, INFO:load program
+2025-07-13 14:58:03,488 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 14:58:03,536 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 14:58:43,081 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 14:58:43,523 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 14:58:43,543 serial_wrap.py, line 296, INFO:is mc602
+2025-07-13 14:58:43,543 serial_wrap.py, line 297, INFO:load program
+2025-07-13 14:58:45,358 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 14:58:45,406 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 14:58:57,115 arm_base.py, line 502, WARNING:timeout
+2025-07-13 14:58:59,743 arm_base.py, line 502, WARNING:timeout
+2025-07-13 14:59:04,677 arm_base.py, line 502, WARNING:timeout
+2025-07-13 14:59:10,117 arm_base.py, line 502, WARNING:timeout
+2025-07-13 14:59:13,749 arm_base.py, line 502, WARNING:timeout
+2025-07-13 15:00:14,822 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 15:00:15,259 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 15:00:15,281 serial_wrap.py, line 296, INFO:is mc602
+2025-07-13 15:00:15,281 serial_wrap.py, line 297, INFO:load program
+2025-07-13 15:00:17,095 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 15:00:17,143 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 15:03:05,140 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 15:03:05,580 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 15:03:05,600 serial_wrap.py, line 296, INFO:is mc602
+2025-07-13 15:03:05,600 serial_wrap.py, line 297, INFO:load program
+2025-07-13 15:03:07,413 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 15:03:07,461 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 15:03:48,690 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 15:03:48,777 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 15:03:48,813 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 15:04:10,195 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 15:04:10,279 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 15:04:10,316 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 15:04:35,334 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 15:04:35,417 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 15:04:35,454 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 15:05:04,423 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 15:05:04,507 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 15:05:04,543 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 15:05:26,897 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 15:05:27,334 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 15:05:27,354 serial_wrap.py, line 296, INFO:is mc602
+2025-07-13 15:05:27,354 serial_wrap.py, line 297, INFO:load program
+2025-07-13 15:05:29,168 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 15:05:29,216 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 15:05:48,934 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 15:05:49,371 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 15:05:49,393 serial_wrap.py, line 296, INFO:is mc602
+2025-07-13 15:05:49,393 serial_wrap.py, line 297, INFO:load program
+2025-07-13 15:05:51,206 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 15:05:51,255 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 15:06:16,657 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 15:06:17,093 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 15:06:17,114 serial_wrap.py, line 296, INFO:is mc602
+2025-07-13 15:06:17,114 serial_wrap.py, line 297, INFO:load program
+2025-07-13 15:06:18,928 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 15:06:18,976 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 15:07:04,250 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 15:07:04,688 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 15:07:04,711 serial_wrap.py, line 296, INFO:is mc602
+2025-07-13 15:07:04,711 serial_wrap.py, line 297, INFO:load program
+2025-07-13 15:07:06,524 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 15:07:06,574 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 15:07:31,677 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 15:07:31,762 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 15:07:31,798 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 15:08:34,997 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 15:08:35,435 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 15:08:35,458 serial_wrap.py, line 296, INFO:is mc602
+2025-07-13 15:08:35,458 serial_wrap.py, line 297, INFO:load program
+2025-07-13 15:08:37,272 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 15:08:37,321 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 15:08:54,714 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 15:08:54,798 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 15:08:54,836 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 15:09:37,785 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 15:09:38,224 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 15:09:38,245 serial_wrap.py, line 296, INFO:is mc602
+2025-07-13 15:09:38,245 serial_wrap.py, line 297, INFO:load program
+2025-07-13 15:09:40,059 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 15:09:40,107 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 15:10:05,119 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 15:10:05,205 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 15:10:05,242 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 15:10:29,972 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 15:10:30,409 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 15:10:30,431 serial_wrap.py, line 296, INFO:is mc602
+2025-07-13 15:10:30,431 serial_wrap.py, line 297, INFO:load program
+2025-07-13 15:10:32,244 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 15:10:32,292 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 15:11:24,270 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 15:11:24,355 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 15:11:24,391 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 15:12:03,384 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 15:12:03,467 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 15:12:03,504 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 15:12:39,553 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 15:12:39,637 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 15:12:39,675 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 15:13:46,687 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 15:13:46,772 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 15:13:46,810 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 15:13:59,549 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 15:13:59,986 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 15:14:00,006 serial_wrap.py, line 296, INFO:is mc602
+2025-07-13 15:14:00,007 serial_wrap.py, line 297, INFO:load program
+2025-07-13 15:14:01,820 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 15:14:01,868 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 15:17:18,450 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 15:17:18,888 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 15:17:18,908 serial_wrap.py, line 296, INFO:is mc602
+2025-07-13 15:17:18,908 serial_wrap.py, line 297, INFO:load program
+2025-07-13 15:17:20,722 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 15:17:20,771 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 15:18:22,834 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 15:18:23,271 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 15:18:23,291 serial_wrap.py, line 296, INFO:is mc602
+2025-07-13 15:18:23,291 serial_wrap.py, line 297, INFO:load program
+2025-07-13 15:18:25,105 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 15:18:25,153 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 15:19:06,826 arm_base.py, line 502, WARNING:timeout
+2025-07-13 15:19:26,431 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 15:19:26,517 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 15:19:26,554 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 15:19:29,999 arm_base.py, line 502, WARNING:timeout
+2025-07-13 15:19:35,813 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 15:19:36,250 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 15:19:36,272 serial_wrap.py, line 296, INFO:is mc602
+2025-07-13 15:19:36,273 serial_wrap.py, line 297, INFO:load program
+2025-07-13 15:19:38,085 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 15:19:38,134 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 15:20:11,003 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 15:20:11,090 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 15:20:11,127 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 15:21:13,879 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 15:21:14,316 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 15:21:14,338 serial_wrap.py, line 296, INFO:is mc602
+2025-07-13 15:21:14,338 serial_wrap.py, line 297, INFO:load program
+2025-07-13 15:21:16,151 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 15:21:16,197 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 15:25:34,202 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 15:25:34,640 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 15:25:34,662 serial_wrap.py, line 296, INFO:is mc602
+2025-07-13 15:25:34,662 serial_wrap.py, line 297, INFO:load program
+2025-07-13 15:25:36,476 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 15:25:36,524 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 15:25:36,932 arm_base.py, line 282, INFO:change side to 1
+2025-07-13 15:26:25,741 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 15:26:25,824 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 15:26:25,861 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 15:26:26,270 arm_base.py, line 282, INFO:change side to 1
+2025-07-13 15:27:36,825 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 15:27:37,262 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 15:27:37,282 serial_wrap.py, line 296, INFO:is mc602
+2025-07-13 15:27:37,282 serial_wrap.py, line 297, INFO:load program
+2025-07-13 15:27:39,097 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 15:27:39,144 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 15:27:39,551 arm_base.py, line 282, INFO:change side to 1
+2025-07-13 15:27:52,614 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 15:27:53,050 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 15:27:53,070 serial_wrap.py, line 296, INFO:is mc602
+2025-07-13 15:27:53,070 serial_wrap.py, line 297, INFO:load program
+2025-07-13 15:27:54,883 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 15:27:54,932 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 15:27:55,336 arm_base.py, line 282, INFO:change side to 1
+2025-07-13 15:28:55,099 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 15:28:55,535 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 15:28:55,558 serial_wrap.py, line 296, INFO:is mc602
+2025-07-13 15:28:55,558 serial_wrap.py, line 297, INFO:load program
+2025-07-13 15:28:57,372 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 15:28:57,420 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 15:28:57,826 arm_base.py, line 282, INFO:change side to 1
+2025-07-13 15:29:32,898 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 15:29:33,335 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 15:29:33,356 serial_wrap.py, line 296, INFO:is mc602
+2025-07-13 15:29:33,356 serial_wrap.py, line 297, INFO:load program
+2025-07-13 15:29:35,171 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 15:29:35,219 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 15:29:35,626 arm_base.py, line 282, INFO:change side to 1
+2025-07-13 15:30:25,856 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 15:30:26,294 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 15:30:26,314 serial_wrap.py, line 296, INFO:is mc602
+2025-07-13 15:30:26,314 serial_wrap.py, line 297, INFO:load program
+2025-07-13 15:30:28,127 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 15:30:28,176 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 15:31:30,627 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 15:31:31,066 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 15:31:31,088 serial_wrap.py, line 296, INFO:is mc602
+2025-07-13 15:31:31,088 serial_wrap.py, line 297, INFO:load program
+2025-07-13 15:31:32,902 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 15:31:32,949 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 16:28:58,930 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 16:28:59,015 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 16:28:59,052 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 16:29:17,976 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 16:29:18,060 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 16:29:18,097 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 16:29:18,707 vehicle_base.py, line 305, INFO:MecanumChassis
+2025-07-13 16:29:18,708 vehicle_base.py, line 194, INFO:mecanum init
+2025-07-13 16:29:18,709 car_wrap.py, line 147, INFO:my car init ok 0.011332035064697266
+2025-07-13 16:29:21,702 infer_front.py, line 118, INFO:lane连接服务器...
+2025-07-13 16:29:21,793 infer_front.py, line 162, INFO:开启infer_back_end.py脚本, 后台运行中, 请等待
+2025-07-13 14:07:10,279 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 14:07:10,364 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 14:07:10,415 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 14:07:13,104 vehicle_base.py, line 305, INFO:MecanumChassis
+2025-07-13 14:07:13,105 vehicle_base.py, line 194, INFO:mecanum init
+2025-07-13 14:07:13,159 car_wrap.py, line 147, INFO:my car init ok 0.0777122974395752
+2025-07-13 14:07:16,504 infer_front.py, line 118, INFO:lane连接服务器...
+2025-07-13 14:07:26,746 infer_front.py, line 136, INFO:
+2025-07-13 14:07:26,751 infer_front.py, line 145, INFO:lane连接服务器成功
+2025-07-13 14:07:26,765 infer_front.py, line 118, INFO:front连接服务器...
+2025-07-13 14:07:26,859 infer_front.py, line 145, INFO:front连接服务器成功
+2025-07-13 14:07:26,864 infer_front.py, line 118, INFO:task连接服务器...
+2025-07-13 14:07:26,939 infer_front.py, line 145, INFO:task连接服务器成功
+2025-07-13 14:07:26,943 infer_front.py, line 118, INFO:ocr连接服务器...
+2025-07-13 14:07:27,018 infer_front.py, line 145, INFO:ocr连接服务器成功
+2025-07-13 14:07:27,227 car_wrap.py, line 798, INFO:0
+2025-07-13 14:07:27,227 car_wrap.py, line 800, INFO:['hanoi_tower_func', 'bmi_cal', 'camp_fun', 'send_fun', 'task_ingredients', 'task_answer', 'task_fun2', 'task_food', 'task_help', 'follow_map', 'arm_test', 'all_task', 'lane_test', 'reset', 'debug']
+2025-07-13 14:07:43,014 car_wrap.py, line 881, INFO:bmi_cal
+2025-07-13 14:07:43,687 car_wrap.py, line 881, INFO:camp_fun
+2025-07-13 14:07:45,002 car_wrap.py, line 881, INFO:send_fun
+2025-07-13 14:07:45,620 car_wrap.py, line 881, INFO:task_ingredients
+2025-07-13 14:07:46,292 car_wrap.py, line 881, INFO:task_answer
+2025-07-13 14:07:47,337 car_wrap.py, line 881, INFO:task_fun2
+2025-07-13 14:07:48,010 car_wrap.py, line 881, INFO:task_food
+2025-07-13 14:07:48,524 car_wrap.py, line 881, INFO:task_help
+2025-07-13 14:07:49,090 car_wrap.py, line 881, INFO:follow_map
+2025-07-13 14:07:49,760 car_wrap.py, line 881, INFO:arm_test
+2025-07-13 14:07:50,380 car_wrap.py, line 881, INFO:all_task
+2025-07-13 14:07:51,050 car_wrap.py, line 881, INFO:lane_test
+2025-07-13 14:07:51,991 car_wrap.py, line 881, INFO:reset
+2025-07-13 14:07:52,937 car_wrap.py, line 881, INFO:debug
+2025-07-13 14:07:59,816 car_wrap.py, line 747, INFO:
+2025-07-13 14:07:59,816 car_wrap.py, line 748, INFO:--------------
+2025-07-13 14:07:59,817 car_wrap.py, line 749, INFO:error:-0.00017768179532140493 angle-0.10235440731048584
+2025-07-13 14:07:59,817 car_wrap.py, line 750, INFO:front:[]
+2025-07-13 14:07:59,818 car_wrap.py, line 752, INFO:task:[]
+2025-07-13 14:07:59,826 car_wrap.py, line 764, INFO:left:2.426 right:0.104
+2025-07-13 14:08:00,974 car_wrap.py, line 747, INFO:
+2025-07-13 14:08:00,974 car_wrap.py, line 748, INFO:--------------
+2025-07-13 14:08:00,975 car_wrap.py, line 749, INFO:error:-0.00017974188085645437 angle-0.10047388076782227
+2025-07-13 14:08:00,975 car_wrap.py, line 750, INFO:front:[]
+2025-07-13 14:08:00,975 car_wrap.py, line 752, INFO:task:[]
+2025-07-13 14:08:00,983 car_wrap.py, line 764, INFO:left:2.427 right:0.104
+2025-07-13 14:08:02,125 car_wrap.py, line 747, INFO:
+2025-07-13 14:08:02,125 car_wrap.py, line 748, INFO:--------------
+2025-07-13 14:08:02,125 car_wrap.py, line 749, INFO:error:-0.0001477155601605773 angle-0.1243964433670044
+2025-07-13 14:08:02,125 car_wrap.py, line 750, INFO:front:[]
+2025-07-13 14:08:02,125 car_wrap.py, line 752, INFO:task:[]
+2025-07-13 14:08:02,132 car_wrap.py, line 764, INFO:left:2.426 right:0.102
+2025-07-13 14:08:03,275 car_wrap.py, line 747, INFO:
+2025-07-13 14:08:03,276 car_wrap.py, line 748, INFO:--------------
+2025-07-13 14:08:03,276 car_wrap.py, line 749, INFO:error:-0.00018410419579595327 angle-0.0803520530462265
+2025-07-13 14:08:03,276 car_wrap.py, line 750, INFO:front:[]
+2025-07-13 14:08:03,277 car_wrap.py, line 752, INFO:task:[]
+2025-07-13 14:08:03,283 car_wrap.py, line 764, INFO:left:2.423 right:0.104
+2025-07-13 14:08:04,419 car_wrap.py, line 747, INFO:
+2025-07-13 14:08:04,420 car_wrap.py, line 748, INFO:--------------
+2025-07-13 14:08:04,420 car_wrap.py, line 749, INFO:error:-0.00018070300575345755 angle-0.08247112482786179
+2025-07-13 14:08:04,420 car_wrap.py, line 750, INFO:front:[]
+2025-07-13 14:08:04,420 car_wrap.py, line 752, INFO:task:[]
+2025-07-13 14:08:04,426 car_wrap.py, line 764, INFO:left:2.422 right:0.105
+2025-07-13 14:08:05,566 car_wrap.py, line 747, INFO:
+2025-07-13 14:08:05,566 car_wrap.py, line 748, INFO:--------------
+2025-07-13 14:08:05,566 car_wrap.py, line 749, INFO:error:-0.0001856948947533965 angle-0.07555078715085983
+2025-07-13 14:08:05,567 car_wrap.py, line 750, INFO:front:[]
+2025-07-13 14:08:05,567 car_wrap.py, line 752, INFO:task:[]
+2025-07-13 14:08:05,573 car_wrap.py, line 764, INFO:left:2.425 right:0.101
+2025-07-13 14:08:06,713 car_wrap.py, line 747, INFO:
+2025-07-13 14:08:06,713 car_wrap.py, line 748, INFO:--------------
+2025-07-13 14:08:06,713 car_wrap.py, line 749, INFO:error:-0.00016368960496038198 angle-0.14218376576900482
+2025-07-13 14:08:06,713 car_wrap.py, line 750, INFO:front:[]
+2025-07-13 14:08:06,713 car_wrap.py, line 752, INFO:task:[]
+2025-07-13 14:08:06,720 car_wrap.py, line 764, INFO:left:2.425 right:0.105
+2025-07-13 14:08:07,857 car_wrap.py, line 747, INFO:
+2025-07-13 14:08:07,858 car_wrap.py, line 748, INFO:--------------
+2025-07-13 14:08:07,858 car_wrap.py, line 749, INFO:error:-0.00016429310198873281 angle-0.14022871851921082
+2025-07-13 14:08:07,858 car_wrap.py, line 750, INFO:front:[]
+2025-07-13 14:08:07,858 car_wrap.py, line 752, INFO:task:[]
+2025-07-13 14:08:07,865 car_wrap.py, line 764, INFO:left:2.427 right:0.104
+2025-07-13 14:08:09,002 car_wrap.py, line 747, INFO:
+2025-07-13 14:08:09,003 car_wrap.py, line 748, INFO:--------------
+2025-07-13 14:08:09,003 car_wrap.py, line 749, INFO:error:-0.00014330854173749685 angle-0.17282825708389282
+2025-07-13 14:08:09,003 car_wrap.py, line 750, INFO:front:[]
+2025-07-13 14:08:09,003 car_wrap.py, line 752, INFO:task:[]
+2025-07-13 14:08:09,010 car_wrap.py, line 764, INFO:left:2.426 right:0.105
+2025-07-13 14:08:10,148 car_wrap.py, line 747, INFO:
+2025-07-13 14:08:10,149 car_wrap.py, line 748, INFO:--------------
+2025-07-13 14:08:10,149 car_wrap.py, line 749, INFO:error:-0.00016606261488050222 angle-0.13026387989521027
+2025-07-13 14:08:10,149 car_wrap.py, line 750, INFO:front:[]
+2025-07-13 14:08:10,149 car_wrap.py, line 752, INFO:task:[]
+2025-07-13 14:08:10,155 car_wrap.py, line 764, INFO:left:2.428 right:0.105
+2025-07-13 14:08:11,295 car_wrap.py, line 747, INFO:
+2025-07-13 14:08:11,296 car_wrap.py, line 748, INFO:--------------
+2025-07-13 14:08:11,296 car_wrap.py, line 749, INFO:error:-0.0001742321765050292 angle-0.12823520600795746
+2025-07-13 14:08:11,296 car_wrap.py, line 750, INFO:front:[]
+2025-07-13 14:08:11,297 car_wrap.py, line 752, INFO:task:[]
+2025-07-13 14:08:11,305 car_wrap.py, line 764, INFO:left:2.423 right:0.104
+2025-07-13 14:08:12,444 car_wrap.py, line 747, INFO:
+2025-07-13 14:08:12,445 car_wrap.py, line 748, INFO:--------------
+2025-07-13 14:08:12,445 car_wrap.py, line 749, INFO:error:-0.0001900870120152831 angle-0.08975446224212646
+2025-07-13 14:08:12,445 car_wrap.py, line 750, INFO:front:[]
+2025-07-13 14:08:12,445 car_wrap.py, line 752, INFO:task:[]
+2025-07-13 14:08:12,451 car_wrap.py, line 764, INFO:left:2.422 right:0.105
+2025-07-13 14:08:13,590 car_wrap.py, line 747, INFO:
+2025-07-13 14:08:13,591 car_wrap.py, line 748, INFO:--------------
+2025-07-13 14:08:13,591 car_wrap.py, line 749, INFO:error:-0.00018599664326757193 angle-0.08767833560705185
+2025-07-13 14:08:13,591 car_wrap.py, line 750, INFO:front:[]
+2025-07-13 14:08:13,591 car_wrap.py, line 752, INFO:task:[]
+2025-07-13 14:08:13,598 car_wrap.py, line 764, INFO:left:2.431 right:0.102
+2025-07-13 17:17:14,409 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 17:17:14,493 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 17:17:14,554 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 17:17:41,394 arm_base.py, line 502, WARNING:timeout
+2025-07-13 17:17:54,807 arm_base.py, line 502, WARNING:timeout
+2025-07-13 17:18:08,048 arm_base.py, line 502, WARNING:timeout
+2025-07-13 17:18:36,564 arm_base.py, line 502, WARNING:timeout
+2025-07-13 17:19:15,282 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 17:19:15,367 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 17:19:15,405 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 17:19:19,439 arm_base.py, line 502, WARNING:timeout
+2025-07-13 17:19:25,259 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 17:19:25,343 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 17:19:25,378 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 17:19:28,367 arm_base.py, line 502, WARNING:timeout
+2025-07-13 17:19:43,295 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 17:19:43,379 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 17:19:43,415 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 17:19:44,209 vehicle_base.py, line 305, INFO:MecanumChassis
+2025-07-13 17:19:44,210 vehicle_base.py, line 194, INFO:mecanum init
+2025-07-13 17:19:44,211 car_wrap.py, line 147, INFO:my car init ok 0.011682987213134766
+2025-07-13 17:19:47,214 infer_front.py, line 118, INFO:lane连接服务器...
+2025-07-13 17:19:47,296 infer_front.py, line 145, INFO:lane连接服务器成功
+2025-07-13 17:19:47,301 infer_front.py, line 118, INFO:front连接服务器...
+2025-07-13 17:19:47,371 infer_front.py, line 145, INFO:front连接服务器成功
+2025-07-13 17:19:47,376 infer_front.py, line 118, INFO:task连接服务器...
+2025-07-13 17:19:47,446 infer_front.py, line 145, INFO:task连接服务器成功
+2025-07-13 17:19:47,451 infer_front.py, line 118, INFO:ocr连接服务器...
+2025-07-13 17:19:47,518 infer_front.py, line 145, INFO:ocr连接服务器成功
+2025-07-13 17:19:47,726 car_wrap.py, line 798, INFO:11
+2025-07-13 17:19:47,726 car_wrap.py, line 800, INFO:['hanoi_tower_func', 'bmi_cal', 'camp_fun', 'send_fun', 'task_ingredients', 'task_answer', 'task_fun2', 'task_food', 'task_help', 'follow_map', 'arm_test', 'all_task', 'lane_test', 'reset', 'debug']
+2025-07-13 17:22:24,869 car_wrap.py, line 881, INFO:arm_test
+2025-07-13 17:22:27,997 car_wrap.py, line 881, INFO:follow_map
+2025-07-13 17:22:30,854 car_wrap.py, line 881, INFO:arm_test
+2025-07-13 17:22:31,524 car_wrap.py, line 881, INFO:all_task
+2025-07-13 17:22:32,521 car_wrap.py, line 881, INFO:lane_test
+2025-07-13 17:22:33,247 car_wrap.py, line 881, INFO:reset
+2025-07-13 17:22:39,581 arm_base.py, line 282, INFO:change side to 1
+2025-07-13 17:22:41,059 car_wrap.py, line 881, INFO:reset
+2025-07-13 17:22:47,094 car_wrap.py, line 881, INFO:lane_test
+2025-07-13 17:22:59,170 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 17:22:59,256 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 17:22:59,297 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 17:25:39,900 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 17:25:39,984 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 17:25:40,021 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 17:26:14,753 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 17:26:14,839 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 17:26:14,876 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 17:37:18,784 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 17:37:18,870 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 17:37:18,906 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 17:39:30,373 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 17:39:30,457 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 17:39:30,495 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 17:40:52,664 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 17:40:52,750 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 17:40:52,787 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 17:43:35,353 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 17:43:35,437 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 17:43:35,473 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 17:48:08,395 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 17:48:08,480 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 17:48:08,518 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 17:49:15,859 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 17:49:15,944 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 17:49:15,981 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 17:55:50,444 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 17:55:50,528 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 17:55:50,563 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 17:57:07,956 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 17:57:08,039 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 17:57:08,077 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 17:58:53,772 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 17:58:53,856 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 17:58:53,894 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 17:59:33,920 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 17:59:34,005 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 17:59:34,044 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 17:59:34,756 vehicle_base.py, line 305, INFO:MecanumChassis
+2025-07-13 17:59:34,756 vehicle_base.py, line 194, INFO:mecanum init
+2025-07-13 17:59:34,757 car_wrap.py, line 147, INFO:my car init ok 0.011773347854614258
+2025-07-13 17:59:37,753 infer_front.py, line 118, INFO:lane连接服务器...
+2025-07-13 17:59:37,833 infer_front.py, line 145, INFO:lane连接服务器成功
+2025-07-13 17:59:37,838 infer_front.py, line 118, INFO:front连接服务器...
+2025-07-13 17:59:37,905 infer_front.py, line 145, INFO:front连接服务器成功
+2025-07-13 17:59:37,910 infer_front.py, line 118, INFO:task连接服务器...
+2025-07-13 17:59:37,977 infer_front.py, line 145, INFO:task连接服务器成功
+2025-07-13 17:59:37,982 infer_front.py, line 118, INFO:ocr连接服务器...
+2025-07-13 17:59:38,048 infer_front.py, line 145, INFO:ocr连接服务器成功
+2025-07-13 17:59:38,256 car_wrap.py, line 798, INFO:11
+2025-07-13 17:59:38,256 car_wrap.py, line 800, INFO:['hanoi_tower_func', 'bmi_cal', 'camp_fun', 'send_fun', 'task_ingredients', 'task_answer', 'task_fun2', 'task_food', 'task_help', 'follow_map', 'arm_test', 'all_task', 'lane_test', 'reset', 'debug']
+2025-07-13 18:00:52,168 serial_wrap.py, line 78, ERROR:get_anwser error:device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+2025-07-13 18:00:52,170 serial_wrap.py, line 164, WARNING:尝试串口重连(1/3)...
+2025-07-13 18:00:53,187 serial_wrap.py, line 170, INFO:串口重连成功，开始初始化...
+2025-07-13 18:00:53,288 serial_wrap.py, line 178, WARNING:下位机握手/初始化失败，可能需要人工干预
+2025-07-13 18:01:33,790 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 18:01:34,228 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 18:01:34,249 serial_wrap.py, line 296, INFO:is mc602
+2025-07-13 18:01:34,250 serial_wrap.py, line 297, INFO:load program
+2025-07-13 18:01:36,063 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 18:01:36,114 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 18:01:36,737 vehicle_base.py, line 305, INFO:MecanumChassis
+2025-07-13 18:01:36,737 vehicle_base.py, line 194, INFO:mecanum init
+2025-07-13 18:01:36,739 car_wrap.py, line 147, INFO:my car init ok 0.011511087417602539
+2025-07-13 18:01:39,726 infer_front.py, line 118, INFO:lane连接服务器...
+2025-07-13 18:01:39,806 infer_front.py, line 145, INFO:lane连接服务器成功
+2025-07-13 18:01:39,811 infer_front.py, line 118, INFO:front连接服务器...
+2025-07-13 18:01:39,880 infer_front.py, line 145, INFO:front连接服务器成功
+2025-07-13 18:01:39,885 infer_front.py, line 118, INFO:task连接服务器...
+2025-07-13 18:01:39,954 infer_front.py, line 145, INFO:task连接服务器成功
+2025-07-13 18:01:39,959 infer_front.py, line 118, INFO:ocr连接服务器...
+2025-07-13 18:01:40,029 infer_front.py, line 145, INFO:ocr连接服务器成功
+2025-07-13 18:01:40,236 car_wrap.py, line 798, INFO:11
+2025-07-13 18:01:40,238 car_wrap.py, line 800, INFO:['hanoi_tower_func', 'bmi_cal', 'camp_fun', 'send_fun', 'task_ingredients', 'task_answer', 'task_fun2', 'task_food', 'task_help', 'follow_map', 'arm_test', 'all_task', 'lane_test', 'reset', 'debug']
+2025-07-13 18:02:02,968 car_wrap.py, line 881, INFO:arm_test
+2025-07-13 18:02:06,256 car_wrap.py, line 881, INFO:follow_map
+2025-07-13 18:02:08,206 car_wrap.py, line 881, INFO:task_help
+2025-07-13 18:02:10,320 car_wrap.py, line 881, INFO:task_food
+2025-07-13 18:02:11,847 car_wrap.py, line 881, INFO:task_fun2
+2025-07-13 18:02:13,320 car_wrap.py, line 881, INFO:task_answer
+2025-07-13 18:02:14,797 car_wrap.py, line 881, INFO:task_ingredients
+2025-07-13 18:02:17,015 car_wrap.py, line 881, INFO:send_fun
+2025-07-13 18:02:18,385 car_wrap.py, line 881, INFO:camp_fun
+2025-07-13 18:02:19,907 car_wrap.py, line 881, INFO:bmi_cal
+2025-07-13 18:02:21,539 car_wrap.py, line 881, INFO:hanoi_tower_func
+2025-07-13 18:02:44,555 serial_wrap.py, line 78, ERROR:get_anwser error:device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+2025-07-13 18:02:44,557 serial_wrap.py, line 164, WARNING:尝试串口重连(1/3)...
+2025-07-13 18:02:45,573 serial_wrap.py, line 170, INFO:串口重连成功，开始初始化...
+2025-07-13 18:02:45,674 serial_wrap.py, line 178, WARNING:下位机握手/初始化失败，可能需要人工干预
+2025-07-13 18:02:59,575 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 18:03:00,013 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 18:03:00,033 serial_wrap.py, line 296, INFO:is mc602
+2025-07-13 18:03:00,033 serial_wrap.py, line 297, INFO:load program
+2025-07-13 18:03:01,848 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 18:03:01,898 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 18:03:02,622 vehicle_base.py, line 305, INFO:MecanumChassis
+2025-07-13 18:03:02,622 vehicle_base.py, line 194, INFO:mecanum init
+2025-07-13 18:03:02,623 car_wrap.py, line 147, INFO:my car init ok 0.011759519577026367
+2025-07-13 18:03:05,627 infer_front.py, line 118, INFO:lane连接服务器...
+2025-07-13 18:03:05,706 infer_front.py, line 145, INFO:lane连接服务器成功
+2025-07-13 18:03:05,711 infer_front.py, line 118, INFO:front连接服务器...
+2025-07-13 18:03:05,780 infer_front.py, line 145, INFO:front连接服务器成功
+2025-07-13 18:03:05,785 infer_front.py, line 118, INFO:task连接服务器...
+2025-07-13 18:03:05,852 infer_front.py, line 145, INFO:task连接服务器成功
+2025-07-13 18:03:05,857 infer_front.py, line 118, INFO:ocr连接服务器...
+2025-07-13 18:03:05,925 infer_front.py, line 145, INFO:ocr连接服务器成功
+2025-07-13 18:03:06,132 car_wrap.py, line 798, INFO:11
+2025-07-13 18:03:06,132 car_wrap.py, line 800, INFO:['hanoi_tower_func', 'bmi_cal', 'camp_fun', 'send_fun', 'task_ingredients', 'task_answer', 'task_fun2', 'task_food', 'task_help', 'follow_map', 'arm_test', 'all_task', 'lane_test', 'reset', 'debug']
+2025-07-13 18:03:16,359 car_wrap.py, line 881, INFO:lane_test
+2025-07-13 18:03:18,419 car_wrap.py, line 881, INFO:reset
+2025-07-13 18:03:21,119 car_wrap.py, line 881, INFO:debug
+2025-07-13 18:03:22,647 car_wrap.py, line 881, INFO:hanoi_tower_func
+2025-07-13 18:03:35,501 serial_wrap.py, line 78, ERROR:get_anwser error:device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+2025-07-13 18:03:35,501 serial_wrap.py, line 164, WARNING:尝试串口重连(1/3)...
+2025-07-13 18:03:36,519 serial_wrap.py, line 170, INFO:串口重连成功，开始初始化...
+2025-07-13 18:03:36,621 serial_wrap.py, line 178, WARNING:下位机握手/初始化失败，可能需要人工干预
+2025-07-13 18:04:41,275 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 18:04:41,713 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 18:04:41,733 serial_wrap.py, line 296, INFO:is mc602
+2025-07-13 18:04:41,733 serial_wrap.py, line 297, INFO:load program
+2025-07-13 18:04:43,548 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 18:04:43,596 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 18:04:44,119 vehicle_base.py, line 305, INFO:MecanumChassis
+2025-07-13 18:04:44,120 vehicle_base.py, line 194, INFO:mecanum init
+2025-07-13 18:04:44,121 car_wrap.py, line 147, INFO:my car init ok 0.011116504669189453
+2025-07-13 18:04:47,110 infer_front.py, line 118, INFO:lane连接服务器...
+2025-07-13 18:04:47,187 infer_front.py, line 145, INFO:lane连接服务器成功
+2025-07-13 18:04:47,192 infer_front.py, line 118, INFO:front连接服务器...
+2025-07-13 18:04:47,258 infer_front.py, line 145, INFO:front连接服务器成功
+2025-07-13 18:04:47,263 infer_front.py, line 118, INFO:task连接服务器...
+2025-07-13 18:04:47,331 infer_front.py, line 145, INFO:task连接服务器成功
+2025-07-13 18:04:47,336 infer_front.py, line 118, INFO:ocr连接服务器...
+2025-07-13 18:04:47,404 infer_front.py, line 145, INFO:ocr连接服务器成功
+2025-07-13 18:04:47,612 car_wrap.py, line 798, INFO:11
+2025-07-13 18:04:47,612 car_wrap.py, line 800, INFO:['hanoi_tower_func', 'bmi_cal', 'camp_fun', 'send_fun', 'task_ingredients', 'task_answer', 'task_fun2', 'task_food', 'task_help', 'follow_map', 'arm_test', 'all_task', 'lane_test', 'reset', 'debug']
+2025-07-13 18:04:49,081 car_wrap.py, line 881, INFO:lane_test
+2025-07-13 18:04:50,603 car_wrap.py, line 881, INFO:reset
+2025-07-13 18:04:57,888 car_wrap.py, line 881, INFO:debug
+2025-07-13 18:04:59,785 car_wrap.py, line 881, INFO:hanoi_tower_func
+2025-07-13 18:05:59,145 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 18:05:59,229 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 18:05:59,266 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 18:05:59,787 vehicle_base.py, line 305, INFO:MecanumChassis
+2025-07-13 18:05:59,788 vehicle_base.py, line 194, INFO:mecanum init
+2025-07-13 18:05:59,789 car_wrap.py, line 147, INFO:my car init ok 0.011092901229858398
+2025-07-13 18:06:02,773 infer_front.py, line 118, INFO:lane连接服务器...
+2025-07-13 18:06:02,850 infer_front.py, line 145, INFO:lane连接服务器成功
+2025-07-13 18:06:02,855 infer_front.py, line 118, INFO:front连接服务器...
+2025-07-13 18:06:02,922 infer_front.py, line 145, INFO:front连接服务器成功
+2025-07-13 18:06:02,927 infer_front.py, line 118, INFO:task连接服务器...
+2025-07-13 18:06:02,994 infer_front.py, line 145, INFO:task连接服务器成功
+2025-07-13 18:06:02,999 infer_front.py, line 118, INFO:ocr连接服务器...
+2025-07-13 18:06:03,065 infer_front.py, line 145, INFO:ocr连接服务器成功
+2025-07-13 18:06:03,272 car_wrap.py, line 798, INFO:11
+2025-07-13 18:06:03,273 car_wrap.py, line 800, INFO:['hanoi_tower_func', 'bmi_cal', 'camp_fun', 'send_fun', 'task_ingredients', 'task_answer', 'task_fun2', 'task_food', 'task_help', 'follow_map', 'arm_test', 'all_task', 'lane_test', 'reset', 'debug']
+2025-07-13 18:06:04,098 car_wrap.py, line 881, INFO:lane_test
+2025-07-13 18:06:05,197 car_wrap.py, line 881, INFO:reset
+2025-07-13 18:06:06,295 car_wrap.py, line 881, INFO:debug
+2025-07-13 18:06:07,343 car_wrap.py, line 881, INFO:hanoi_tower_func
+2025-07-13 18:06:16,785 serial_wrap.py, line 78, ERROR:get_anwser error:device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+2025-07-13 18:06:16,785 serial_wrap.py, line 164, WARNING:尝试串口重连(1/3)...
+2025-07-13 18:06:17,803 serial_wrap.py, line 170, INFO:串口重连成功，开始初始化...
+2025-07-13 18:06:17,904 serial_wrap.py, line 178, WARNING:下位机握手/初始化失败，可能需要人工干预
+2025-07-13 18:06:34,363 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 18:06:34,799 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 18:06:34,819 serial_wrap.py, line 296, INFO:is mc602
+2025-07-13 18:06:34,820 serial_wrap.py, line 297, INFO:load program
+2025-07-13 18:06:37,509 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 18:06:37,593 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 18:06:37,630 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 18:06:38,149 vehicle_base.py, line 305, INFO:MecanumChassis
+2025-07-13 18:06:38,150 vehicle_base.py, line 194, INFO:mecanum init
+2025-07-13 18:06:38,151 car_wrap.py, line 147, INFO:my car init ok 0.011220216751098633
+2025-07-13 18:06:41,142 infer_front.py, line 118, INFO:lane连接服务器...
+2025-07-13 18:06:41,220 infer_front.py, line 145, INFO:lane连接服务器成功
+2025-07-13 18:06:41,225 infer_front.py, line 118, INFO:front连接服务器...
+2025-07-13 18:06:41,293 infer_front.py, line 145, INFO:front连接服务器成功
+2025-07-13 18:06:41,298 infer_front.py, line 118, INFO:task连接服务器...
+2025-07-13 18:06:41,368 infer_front.py, line 145, INFO:task连接服务器成功
+2025-07-13 18:06:41,372 infer_front.py, line 118, INFO:ocr连接服务器...
+2025-07-13 18:06:41,441 infer_front.py, line 145, INFO:ocr连接服务器成功
+2025-07-13 18:06:41,649 car_wrap.py, line 798, INFO:11
+2025-07-13 18:06:41,649 car_wrap.py, line 800, INFO:['hanoi_tower_func', 'bmi_cal', 'camp_fun', 'send_fun', 'task_ingredients', 'task_answer', 'task_fun2', 'task_food', 'task_help', 'follow_map', 'arm_test', 'all_task', 'lane_test', 'reset', 'debug']
+2025-07-13 18:06:43,224 car_wrap.py, line 881, INFO:lane_test
+2025-07-13 18:06:44,537 car_wrap.py, line 881, INFO:reset
+2025-07-13 18:06:45,744 car_wrap.py, line 881, INFO:debug
+2025-07-13 18:06:46,950 car_wrap.py, line 881, INFO:hanoi_tower_func
+2025-07-13 18:07:04,694 car_wrap.py, line 376, INFO:task location dis out
+2025-07-13 18:07:07,993 car_wrap.py, line 376, INFO:task location dis out
+2025-07-13 18:07:09,434 car_wrap.py, line 376, INFO:task location dis out
+2025-07-13 18:07:50,026 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 18:07:50,111 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 18:07:50,149 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 18:07:50,672 vehicle_base.py, line 305, INFO:MecanumChassis
+2025-07-13 18:07:50,672 vehicle_base.py, line 194, INFO:mecanum init
+2025-07-13 18:07:50,673 car_wrap.py, line 147, INFO:my car init ok 0.011464834213256836
+2025-07-13 18:07:53,654 infer_front.py, line 118, INFO:lane连接服务器...
+2025-07-13 18:07:53,749 infer_front.py, line 145, INFO:lane连接服务器成功
+2025-07-13 18:07:53,754 infer_front.py, line 118, INFO:front连接服务器...
+2025-07-13 18:07:53,825 infer_front.py, line 145, INFO:front连接服务器成功
+2025-07-13 18:07:53,830 infer_front.py, line 118, INFO:task连接服务器...
+2025-07-13 18:07:53,900 infer_front.py, line 145, INFO:task连接服务器成功
+2025-07-13 18:07:53,905 infer_front.py, line 118, INFO:ocr连接服务器...
+2025-07-13 18:07:53,976 infer_front.py, line 145, INFO:ocr连接服务器成功
+2025-07-13 18:07:54,183 car_wrap.py, line 798, INFO:11
+2025-07-13 18:07:54,183 car_wrap.py, line 800, INFO:['hanoi_tower_func', 'bmi_cal', 'camp_fun', 'send_fun', 'task_ingredients', 'task_answer', 'task_fun2', 'task_food', 'task_help', 'follow_map', 'arm_test', 'all_task', 'lane_test', 'reset', 'debug']
+2025-07-13 18:08:05,903 car_wrap.py, line 881, INFO:lane_test
+2025-07-13 18:08:06,999 car_wrap.py, line 881, INFO:reset
+2025-07-13 18:08:07,886 car_wrap.py, line 881, INFO:debug
+2025-07-13 18:08:08,933 car_wrap.py, line 881, INFO:hanoi_tower_func
+2025-07-13 18:08:24,245 car_wrap.py, line 369, INFO:time out
+2025-07-13 18:08:26,068 serial_wrap.py, line 78, ERROR:get_anwser error:write failed: [Errno 19] No such device
+2025-07-13 18:08:26,069 serial_wrap.py, line 164, WARNING:尝试串口重连(1/3)...
+2025-07-13 18:08:27,087 serial_wrap.py, line 170, INFO:串口重连成功，开始初始化...
+2025-07-13 18:08:27,188 serial_wrap.py, line 178, WARNING:下位机握手/初始化失败，可能需要人工干预
+2025-07-13 20:01:04,143 serial_wrap.py, line 118, ERROR:未找到串口,查看是否插入了串口,或者查看下位机是否开机
+2025-07-13 20:01:23,103 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 20:01:23,542 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 20:01:23,562 serial_wrap.py, line 296, INFO:is mc602
+2025-07-13 20:01:23,562 serial_wrap.py, line 297, INFO:load program
+2025-07-13 20:01:25,378 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 20:01:25,428 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 20:02:27,975 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 20:02:28,064 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 20:02:28,121 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 20:02:32,021 arm_base.py, line 502, WARNING:timeout
+2025-07-13 20:11:14,499 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 20:11:14,582 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 20:11:14,619 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 20:11:17,604 arm_base.py, line 502, WARNING:timeout
+2025-07-13 20:11:37,381 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 20:11:37,467 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 20:11:37,505 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 20:11:42,418 arm_base.py, line 502, WARNING:timeout
+2025-07-13 20:16:56,142 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 20:16:56,226 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 20:16:56,263 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 20:17:01,172 arm_base.py, line 502, WARNING:timeout
+2025-07-13 20:18:26,730 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 20:18:26,814 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 20:18:26,850 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 20:18:31,762 arm_base.py, line 502, WARNING:timeout
+2025-07-13 20:19:30,916 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 20:19:31,001 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 20:19:31,038 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 20:19:38,228 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 20:19:38,311 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 20:19:38,347 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 20:19:57,588 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 20:19:57,673 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 20:19:57,709 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 20:20:11,543 arm_base.py, line 502, WARNING:timeout
+2025-07-13 20:20:25,405 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 20:20:25,489 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 20:20:25,525 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 20:21:15,195 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 20:21:15,281 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 20:21:15,318 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 20:21:15,723 arm_base.py, line 282, INFO:change side to 1
+2025-07-13 20:21:49,323 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 20:21:49,764 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 20:21:49,785 serial_wrap.py, line 296, INFO:is mc602
+2025-07-13 20:21:49,785 serial_wrap.py, line 297, INFO:load program
+2025-07-13 20:21:51,598 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 20:21:51,647 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 20:21:52,056 arm_base.py, line 282, INFO:change side to 1
+2025-07-13 20:22:51,687 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 20:22:51,770 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 20:22:51,807 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 20:23:03,943 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 20:23:04,027 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 20:23:04,065 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 20:23:16,385 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 20:23:16,469 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 20:23:16,506 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 20:29:27,942 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 20:29:28,028 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 20:29:28,067 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 20:42:36,256 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 20:42:36,341 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 20:42:36,378 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 20:42:37,090 vehicle_base.py, line 305, INFO:MecanumChassis
+2025-07-13 20:42:37,091 vehicle_base.py, line 194, INFO:mecanum init
+2025-07-13 20:42:37,092 car_wrap.py, line 147, INFO:my car init ok 0.01159358024597168
+2025-07-13 20:42:40,103 infer_front.py, line 118, INFO:lane连接服务器...
+2025-07-13 20:42:40,188 infer_front.py, line 145, INFO:lane连接服务器成功
+2025-07-13 20:42:40,193 infer_front.py, line 118, INFO:front连接服务器...
+2025-07-13 20:42:40,263 infer_front.py, line 145, INFO:front连接服务器成功
+2025-07-13 20:42:40,268 infer_front.py, line 118, INFO:task连接服务器...
+2025-07-13 20:42:40,339 infer_front.py, line 145, INFO:task连接服务器成功
+2025-07-13 20:42:40,344 infer_front.py, line 118, INFO:ocr连接服务器...
+2025-07-13 20:42:40,414 infer_front.py, line 145, INFO:ocr连接服务器成功
+2025-07-13 20:42:40,622 car_wrap.py, line 798, INFO:11
+2025-07-13 20:42:40,622 car_wrap.py, line 800, INFO:['hanoi_tower_func', 'bmi_cal', 'camp_fun', 'send_fun', 'task_ingredients', 'task_answer', 'task_fun2', 'task_food', 'task_help', 'follow_map', 'arm_test', 'all_task', 'lane_test', 'reset', 'debug']
+2025-07-13 20:42:47,217 car_wrap.py, line 881, INFO:arm_test
+2025-07-13 20:42:50,767 car_wrap.py, line 881, INFO:follow_map
+2025-07-13 20:42:51,652 car_wrap.py, line 881, INFO:task_help
+2025-07-13 20:47:05,480 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 20:47:05,564 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 20:47:05,604 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 20:47:06,336 vehicle_base.py, line 305, INFO:MecanumChassis
+2025-07-13 20:47:06,336 vehicle_base.py, line 194, INFO:mecanum init
+2025-07-13 20:47:06,338 car_wrap.py, line 147, INFO:my car init ok 0.011864662170410156
+2025-07-13 20:47:09,332 infer_front.py, line 118, INFO:lane连接服务器...
+2025-07-13 20:47:09,413 infer_front.py, line 145, INFO:lane连接服务器成功
+2025-07-13 20:47:09,418 infer_front.py, line 118, INFO:front连接服务器...
+2025-07-13 20:47:09,488 infer_front.py, line 145, INFO:front连接服务器成功
+2025-07-13 20:47:09,493 infer_front.py, line 118, INFO:task连接服务器...
+2025-07-13 20:47:09,563 infer_front.py, line 145, INFO:task连接服务器成功
+2025-07-13 20:47:09,568 infer_front.py, line 118, INFO:ocr连接服务器...
+2025-07-13 20:47:09,636 infer_front.py, line 145, INFO:ocr连接服务器成功
+2025-07-13 20:47:09,843 car_wrap.py, line 798, INFO:11
+2025-07-13 20:47:09,844 car_wrap.py, line 800, INFO:['hanoi_tower_func', 'bmi_cal', 'camp_fun', 'send_fun', 'task_ingredients', 'task_answer', 'task_fun2', 'task_food', 'task_help', 'follow_map', 'arm_test', 'task_help_test', 'all_task', 'lane_test', 'reset', 'debug']
+2025-07-13 20:47:15,156 car_wrap.py, line 881, INFO:arm_test
+2025-07-13 20:47:17,587 car_wrap.py, line 881, INFO:task_help_test
+2025-07-13 20:47:21,860 car_wrap.py, line 881, INFO:task_help_test
+2025-07-13 20:47:44,933 car_wrap.py, line 881, INFO:arm_test
+2025-07-13 20:47:46,888 car_wrap.py, line 881, INFO:task_help_test
+2025-07-13 20:47:51,322 car_wrap.py, line 881, INFO:task_help_test
+2025-07-13 20:48:15,314 car_wrap.py, line 881, INFO:all_task
+2025-07-13 20:48:17,277 car_wrap.py, line 881, INFO:task_help_test
+2025-07-13 20:48:20,745 car_wrap.py, line 881, INFO:task_help_test
+2025-07-13 20:51:11,945 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 20:51:12,029 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 20:51:12,065 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 20:51:12,583 vehicle_base.py, line 305, INFO:MecanumChassis
+2025-07-13 20:51:12,583 vehicle_base.py, line 194, INFO:mecanum init
+2025-07-13 20:51:12,584 car_wrap.py, line 147, INFO:my car init ok 0.011288166046142578
+2025-07-13 20:51:15,575 infer_front.py, line 118, INFO:lane连接服务器...
+2025-07-13 20:51:15,669 infer_front.py, line 145, INFO:lane连接服务器成功
+2025-07-13 20:51:15,674 infer_front.py, line 118, INFO:front连接服务器...
+2025-07-13 20:51:15,744 infer_front.py, line 145, INFO:front连接服务器成功
+2025-07-13 20:51:15,748 infer_front.py, line 118, INFO:task连接服务器...
+2025-07-13 20:51:15,818 infer_front.py, line 145, INFO:task连接服务器成功
+2025-07-13 20:51:15,823 infer_front.py, line 118, INFO:ocr连接服务器...
+2025-07-13 20:51:15,892 infer_front.py, line 145, INFO:ocr连接服务器成功
+2025-07-13 20:51:16,100 car_wrap.py, line 798, INFO:11
+2025-07-13 20:51:16,100 car_wrap.py, line 800, INFO:['hanoi_tower_func', 'bmi_cal', 'camp_fun', 'send_fun', 'task_ingredients', 'task_answer', 'task_fun2', 'task_food', 'task_help', 'follow_map', 'arm_test', 'task_help_test', 'all_task', 'lane_test', 'reset', 'debug']
+2025-07-13 20:51:17,677 car_wrap.py, line 881, INFO:all_task
+2025-07-13 20:51:19,203 car_wrap.py, line 881, INFO:lane_test
+2025-07-13 20:51:21,533 car_wrap.py, line 881, INFO:reset
+2025-07-13 20:51:23,112 car_wrap.py, line 881, INFO:debug
+2025-07-13 20:51:24,050 car_wrap.py, line 881, INFO:hanoi_tower_func
+2025-07-13 20:51:25,099 car_wrap.py, line 881, INFO:bmi_cal
+2025-07-13 20:51:26,305 car_wrap.py, line 881, INFO:hanoi_tower_func
+2025-07-13 20:51:28,258 car_wrap.py, line 881, INFO:debug
+2025-07-13 20:51:29,727 car_wrap.py, line 881, INFO:reset
+2025-07-13 20:51:30,665 car_wrap.py, line 881, INFO:lane_test
+2025-07-13 20:51:31,982 car_wrap.py, line 881, INFO:all_task
+2025-07-13 20:51:33,240 car_wrap.py, line 881, INFO:task_help_test
+2025-07-13 20:51:40,631 car_wrap.py, line 881, INFO:task_help_test
+2025-07-13 20:53:12,155 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 20:53:12,239 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 20:53:12,275 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 20:53:12,798 vehicle_base.py, line 305, INFO:MecanumChassis
+2025-07-13 20:53:12,798 vehicle_base.py, line 194, INFO:mecanum init
+2025-07-13 20:53:12,799 car_wrap.py, line 147, INFO:my car init ok 0.011101961135864258
+2025-07-13 20:53:15,793 infer_front.py, line 118, INFO:lane连接服务器...
+2025-07-13 20:53:15,889 infer_front.py, line 145, INFO:lane连接服务器成功
+2025-07-13 20:53:15,894 infer_front.py, line 118, INFO:front连接服务器...
+2025-07-13 20:53:15,966 infer_front.py, line 145, INFO:front连接服务器成功
+2025-07-13 20:53:15,970 infer_front.py, line 118, INFO:task连接服务器...
+2025-07-13 20:53:16,042 infer_front.py, line 145, INFO:task连接服务器成功
+2025-07-13 20:53:16,047 infer_front.py, line 118, INFO:ocr连接服务器...
+2025-07-13 20:53:16,118 infer_front.py, line 145, INFO:ocr连接服务器成功
+2025-07-13 20:53:16,325 car_wrap.py, line 798, INFO:11
+2025-07-13 20:53:16,326 car_wrap.py, line 800, INFO:['hanoi_tower_func', 'bmi_cal', 'camp_fun', 'send_fun', 'task_ingredients', 'task_answer', 'task_fun2', 'task_food', 'task_help', 'follow_map', 'arm_test', 'task_help_test', 'all_task', 'lane_test', 'reset', 'debug']
+2025-07-13 20:53:21,052 car_wrap.py, line 881, INFO:arm_test
+2025-07-13 20:53:22,471 car_wrap.py, line 881, INFO:follow_map
+2025-07-13 20:53:23,835 car_wrap.py, line 881, INFO:task_help
+2025-07-13 20:53:25,361 car_wrap.py, line 881, INFO:task_food
+2025-07-13 20:53:27,099 car_wrap.py, line 881, INFO:task_help
+2025-07-13 20:53:28,199 car_wrap.py, line 881, INFO:follow_map
+2025-07-13 20:53:30,151 car_wrap.py, line 881, INFO:arm_test
+2025-07-13 20:53:31,250 car_wrap.py, line 881, INFO:task_help_test
+2025-07-13 20:53:37,507 serial_wrap.py, line 78, ERROR:get_anwser error:device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+2025-07-13 20:53:37,508 serial_wrap.py, line 164, WARNING:尝试串口重连(1/3)...
+2025-07-13 20:53:38,525 serial_wrap.py, line 170, INFO:串口重连成功，开始初始化...
+2025-07-13 20:53:38,626 serial_wrap.py, line 178, WARNING:下位机握手/初始化失败，可能需要人工干预
+2025-07-13 20:54:10,019 serial_wrap.py, line 78, ERROR:get_anwser error:device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+2025-07-13 20:54:10,020 serial_wrap.py, line 164, WARNING:尝试串口重连(1/3)...
+2025-07-13 20:54:11,037 serial_wrap.py, line 170, INFO:串口重连成功，开始初始化...
+2025-07-13 20:54:11,138 serial_wrap.py, line 178, WARNING:下位机握手/初始化失败，可能需要人工干预
+2025-07-13 20:55:59,765 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 20:55:59,850 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 20:55:59,888 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 20:56:00,417 vehicle_base.py, line 305, INFO:MecanumChassis
+2025-07-13 20:56:00,418 vehicle_base.py, line 194, INFO:mecanum init
+2025-07-13 20:56:00,419 car_wrap.py, line 147, INFO:my car init ok 0.011551856994628906
+2025-07-13 20:56:03,408 infer_front.py, line 118, INFO:lane连接服务器...
+2025-07-13 20:56:03,490 infer_front.py, line 145, INFO:lane连接服务器成功
+2025-07-13 20:56:03,494 infer_front.py, line 118, INFO:front连接服务器...
+2025-07-13 20:56:03,564 infer_front.py, line 145, INFO:front连接服务器成功
+2025-07-13 20:56:03,569 infer_front.py, line 118, INFO:task连接服务器...
+2025-07-13 20:56:03,640 infer_front.py, line 145, INFO:task连接服务器成功
+2025-07-13 20:56:03,644 infer_front.py, line 118, INFO:ocr连接服务器...
+2025-07-13 20:56:03,716 infer_front.py, line 145, INFO:ocr连接服务器成功
+2025-07-13 20:56:03,923 car_wrap.py, line 798, INFO:11
+2025-07-13 20:56:03,923 car_wrap.py, line 800, INFO:['hanoi_tower_func', 'bmi_cal', 'camp_fun', 'send_fun', 'task_ingredients', 'task_answer', 'task_fun2', 'task_food', 'task_help', 'follow_map', 'arm_test', 'task_help_test', 'all_task', 'lane_test', 'reset', 'debug']
+2025-07-13 20:56:07,796 car_wrap.py, line 881, INFO:arm_test
+2025-07-13 20:56:09,161 car_wrap.py, line 881, INFO:task_help_test
+2025-07-13 20:56:10,206 car_wrap.py, line 881, INFO:all_task
+2025-07-13 20:56:11,464 car_wrap.py, line 881, INFO:task_help_test
+2025-07-13 20:56:19,257 car_wrap.py, line 881, INFO:task_help_test
+2025-07-13 20:56:53,652 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 20:56:53,736 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 20:56:53,772 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 20:56:54,290 vehicle_base.py, line 305, INFO:MecanumChassis
+2025-07-13 20:56:54,290 vehicle_base.py, line 194, INFO:mecanum init
+2025-07-13 20:56:54,291 car_wrap.py, line 147, INFO:my car init ok 0.01130819320678711
+2025-07-13 20:56:57,273 infer_front.py, line 118, INFO:lane连接服务器...
+2025-07-13 20:56:57,371 infer_front.py, line 145, INFO:lane连接服务器成功
+2025-07-13 20:56:57,376 infer_front.py, line 118, INFO:front连接服务器...
+2025-07-13 20:56:57,447 infer_front.py, line 145, INFO:front连接服务器成功
+2025-07-13 20:56:57,452 infer_front.py, line 118, INFO:task连接服务器...
+2025-07-13 20:56:57,522 infer_front.py, line 145, INFO:task连接服务器成功
+2025-07-13 20:56:57,527 infer_front.py, line 118, INFO:ocr连接服务器...
+2025-07-13 20:56:57,598 infer_front.py, line 145, INFO:ocr连接服务器成功
+2025-07-13 20:56:57,806 car_wrap.py, line 798, INFO:11
+2025-07-13 20:56:57,806 car_wrap.py, line 800, INFO:['hanoi_tower_func', 'bmi_cal', 'camp_fun', 'send_fun', 'task_ingredients', 'task_answer', 'task_fun2', 'task_food', 'task_help', 'follow_map', 'arm_test', 'task_help_test', 'all_task', 'lane_test', 'reset', 'debug']
+2025-07-13 20:57:00,178 car_wrap.py, line 881, INFO:arm_test
+2025-07-13 20:57:01,651 car_wrap.py, line 881, INFO:follow_map
+2025-07-13 20:57:14,859 serial_wrap.py, line 78, ERROR:get_anwser error:device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+2025-07-13 20:57:14,859 serial_wrap.py, line 164, WARNING:尝试串口重连(1/3)...
+2025-07-13 20:57:15,876 serial_wrap.py, line 170, INFO:串口重连成功，开始初始化...
+2025-07-13 20:57:15,977 serial_wrap.py, line 178, WARNING:下位机握手/初始化失败，可能需要人工干预
+2025-07-13 20:57:31,142 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 20:57:31,579 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 20:57:31,602 serial_wrap.py, line 296, INFO:is mc602
+2025-07-13 20:57:31,602 serial_wrap.py, line 297, INFO:load program
+2025-07-13 20:57:33,417 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 20:57:33,465 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 20:57:33,989 vehicle_base.py, line 305, INFO:MecanumChassis
+2025-07-13 20:57:33,990 vehicle_base.py, line 194, INFO:mecanum init
+2025-07-13 20:57:33,991 car_wrap.py, line 147, INFO:my car init ok 0.011510610580444336
+2025-07-13 20:57:36,978 infer_front.py, line 118, INFO:lane连接服务器...
+2025-07-13 20:57:37,061 infer_front.py, line 145, INFO:lane连接服务器成功
+2025-07-13 20:57:37,066 infer_front.py, line 118, INFO:front连接服务器...
+2025-07-13 20:57:37,140 infer_front.py, line 145, INFO:front连接服务器成功
+2025-07-13 20:57:37,145 infer_front.py, line 118, INFO:task连接服务器...
+2025-07-13 20:57:37,217 infer_front.py, line 145, INFO:task连接服务器成功
+2025-07-13 20:57:37,222 infer_front.py, line 118, INFO:ocr连接服务器...
+2025-07-13 20:57:37,294 infer_front.py, line 145, INFO:ocr连接服务器成功
+2025-07-13 20:57:37,501 car_wrap.py, line 798, INFO:11
+2025-07-13 20:57:37,502 car_wrap.py, line 800, INFO:['hanoi_tower_func', 'bmi_cal', 'camp_fun', 'send_fun', 'task_ingredients', 'task_answer', 'task_fun2', 'task_food', 'task_help', 'follow_map', 'arm_test', 'task_help_test', 'all_task', 'lane_test', 'reset', 'debug']
+2025-07-13 20:57:41,958 car_wrap.py, line 881, INFO:arm_test
+2025-07-13 20:57:43,271 car_wrap.py, line 881, INFO:follow_map
+2025-07-13 20:58:39,797 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 20:58:40,234 serial_wrap.py, line 353, ERROR:get_anwser timeout 
+2025-07-13 20:58:40,255 serial_wrap.py, line 296, INFO:is mc602
+2025-07-13 20:58:40,255 serial_wrap.py, line 297, INFO:load program
+2025-07-13 20:58:42,488 serial_wrap.py, line 125, INFO:try:/dev/ttyUSB0 - USB Serial
+2025-07-13 20:58:42,574 serial_wrap.py, line 63, INFO:port is /dev/ttyUSB0, controller is mc602, mode USB
+2025-07-13 20:58:42,611 controller_wrap.py, line 31, INFO:dev_name:mc602
+2025-07-13 20:58:43,136 vehicle_base.py, line 305, INFO:MecanumChassis
+2025-07-13 20:58:43,136 vehicle_base.py, line 194, INFO:mecanum init
+2025-07-13 20:58:43,137 car_wrap.py, line 147, INFO:my car init ok 0.011350154876708984
+2025-07-13 20:58:46,124 infer_front.py, line 118, INFO:lane连接服务器...
+2025-07-13 20:58:46,207 infer_front.py, line 145, INFO:lane连接服务器成功
+2025-07-13 20:58:46,212 infer_front.py, line 118, INFO:front连接服务器...
+2025-07-13 20:58:46,284 infer_front.py, line 145, INFO:front连接服务器成功
+2025-07-13 20:58:46,289 infer_front.py, line 118, INFO:task连接服务器...
+2025-07-13 20:58:46,363 infer_front.py, line 145, INFO:task连接服务器成功
+2025-07-13 20:58:46,368 infer_front.py, line 118, INFO:ocr连接服务器...
+2025-07-13 20:58:46,440 infer_front.py, line 145, INFO:ocr连接服务器成功
+2025-07-13 20:58:46,648 car_wrap.py, line 798, INFO:11
+2025-07-13 20:58:46,649 car_wrap.py, line 800, INFO:['hanoi_tower_func', 'bmi_cal', 'camp_fun', 'send_fun', 'task_ingredients', 'task_answer', 'task_fun2', 'task_food', 'task_help', 'follow_map', 'arm_test', 'task_help_test', 'all_task', 'lane_test', 'reset', 'debug']
+2025-07-13 20:58:50,302 car_wrap.py, line 881, INFO:arm_test
+2025-07-13 20:58:51,026 car_wrap.py, line 881, INFO:follow_map
+2025-07-13 20:59:32,591 serial_wrap.py, line 78, ERROR:get_anwser error:device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+2025-07-13 20:59:32,592 serial_wrap.py, line 164, WARNING:尝试串口重连(1/3)...
+2025-07-13 20:59:33,608 serial_wrap.py, line 170, INFO:串口重连成功，开始初始化...
+2025-07-13 20:59:33,709 serial_wrap.py, line 178, WARNING:下位机握手/初始化失败，可能需要人工干预

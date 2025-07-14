@@ -266,8 +266,8 @@ class MyTask:
         self.arm.switch_side(1)
         # 调整手水平
         self.arm.set_hand_angle(-45)
-        tar_height = 0.10
-        tar_horiz = self.arm.horiz_mid
+        tar_height = 0.03
+        tar_horiz = self.arm.horiz_dis
         self.arm.set(tar_horiz, tar_height)
         if arm_set:
             return
@@ -365,6 +365,12 @@ def run_test():
     task = MyTask()
     task.arm.set(0,0)
     print("arm绝对位置0，0")
+    task.arm.set_offset(0.1, 0)
+    print("arm.set_offset(0.1, 0)水平相对前进10cm，竖着不变")
+    task.arm.set_offset(0, 0.1)
+    print("arm.set_offset(0, 0.1)竖着相对前进10cm，水平不变")
+    task.arm.set(0.135,0.1)
+    print("arm绝对位置0.135，0.1")
 
 if __name__ == "__main__":
     
@@ -377,10 +383,11 @@ if __name__ == "__main__":
         task_reset()
 
     # eject_test()
-    # cylinder_test()
+    cylinder_test()
     # bmi_test()
     # ingredients_test()
     # pick_ingredients_test()
     # answer_test()
     # food_test()
-    run_test()
+    #run_test()
+    #task_reset()
