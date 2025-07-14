@@ -498,7 +498,7 @@ class OCRReco(InferInterface):
 
 class LaneInfer(InferInterface):
     def __init__(self) -> None:
-        model_lane = "lane1"   ###之后改这个参数就可以了
+        model_lane = "lane_20250714_14"   ###之后改这个参数就可以了
         super().__init__(model_lane)
         model_path, params_path = self.get_model_path()
         self.config = Config(model_path, params_path)
