@@ -457,6 +457,7 @@ class CarBase():
         self.set_velocity(0, 0, 0)
 
     def set_pose_offset(self, pose, during=None, vel=[0.2, 0.2, math.pi/3], threshold=[0.002, 0.002, 0.02]):
+        #车向前移动x米，向右移动x米，旋转x度
         """设置车辆相对于当前位置的偏移位姿
         
         参数:

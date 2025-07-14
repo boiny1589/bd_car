@@ -399,7 +399,7 @@ class ArmBase():
         vert_pos = self.vert_pose_now + vert_offset
         self.set(horiz_pos, vert_pos, time_run, speed)
 
-    def set(self, horiz_pos, vert_pos, time_run=None, speed=[0.15, 0.04]):  ###不咋用
+    def set(self, horiz_pos, vert_pos, time_run=None, speed=[0.15, 0.04]):  #s 设置机械臂的绝对目标位置并移动到该位置
         """
         设置机械臂的绝对目标位置并移动到该位置
         

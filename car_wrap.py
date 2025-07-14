@@ -604,7 +604,7 @@ class MyCar(CarBase):
         self.lane_dis(speed, dis_stop, stop=stop)
 
     def lane_sensor(self, speed, value_h=None, value_l=None, dis_offset=0.0, times=1, sides=1, stop=STOP_PARAM):
-        """基于传感器触发的车道循迹
+        """基于红外传感器触发的车道循迹
         
         功能: 当传感器读数进入指定范围时停止，可多次触发
         
