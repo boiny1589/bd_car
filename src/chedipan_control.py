@@ -10,6 +10,9 @@ import time
 import threading
 import sys
 import os
+import termios
+import tty
+import select
 
 # 添加项目根目录到路径
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
@@ -31,6 +34,21 @@ except ImportError:
         KEYBOARD_AVAILABLE = False
         logger.warning("未找到键盘输入库，将使用模拟键盘")
 
+
+def getch():
+    """Linux下获取单个按键（非阻塞）"""
+    fd = sys.stdin.fileno()
+    old_settings = termios.tcgetattr(fd)
+    try:
+        tty.setraw(fd)
+        rlist, _, _ = select.select([fd], [], [], 0.05)
+        if rlist:
+            ch = sys.stdin.read(1)
+        else:
+            ch = ''
+    finally:
+        termios.tcsetattr(fd, termios.TCSADRAIN, old_settings)
+    return ch
 
 class ChedipanControl:
     """键盘控制车辆类"""
@@ -354,8 +372,8 @@ class ChedipanControl:
                 pass
     
     def simple_keyboard_control(self):
-        """简单的键盘控制循环"""
-        logger.info("开始简单键盘控制模式")
+        """适用于Linux终端的键盘控制循环"""
+        logger.info("开始Linux键盘控制模式")
         logger.info("控制说明:")
         logger.info("W/↑: 前进")
         logger.info("S/↓: 后退") 
@@ -370,49 +388,40 @@ class ChedipanControl:
         
         try:
             while not self.stop_flag:
-                # 直接使用msvcrt检测键盘输入
-                if 'msvcrt' in sys.modules and msvcrt.kbhit():
-                    key = msvcrt.getch()
-                    logger.info(f"检测到按键: {key}")
-                    
-                    # 处理按键
-                    if key in [b'w', b'W']:
+                key = getch()
+                if key:
+                    logger.info(f"检测到按键: {repr(key)}")
+                    if key in ['w', 'W', '\x1b[A']:  # W或上箭头
                         self.move_forward()
                         self.show_status("Forward")
                         logger.info("前进")
-                    elif key in [b's', b'S']:
+                    elif key in ['s', 'S', '\x1b[B']:  # S或下箭头
                         self.move_backward()
                         self.show_status("Backward")
                         logger.info("后退")
-                    elif key in [b'a', b'A']:
+                    elif key in ['a', 'A', '\x1b[D']:  # A或左箭头
                         self.turn_left()
                         self.show_status("Turn-Left")
                         logger.info("左转")
-                    elif key in [b'd', b'D']:
+                    elif key in ['d', 'D', '\x1b[C']:  # D或右箭头
                         self.turn_right()
                         self.show_status("Turn-Right")
                         logger.info("右转")
-                    elif key in [b'q', b'Q']:
+                    elif key in ['q', 'Q']:
                         logger.info("收到退出信号")
                         self.stop_flag = True
                         break
                     else:
-                        logger.info(f"未识别的按键: {key}")
+                        logger.info(f"未识别的按键: {repr(key)}")
                         self.stop_movement()
                         self.show_status("Stop")
-                    
-                    # 蜂鸣器提示
                     self.beep_alert()
-                
-                # 短暂延时
                 time.sleep(0.05)
-                
         except KeyboardInterrupt:
             logger.info("收到键盘中断信号")
         except Exception as e:
             logger.error(f"控制循环异常: {e}")
         finally:
-            # 清理资源
             self.cleanup()
     
     def run(self):
