@@ -34,57 +34,81 @@ if __name__ == "__main__":
         # 调整车子朝向
         my_car.set_pose_offset([0, 0, math.pi/4*side], 1)
         
-        # 第一个要抓取的圆柱
-        cylinder_id = 1
-        # 调整抓手位置，获取要抓取的圆柱信息
-        pts = my_car.task.pick_up_cylinder(cylinder_id, True)   #True是准备阶段
+        # 准备阶段 - 获取圆柱体检测参数
+        pts = my_car.task.pick_up_cylinder(1, True)   # True是准备阶段
         # 走一段距离
-        my_car.lane_dis_offset(0.3,0.66)
+        my_car.lane_dis_offset(0.3, 0.66)
         
         # 第二次感应到侧面位置
-        # my_car.lane_sensor(0.2, value_h=0.3, sides=side*-1)
         my_car.lane_sensor(0.2, value_h=0.3, sides=side*-1, stop=True)
-        # return
-        # 记录此时的位置
-        pose_dict = {}
+        
+        # 记录圆柱体位置
+        # 创建字典存储不同大小圆柱体的位置信息
+        cylinder_poses = {}
         pose_last = None
+        
+        # 定义圆柱体ID和对应的大小关系
+        cylinder_ids = {13: 1, 14: 2, 15: 3}  # 1=大, 2=中, 3=小
+        
+        # 识别三个圆柱体的位置
         for i in range(3):
             # 根据给定信息定位目标
             index = my_car.lane_det_location(0.2, pts, side=side*-1)
             my_car.beep()
-            pose_dict[index] = my_car.get_odometry().copy()
-            if i == 2:
-                pose_last = my_car.get_odometry().copy()
-            # print(index)
-            # pose_list.append([index, my_car.get_odometry().copy()])
+            pose_last = current_pose
             
+            # 移动到下一个位置
             if i < 2:
                 my_car.set_pose_offset([0.08, 0, 0])
                 my_car.beep()
-            
-        # print(pose_dict)
-        # 根据识别到的位置调整方向位置
-        # angle = math.atan((pose_dict[2][1] - pose_dict[0][1]) / (pose_dict[2][0] - pose_dict[0][0]))
-        # print(angle)
-        # my_car.set_pose_offset([0, 0, -angle])
-        # 重新定位最后一个圆柱
-        # my_car.lane_det_location(0.2, pts, side=side*-1)
+        
+        # 确保我们识别到了三个不同大小的圆柱体
+        if len(cylinder_poses) < 3:
+            print("警告：未能识别到所有三个圆柱体")
+            # 如果缺少某些大小，使用位置索引填充
+            for size in range(1, 4):
+                if size not in cylinder_poses and i < len(cylinder_poses):
+                    cylinder_poses[size] = list(cylinder_poses.values())[i]
+                    i += 1
+        
+        # 获取当前角度
         angle_det = my_car.get_odometry()[2]
-        # 计算目的地终点坐标
+        
+        # 计算目的地终点坐标（放置圆柱体的位置）
         pose_end = [0, 0, angle_det]
         pose_end[0] = pose_last[0] + 0.12*math.cos(angle_det)
         pose_end[1] = pose_last[1] + 0.12*math.sin(angle_det)
-        # print(det)
-        # 调整到目的地
-        # my_car.set_pose(det)
-        for i in range(3):
-            det = pose_dict[i]
+        
+        # 实现汉诺塔移动算法
+        # 汉诺塔规则：大的圆柱体不能放在小的上面
+        # 移动顺序：1(大) -> 3(小) -> 2(中)
+        
+        # 移动大圆柱(1)到目标位置
+        if 1 in cylinder_poses:
+            det = cylinder_poses[1]
             det[2] = angle_det
             my_car.set_pose(det)
-            # my_car.lane_det_location(0.2, pts, side=side*-1)
-            my_car.task.pick_up_cylinder(i)
+            my_car.task.pick_up_cylinder(1)  # 大圆柱对应radius=1
             my_car.set_pose(pose_end)
-            my_car.task.put_down_cylinder(i)
+            my_car.task.put_down_cylinder(1)
+        
+        # 移动小圆柱(3)到目标位置
+        if 3 in cylinder_poses:
+            det = cylinder_poses[3]
+            det[2] = angle_det
+            my_car.set_pose(det)
+            my_car.task.pick_up_cylinder(3)  # 小圆柱对应radius=3
+            my_car.set_pose(pose_end)
+            my_car.task.put_down_cylinder(3)
+        
+        # 移动中圆柱(2)到目标位置
+        if 2 in cylinder_poses:
+            det = cylinder_poses[2]
+            det[2] = angle_det
+            my_car.set_pose(det)
+            my_car.task.pick_up_cylinder(2)  # 中圆柱对应radius=2
+            my_car.set_pose(pose_end)
+            my_car.task.put_down_cylinder(2)
         # return
 
     def bmi_cal():

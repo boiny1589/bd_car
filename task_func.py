@@ -72,14 +72,14 @@ class MyTask:
         tar_list =  [[13, 100, "cylinder1", 0,  0, 0.28, 0.75, 0.97], [14, 80, "cylinder2", 0, 0, 0.3, 0.61, 0.9], 
                      [15, 60, "cylinder3", 0, 0, 0.2, 0.45, 0.7]]
         # pt_tar = tar_list[radius-1]
-        height_list = [0.08, 0.08, 0.15]
+        height_list = [0.13, 0.13, 0.15]
         tar_height = height_list[0]
         tar_horiz = self.arm.horiz_mid
         # 手爪方向向下
         self.arm.set_hand_angle(48)
         print("pick_up_cylinder设置小舵机方向48")
         if arm_set:
-            tar_height = 0.10
+            tar_height = 0.08
             # 到达目标位置
             self.arm.set(tar_horiz, tar_height)
             print("pick_up_cylinder到达目标位置tar_height: %f" % tar_height)
@@ -96,13 +96,14 @@ class MyTask:
         self.arm.set(tar_horiz, tar_height)
         print("pick_up_cylinder移动到准备抓取的位置tar_horiz: %f, tar_height: %f" % (tar_horiz, tar_height))
         # 往下放,抓住
-        self.arm.set_offset(0, -0.015)
+        self.arm.set_offset(0, -0.02)
         time.sleep(0.5)
         # 抬起一定高度
         # height_offset = 0.07
-        height_offset = 0.10
+        height_offset = 0.07
         if radius == 2:
             height_offset += 0.06
+            self.arm.set_hand_angle(0)
         self.arm.set_offset(0, height_offset)
         # self.arm.set_offset(0, 0.08, 1.3)
 
@@ -380,7 +381,7 @@ if __name__ == "__main__":
     args = args.parse_args()
     print(args)
     if args.op == "reset":
-        task_reset()
+       task_reset()
 
     # eject_test()
     cylinder_test()
@@ -389,5 +390,5 @@ if __name__ == "__main__":
     # pick_ingredients_test()
     # answer_test()
     # food_test()
-    #run_test()
+    # run_test()
     #task_reset()
