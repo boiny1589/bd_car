@@ -149,6 +149,7 @@ if __name__ == "__main__":
         # my_car.move_advance([0.3, 0, 0], value_l=1, sides=-1)
         # my_car.move_advance([0.3, 0, 0], value_l=0.5, sides=-1)
 
+
     def send_fun():
         # my_car.move_advance([0.3, 0, 0], value_l=1, sides=-1)
         # my_car.move_distance([0.3, 0, -0.1], 0.25)
@@ -240,9 +241,41 @@ if __name__ == "__main__":
         # my_car.set_pose_offset([0.15, -0.4, 0], 2)
         # 做任务
         # my_car.do_action_list(actions_map)
+    def car_move():
+        my_car.set_pose([0.20, 0,0], 1)
+    def follow_map():
+        # 使用循迹功能前进
+        # my_car.lane_dis_offset(0.3, 2)  # 以0.3的速度前进0.5米
+        my_car.lane_base(0.3, end_fuction=lambda: False)
+        # my_car.lane_det_dis2pt(0.3, 2)  # 以0.3的速度循迹行驶，距离目标点2米时停止
+        # 使用红外传感器检测边界
+        my_car.lane_sensor(0.3, value_h=0.3, sides=1)  # 以0.3的速度前进，直到左侧传感器检测到边界
+        # # 继续前进一段距离
+        # my_car.lane_dis_offset(0.3, 1.0)  # 以0.3的速度继续前进1.0米
         
-    my_car.beep()
-    time.sleep(0.2)
-    functions = [hanoi_tower_func, bmi_cal, camp_fun, send_fun, task_ingredients, task_answer, task_fun2, task_food, task_help]
-    my_car.manage(functions, 9)
+        # # 最后一段直线
+        # my_car.lane_dis_offset(0.3, 0.5)  # 继续前进0.5米
 
+    def arm_test():
+        # my_car.task.arm.reset()
+        # my_car.task.arm.reset_pos_dir(dir=1, speed=0.05)
+        my_car.task.arm.switch_side(1)
+        my_car.task.arm.set_arm_angle(0,20)
+        my_car.task.arm.set_hand_angle(30)
+        # my_car.task.arm.set_arm_angle(1.57)
+        sys.exit()  # 运行完自动结束
+
+    def task_help_test():
+        my_car.lane_sensor(0.3, value_h=0.5, sides=1)
+        my_car.task.help_peo(arm_set=True)
+        # my_car.set_pose_offset([0.07, 0.14, 0])
+        # my_car.set_pose_offset([-0.1, 0.15, 0])
+        # my_car.set_pose_offset([0, -0.3, 0])
+        # my_car.set_pose_offset([0.7, 0, 0], vel=[0.3, 0.3, 0])
+        # my_car.set_pose_offset([0.1, -0.1, 0])
+
+        # my_car.move_advance([0.2, 0, 0], value_h=0.5, sides=1, dis_out=0.05)
+        # my_car.task.help_peo()    
+        
+    functions = [hanoi_tower_func, bmi_cal, camp_fun, send_fun, task_ingredients, task_answer, task_fun2, task_food, task_help, follow_map, arm_test, task_help_test]
+    my_car.manage(functions, 11)  # 注意这里数字改为10
